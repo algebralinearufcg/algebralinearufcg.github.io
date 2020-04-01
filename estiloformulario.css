@@ -16,10 +16,6 @@ ul{
     list-style: none;
   }
 
-img{
-     width: 25px;
-   }
-
 input[type = "checkbox"]{
                           display: none;
                         }
