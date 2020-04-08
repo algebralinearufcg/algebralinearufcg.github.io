@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!-- Definindo as configurações gerais -->
+	<meta http-equiv = "Content-Type" content = "text/html" />
+	<meta charset = "utf-8" />
+	<title> Álgebra Linear com Python </title>
+	<link rel = "icon" href = "logo.png" type = "image/x-icon" />
+    <link rel = "shortcut icon" href = "logo.png" type = "image/x-icon" />
+
+    <!-- Definindo as configurações do menu navegador-->
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <link rel = "stylesheet" type = "text/css" href = "estilomenu.css" />
+    <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
+
+    <!-- Definindo as configurações para o conteúdo da página -->
+	<link rel = "stylesheet" href = "estiloprogramas.css">
+	<link rel = "stylesheet" href = "swiper.min.css">
+
+</head>
+
+<body>
+
+	<!-- Definindo o menu navegador -->
+
+	<header class = "headeratalho"> 
+
+		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
+
+		<div class = "menu-toggle"></div>
+
+		<nav class = "navatalho">
+			
+			<ul>
+				
+				<li><a href = "index.html" target = "_self"> Programas </a></li>
+				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
+				<li><a href = "listademateriais.html" target = "_self" class = "active"> Materiais </a></li>
+				<li><a href = "listadeformulario.html" target = "_self"> Feedback </a></li>
+
+			</ul>
+
+		</nav>
+
+		<div class = "clearfix"></div>
+
+	</header>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js" 
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+	crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+
+	</script>
+
+	<!-- Definindo o conteúdo da página -->
+
+	<div class = "swiper-container">
+		<div class = "swiper-wrapper">
+
+			<div class = "swiper-slide">
+				<div class = "card">
+					<div class = "sliderText">
+						<h3 align = "center"> Instalando o Python 3.0 </h3>
+					</div>
+					<div class = "content">
+						<p> Aprenda a instalar o Python, na versão 3.0, no seu ambiente de trabalho. Com isso, você poderá ter um papel ativo
+						no projeto "Álgebra Linear com Python".</p>
+						<a href = "https://youtu.be/VuKvR1J2LQE" target = "_blank"> Leia Mais </a>
+					</div>
+				</div>
+			</div>
+
+			<div class = "swiper-slide">
+				<div class = "card">
+					<div class = "sliderText">
+						<h3 align = "center"> Para que Serve o Python? </h3>
+					</div>
+					<div class = "content">
+						<p> Veja as inúmeras aplicações que a linguagem de programação Python pode ter e como ela está presente em nossas vidas atualmente. </p>
+						<a href = "https://youtu.be/Mp0vhMDI7fA" target = "_blank"> Leia Mais </a>
+					</div>
+				</div>
+			</div>
+
+			<div class = "swiper-slide">
+				<div class = "card">
+					<div class = "sliderText">
+						<h3 align = "center"> Iniciando com o Google Colab </h3>
+					</div>
+					<div class = "content">
+						<p> Entenda a importância da plataforma Google Colab Notebooks quando se está trabalhando com Python. </p>
+						<a href = "https://youtu.be/inN8seMm7UI" target = "_blank"> Leia Mais </a>
+					</div>
+				</div>
+			</div>
+
+			<div class = "swiper-slide">
+				<div class = "card">
+					<div class = "sliderText">
+						<h3 align = "center"> Microsoft Azure </h3>
+					</div>
+					<div class = "content">
+						<p> Entenda a importância da plataforma Microsoft Azure Notebooks quando se está trabalhando com Python. </p>
+						<a href = "https://youtu.be/qCg8PvOzL7M" target = "_blank"> Read More </a>
+					</div>
+				</div>
+			</div>
+
+			<div class = "swiper-slide">
+				<div class = "card">
+					<div class = "sliderText">
+						<h3 align = "center"> Álgebra Linear: Khan Academy </h3>
+					</div>
+					<div class = "content">
+						<p> Tenha acesso a inúmeros vídeos gratuitos sobre Álgebra Linear na Khan Academy, uma plataforma que visa tornar
+						o ensino mais acessível a todos. </p>
+						<a href = "https://pt.khanacademy.org/math/linear-algebra" target = "_blank"> Read More </a>
+					</div>
+				</div>
+			</div>
+
+			
+
+		</div>
+	</div>
+
+	<script src = "swiper.min.js"></script>
+
+	<script>
+
+	    var swiper = new Swiper('.swiper-container', {
+	      effect: 'coverflow',
+	      grabCursor: true,
+	      centeredSlides: true,
+	      slidesPerView: 'auto',
+	      coverflowEffect: {
+	        rotate: 30,
+	        stretch: 0,
+	        depth: 200,
+	        modifier: 1,
+	        slideShadows : true,
+	      },
+	      pagination: {
+	        el: '.swiper-pagination',
+	      },
+	    });
+
+  	</script>
+
+</body>
+
+</html>
