@@ -98,6 +98,18 @@ body
 	background: #2196f3;
 }
 
+.container .box:nth-child(4) .icon
+{
+	box-shadow: 0 0 0 0 #FFA500;
+	background: #FFA500;
+}
+
+.container .box:nth-child(4):hover .icon
+{
+	box-shadow: 0 0 0 400px #FFA500;
+	background: #FFA500;
+}
+
 .container .box .content
 {
 	position: relative;
