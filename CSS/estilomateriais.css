@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700');
+
+body
+{
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container .box
+{
+	position: relative;
+	align-items: center;
+	width: 350px;
+	padding: 40px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.3);
+	border-radius: 4px;
+	margin: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-align: center;
+}
+
+.container .box:before
+{
+	content: '';
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255, .2);
+	z-index: 2;
+	pointer-events: none;
+}
+
+.container .box .icon
+{
+	position: relative;
+	width: 80px;
+	height: 80px;
+	color: #fff;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	font-size: 40px;
+	font-weight: 700;
+	transition: 1s;
+}
+
+.container .box:nth-child(1) .icon
+{
+	box-shadow: 0 0 0 0 #e91e63;
+	background: #e91e63;
+}
+
+.container .box:nth-child(1):hover .icon
+{
+	box-shadow: 0 0 0 400px #e91e63;
+	background: #e91e63;
+}
+
+.container .box:nth-child(2) .icon
+{
+	box-shadow: 0 0 0 0 #23e629;
+	background: #23e629;
+}
+
+.container .box:nth-child(2):hover .icon
+{
+	box-shadow: 0 0 0 400px #23e629;
+	background: #23e629;
+}
+
+.container .box:nth-child(3) .icon
+{
+	box-shadow: 0 0 0 0 #2196f3;
+	background: #2196f3;
+}
+
+.container .box:nth-child(3):hover .icon
+{
+	box-shadow: 0 0 0 400px #2196f3;
+	background: #2196f3;
+}
+
+.container .box:nth-child(4) .icon
+{
+	box-shadow: 0 0 0 0 #FFA500;
+	background: #FFA500;
+}
+
+.container .box:nth-child(4):hover .icon
+{
+	box-shadow: 0 0 0 400px #FFA500;
+	background: #FFA500;
+}
+
+.container .box:nth-child(5) .icon
+{
+	box-shadow: 0 0 0 0 #7D26CD;
+	background: #7D26CD;
+}
+
+.container .box:nth-child(5):hover .icon
+{
+	box-shadow: 0 0 0 400px #7D26CD;
+	background: #7D26CD;
+}
+
+.container .box .content
+{
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.container .box:hover .content
+{
+	color: #fff;
+}
+
+.container .box .content h3
+{
+	font-size: 20px;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.container .box .content p
+{
+	margin: 0;
+	padding: 0;
+}
+
+.aatalho
+{
+	display: inline-block;
+	padding: 10px 20px;
+	background: #fff;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	margin-top: 20px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.4);
+}
+
+.footeratalho p, .footeratalho a
+{
+	color: #069370;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
