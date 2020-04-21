@@ -110,6 +110,18 @@ body
 	background: #FFA500;
 }
 
+.container .box:nth-child(5) .icon
+{
+	box-shadow: 0 0 0 0 #7D26CD;
+	background: #7D26CD;
+}
+
+.container .box:nth-child(5):hover .icon
+{
+	box-shadow: 0 0 0 400px #7D26CD;
+	background: #7D26CD;
+}
+
 .container .box .content
 {
 	position: relative;
