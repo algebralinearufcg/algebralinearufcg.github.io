@@ -122,6 +122,19 @@ body
 	background: #7D26CD;
 }
 
+.container .box:nth-child(6) .icon
+{
+	box-shadow: 0 0 0 0 #CDAF95;
+	background: #CDAF95;
+}
+
+.container .box:nth-child(6):hover .icon
+{
+	box-shadow: 0 0 0 400px #CDAF95;
+	background: #CDAF95;
+}
+
+
 .container .box .content
 {
 	position: relative;
