@@ -48,6 +48,13 @@ body
 	background: #000;
 }
 
+.card .content .setaatalho
+{
+	padding-bottom: 5%;
+	width: 100%;
+	height: 40px;
+}
+
 .card .sliderText h3
 {
 	color: #fff;
