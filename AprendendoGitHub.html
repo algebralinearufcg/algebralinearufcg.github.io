@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>AprendendoGitHub</title>
+<title>Álgebra Linear com Python</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13047,6 +13047,12 @@ div#notebook {
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
 <link rel="stylesheet" href="custom.css">
+<title> Álgebra Linear com Python </title>
+<link rel = "icon" href = "Imagens/logo.png" type = "image/x-icon" />
+<link rel = "shortcut icon" href = "Imagens/logo.png" type = "image/x-icon" />
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+<link rel = "stylesheet" type = "text/css" href = "CSS/estilomenu.css" />
+<link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -13071,6 +13077,45 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
+
+  <header class = "headeratalho"> 
+
+		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
+
+		<div class = "menu-toggle"></div>
+
+		<nav class = "navatalho">
+			
+			<ul>
+				
+				<li><a href = "index.html" target = "_self"> Programas </a></li>
+				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
+				<li><a href = "listademateriais.html" target = "_self" class = "active"> Materiais </a></li>
+				<li><a href = "listadeformulario.html" target = "_self"> Feedback </a></li>
+
+			</ul>
+
+		</nav>
+
+		<div class = "clearfix"></div>
+
+	</header>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js" 
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+	crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+
+	</script>
+
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
