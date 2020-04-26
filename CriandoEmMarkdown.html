@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>AprendendoGitHub</title>
+<title>CriandoEmMarkdown</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,14 +13077,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Aprendendo-e-Criando-no-GitHub">Aprendendo e Criando no GitHub<a class="anchor-link" href="#Aprendendo-e-Criando-no-GitHub">&#182;</a></h1><h3 id="Nessa-parte-do-curso,-vamos-falar-sobre-a-plataforma-GitHub,-uma-das-maiores-comunidades-Open-Source-do-mundo.-Vamos-tamb&#233;m-criar-o-nosso-perfil-e-um-reposit&#243;rio-na-plataforma.">Nessa parte do curso, vamos falar sobre a plataforma GitHub, uma das maiores comunidades Open Source do mundo. Vamos tamb&#233;m criar o nosso perfil e um reposit&#243;rio na plataforma.<a class="anchor-link" href="#Nessa-parte-do-curso,-vamos-falar-sobre-a-plataforma-GitHub,-uma-das-maiores-comunidades-Open-Source-do-mundo.-Vamos-tamb&#233;m-criar-o-nosso-perfil-e-um-reposit&#243;rio-na-plataforma.">&#182;</a></h3>
+<h1 id="Personalizando-Documentos-com-o-Markdown">Personalizando Documentos com o Markdown<a class="anchor-link" href="#Personalizando-Documentos-com-o-Markdown">&#182;</a></h1><h3 id="Aprenda-as-caracter&#237;sticas-do-markdown,-uma-&#243;tima-ferramenta-para-edi&#231;&#227;o-de-documentos-que-&#233;-compat&#237;vel-com-o-GitHub.">Aprenda as caracter&#237;sticas do markdown, uma &#243;tima ferramenta para edi&#231;&#227;o de documentos que &#233; compat&#237;vel com o GitHub.<a class="anchor-link" href="#Aprenda-as-caracter&#237;sticas-do-markdown,-uma-&#243;tima-ferramenta-para-edi&#231;&#227;o-de-documentos-que-&#233;-compat&#237;vel-com-o-GitHub.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/5.png" width = "500" alt = "Logo do Git e do GitHub"></p>
+<p><img src = "Imagens/5.png" width = "500" alt = "Logo do Git e GitHub"></p>
 
 </div>
 </div>
@@ -13092,16 +13092,443 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="O-que-&#233;-o-GitHub?">O que &#233; o GitHub?<a class="anchor-link" href="#O-que-&#233;-o-GitHub?">&#182;</a></h3>
+<p><strong>Markdown</strong> é uma vertente da linguagem de marcação <strong>HTML</strong>. Com ela, você pode formatar documentos facilmente e, dada sua integração com o GitHub, é possível criar um excelente README.md para documentar o seu repositório ou fazer issues mais elegantes. Para isso, vamos aprender os principais tópicos dessa linguagem de marcação.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>O <strong>GitHub</strong> é um dos maiores e mais famosos repositórios remotos que existem mundialmente, sendo ele uma plataforma que hospeda códigos fonte com auxílio do software de versionamento <strong>Git</strong>. Se você ainda não viu nossa parte do curso que fala sobre o Git, acesse o link abaixo, nele há itens importantes para você estudar e conseguir avançar bem no curso.</p>
+<h3 id="M&#233;todos-do-Marckdown">M&#233;todos do Marckdown<a class="anchor-link" href="#M&#233;todos-do-Marckdown">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><strong>Observação 1</strong>: Todo o texto em marckdown pode ser escrito usando a linguagem de marcação <strong>HTML</strong>, pois ela está por trás de toda a estrutura do Markdown. Entretanto, não vamos abordar HTML aqui, pois foge do nosso propósito.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># &gt; **Observação 2**: ignorem as cerquilhas que aparecem no </span>
+<span class="c1"># início das linhas, elas não fazem parte da linguagem Markdown. </span>
+<span class="c1"># Todos os demais elementos, incluindo outras cerquilhas que </span>
+<span class="c1"># não estão no início das linhas, fazem parte da formatação  de</span>
+<span class="c1"># documentos em Markdown.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Texto-Comum">Texto Comum<a class="anchor-link" href="#Texto-Comum">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para escrever textos comuns, não há muitas dificuldades,</span>
+<span class="c1"># basta somente digitar o texto no documento.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># Esse é um texto corrido comum.</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esse é um texto corrido comum.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="T&#237;tulos">T&#237;tulos<a class="anchor-link" href="#T&#237;tulos">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para marcar um título, você vai usar cerquilhas e quanto mais</span>
+<span class="c1"># cerquilhas houver, até no máximo 6 vezes, menor será o tamanho textual</span>
+<span class="c1"># do seu título.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># # Título 1</span>
+<span class="c1"># ## Título 2</span>
+<span class="c1"># ### Título 3</span>
+<span class="c1"># #### Título 4</span>
+<span class="c1"># ##### Título 5</span>
+<span class="c1"># ###### Título 6</span>
+
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="T&#237;tulo-1">T&#237;tulo 1<a class="anchor-link" href="#T&#237;tulo-1">&#182;</a></h1><h2 id="T&#237;tulo-2">T&#237;tulo 2<a class="anchor-link" href="#T&#237;tulo-2">&#182;</a></h2><h3 id="T&#237;tulo-3">T&#237;tulo 3<a class="anchor-link" href="#T&#237;tulo-3">&#182;</a></h3><h4 id="T&#237;tulo-4">T&#237;tulo 4<a class="anchor-link" href="#T&#237;tulo-4">&#182;</a></h4><h5 id="T&#237;tulo-5">T&#237;tulo 5<a class="anchor-link" href="#T&#237;tulo-5">&#182;</a></h5><h6 id="T&#237;tulo-6">T&#237;tulo 6<a class="anchor-link" href="#T&#237;tulo-6">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Outra maneira mais simples de marcar um título em texto,</span>
+<span class="c1"># é da seguinte forma:</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># Título 1</span>
+<span class="c1"># ========</span>
+<span class="c1">#</span>
+<span class="c1"># Título 2</span>
+<span class="c1"># --------</span>
+<span class="c1">#</span>
+<span class="c1">#Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="T&#237;tulo-1">T&#237;tulo 1<a class="anchor-link" href="#T&#237;tulo-1">&#182;</a></h1><h2 id="T&#237;tulo-2">T&#237;tulo 2<a class="anchor-link" href="#T&#237;tulo-2">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Par&#225;grafos">Par&#225;grafos<a class="anchor-link" href="#Par&#225;grafos">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para delimitar um parágrafo, você pode simplesmente deixar</span>
+<span class="c1"># uma linha em branco.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1"># </span>
+<span class="c1"># Este é o primeiro parágrafo.</span>
+<span class="c1">#</span>
+<span class="c1"># Este é o segundo parágrafo.</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Este é o primeiro parágrafo.</p>
+<p>Este é o segundo parágrafo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Quebra-de-linha">Quebra de linha<a class="anchor-link" href="#Quebra-de-linha">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para inserir uma quebra de linha, você deve colocar após a palavra </span>
+<span class="c1"># final da linha dois caracteres de espaço em branco</span>
+<span class="c1"># e ir para a próxima linha. Talvez não seja tão visual no </span>
+<span class="c1"># exemplo, mas os dois caracteres em branco fazem parte do </span>
+<span class="c1"># conteúdo.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># Esta é a primeira linha.  </span>
+<span class="c1"># Esta é a segunda linha.</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta é a primeira linha.<br>
+Esta é a segunda linha.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Caso você não deixe dois caracteres de espaço em branco</span>
+<span class="c1"># (tecla enter), a linha se manterá coesa.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># Esta é a primeira linha.</span>
+<span class="c1"># Esta ainda é a primeira linha.</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta é a primeira linha.
+Esta ainda é a primeira linha.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Negrito">Negrito<a class="anchor-link" href="#Negrito">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># para deixar um texto em negrito, use dois asteriscos</span>
+<span class="c1"># consecutivos ou __.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># **Este é um texto marcado.**</span>
+<span class="c1"># __Este é também um texto marcado.__</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Este é um texto marcado.</strong><br>
+<strong>Este é também um texto marcado.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="It&#225;lico">It&#225;lico<a class="anchor-link" href="#It&#225;lico">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para deixar um texto em itálico, use um astericos ou _.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># *Este é um texto em itálico.*</span>
+<span class="c1"># _Este é também um texto em itálico._</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Este é um texto em itálico.</em><br>
+<em>Este é também um texto em itálico.</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Risco">Risco<a class="anchor-link" href="#Risco">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para escrever um texto com um risco, usa-se ~~.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># &quot;Eu ~~quebrei~~ fiz engenharia reversa em meu computador.&quot;</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>"Eu <del>quebrei</del> fiz engenharia reversa em meu computador."</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Listas-Ordenadas">Listas Ordenadas<a class="anchor-link" href="#Listas-Ordenadas">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para criar uma lista ordenada, você pode simplesmente digitar</span>
+<span class="c1"># um número seguido de um ponto.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># 1. Primeiro Elemento;</span>
+<span class="c1"># 2. Segundo Elemento;</span>
+<span class="c1"># 3. Terceiro Elemento;</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Primeiro Elemento;</li>
+<li>Segundo Elemento;</li>
+<li>Terceiro Elemento;</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Listas-n&#227;o-ordenadas">Listas n&#227;o ordenadas<a class="anchor-link" href="#Listas-n&#227;o-ordenadas">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para criar uma lista não ordenada, você pode simplesmente </span>
+<span class="c1"># digitar três caracteres especiais: *, - ou +. Qualquer um</span>
+<span class="c1"># deles lhe dará o mesmo resultado.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># * Primeiro Elemento;</span>
+<span class="c1"># - Segundo Elemento;</span>
+<span class="c1"># + Terceiro Elemento;</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href = "https://algebralinearufcg.github.io/AprendendoSobreoGit.html" target = "_blank">Veja nossa parte do curso que fala sobre o Git</a>;</li>
+<li>Primeiro Elemento;</li>
+<li>Segundo Elemento;</li>
+<li>Terceiro Elemento;</li>
 </ul>
 
 </div>
@@ -13110,15 +13537,33 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>O GitHub poderia ser somente uma espécie de <strong>Google Drive</strong> ou um <strong>Dropbox</strong>, em que poderiamos armazenar nossos projetos e arquivos. Entretanto, os desenvolvedores da plataforma foram mais criativos: o GitHub pode ser considerado uma <strong>plataforma social</strong> para programadores. Como trata-se de uma comunidade <strong>Open Source</strong>, podemos ter contato com outros programadores com o objetivo de aumentar o nosso <strong>Networking</strong>, um fator fundamental em uma carreira profissional.</p>
+<h3 id="Bloco-de-Cita&#231;&#227;o">Bloco de Cita&#231;&#227;o<a class="anchor-link" href="#Bloco-de-Cita&#231;&#227;o">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para criar um bloco de citação, use &gt;.</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># &gt; Amadores dizem que Slash só toca na escala pentatônica.</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
 
+    </div>
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Open Source</strong>: Código aberto é um modelo de desenvolvimento criado em 1998, que promove o licenciamento livre para o design ou esquematização de um produto, e a redistribuição universal desses, com a possibilidade de livre consulta, examinação ou modificação do produto, sem a necessidade de pagar uma licença comercial, promovendo um modelo colaborativo de produção intelectual.</p>
+<blockquote><p>Amadores dizem que Slash só toca na escala pentatônica.</p>
 </blockquote>
 
 </div>
@@ -13127,107 +13572,57 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Networking</strong>: é uma palavra em inglês que indica a capacidade de estabelecer uma rede de contatos ou uma conexão com algo ou com alguém.. Essa rede de contatos é um sistema de suporte onde existe a partilha de serviços e informações entre indivíduos ou grupos que têm um interesse em comum.</p>
-</blockquote>
+<h3 id="Tabelas">Tabelas<a class="anchor-link" href="#Tabelas">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para fazer uma tabela em Markdown, siga os passos abaixo:</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># |**Há 10 tipos de pessoas no mundo...**|</span>
+<span class="c1"># |:-----------------------------------------:|</span>
+<span class="c1"># |1. As que sabem contar em binário|</span>
+<span class="c1"># |10. E as que não sabem contar em binário|</span>
+<span class="c1">#</span>
+<span class="c1"># |Forma Correta|Forma Incorreta|</span>
+<span class="c1"># |:-----|---------:|</span>
+<span class="c1"># |Biscoito|Bolhacha|</span>
+<span class="c1">#</span>
+<span class="c1"># Observe que o caractere : usado nas tabelas indica o </span>
+<span class="c1"># alinhamento do texto, veja:</span>
+<span class="c1">#</span>
+<span class="c1"># |:-------------:| (Centralizado)</span>
+<span class="c1"># |:--------------| (Alinhado na esquerda)</span>
+<span class="c1"># |--------------:| (Alinhado na direita)</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
 
+    </div>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>O GitHub é uma plataforma muito utilizada no mundo inteiro por profissionais e entusiastas do ramo da tecnologia, com ela, podemos divulgar inúmeros projetos, ganhar contribuição de outros profissionais, ser um participante ativo em tornar o conhecimento mais acessível para as pessoas e dar continuidade a projetos de terceiros, com a devida licença. Nele, é contabilizado mais de <strong>36 milhões de usuários ativos</strong> no mundo.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/10.jpeg" width = "500" alt = "Github é uma comunidade colaborativa"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>O GitHub foi desenvolvido por  <strong>Chris Wanstrath</strong>, <strong>J. Hyett</strong>, <strong>Tom Preston-Werner</strong> e <strong>Scott Chacon</strong>, e todo o projeto começou em 2008. A sede está localizada em São Francisco, na Califórnia.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos também usar um recursos muito interessante para hospedar o nosso site gratuitamente chamado de <strong>GitHub Pages</strong>, usando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Entretanto, não podemos criar páginas muito complexas que envolvam <strong>mySQL</strong> para banco de dados em comum com <strong>PHP</strong>, estamos falando de páginas simples com fins educativos.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/11.jpg" width = "500" alt = "Github Pages"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Veja as vantagens que o GitHub oferece aos seus usuários:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><ol>
-<li>Criação de repositórios públicos ilimitados.</li>
-<li>Hospedagem de códigos fonte;</li>
-<li>Em sua maioria é gratuito, exceto para projetos gigantescos de grandes corporações;</li>
-<li>Possui características de uma rede social.</li>
-<li>Possui GitHub Pages integrado (você está acessando uma página criada com esse recurso, por exemplo);</li>
-<li>Possibilidade de colaboração e de aumentar sua networking com outros profissionais;</li>
-</ol>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Por mais que o GitHub seja a principal plataforma com essas características, também podemos citar outras bastante interessantes, em que você pode armazenar remotamente os seus arquivos:</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><strong>Outras Plataformas análogas ao GitHub:</strong></th>
+<th style="text-align:center"><strong>Há 10 tipos de pessoas no mundo...</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">1. GitLab</td>
+<td style="text-align:center">1. As que sabem contar em binário</td>
 </tr>
 <tr>
-<td style="text-align:left">2. Bitbucket</td>
-</tr>
-<tr>
-<td style="text-align:left">3. Phabricator</td>
-</tr>
-<tr>
-<td style="text-align:left">4. Gogs</td>
-</tr>
-<tr>
-<td style="text-align:left">5. Kallithea</td>
+<td style="text-align:center">10. E as que não sabem contar em binário</td>
 </tr>
 </tbody>
 </table>
@@ -13238,14 +13633,19 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Entrando-na-Comunidade-GitHub">Entrando na Comunidade GitHub<a class="anchor-link" href="#Entrando-na-Comunidade-GitHub">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Siga os passos abaixo para criar o seu perfil no GitHub e também criar o seu primeiro repositório.</p>
+<table>
+<thead><tr>
+<th style="text-align:left">Forma Correta</th>
+<th style="text-align:right">Forma Incorreta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Biscoito</td>
+<td style="text-align:right">Bolhacha</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
@@ -13253,7 +13653,35 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/12.png" width = "900" alt = "Criando seu perfil no GitHub"></p>
+<h3 id="Links">Links<a class="anchor-link" href="#Links">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para se colocar um link no markdown, use a seguinte estrutura: [texto](url do site).</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo:</span>
+<span class="c1">#</span>
+<span class="c1"># [Site Álgebra Linear com Python](https://algebralinearufcg.github.io/)</span>
+<span class="c1"># &lt;https://algebralinearufcg.github.io/&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://algebralinearufcg.github.io/">Site Álgebra Linear com Python</a><br>
+<a href="https://algebralinearufcg.github.io/">https://algebralinearufcg.github.io/</a></p>
 
 </div>
 </div>
@@ -13261,8 +13689,33 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Entre na página <a href="https://github.com">https://github.com</a> e cria a sua conta gratuitamente. Será necessário verificar o seu e-mail para validá-la e preencher um formulário sobre suas preferências.</p>
-</blockquote>
+<h3 id="Imagens">Imagens<a class="anchor-link" href="#Imagens">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Para se colocar imagens em markdown, use a seguinte estrutura: ![texto](referência a imagem).</span>
+<span class="c1">#</span>
+<span class="c1"># Exemplo</span>
+<span class="c1">#</span>
+<span class="c1"># ![Isso é Lógico](https://user-images.githubusercontent.com/62623572/80289460-eb992780-8714-11ea-98a3-1874cb5f2e22.png)</span>
+<span class="c1">#</span>
+<span class="c1"># Veja o resultado abaixo:</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://user-images.githubusercontent.com/62623572/80289460-eb992780-8714-11ea-98a3-1874cb5f2e22.png" alt="Isso é Lógico"></p>
 
 </div>
 </div>
@@ -13270,7 +13723,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/9.png" width = "900" alt = "O GitHub é praticamente gratuito"></p>
+<h2 id="Pr&#243;ximos-passos...">Pr&#243;ximos passos...<a class="anchor-link" href="#Pr&#243;ximos-passos...">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Gostou de ter aprendido esse recurso fenomenal que é o Markdown? Então compartilhe com seus amigos para que eles possam aprender também! Ajude a tornar a educação gratuita mais plural e democrática.</p>
 
 </div>
 </div>
@@ -13278,149 +13738,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Escolha a opção <strong>Free</strong>. Você não terá nenhuma restrição no uso. A versão paga é feita mais para empresas com grandes equipes de desenvolvedores que necessitam de recursos mais complexos.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/13.png" width = "900" alt = "Adicione informações ao seu perfil"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Edite o seu perfil. A escolha de uma boa foto, seguida de informações claras, ajudam a torná-lo mais profissional. Além disso, na aba do perfil você também pode visualizar todos os seus repositórios criados e analisar também um pequeno infográfico dos dias contribuidos por você ao longo dos tempos.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/14.png" width = "900" alt = "Personalize o seu perfil"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Na aba de configurações do perfil, você tem acesso a mais configurações detalhadas.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/15.png" width = "900" alt = "Crie o seu repositório"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Na aba "<strong>your repositories</strong>", você pode estar clicando em "<strong>new</strong>" parar criar o seu própio repositório. Além disso, é necessário que você preencha corretamente os campos de configuração.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/16.png" width = "900" alt = "Veja o seu repositório"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Mais adiante, vamos utilizar o <strong>Git</strong> para publicar conteúdos ao repositório. Entretanto, você pode relizar todo o processo manualmente (esse que não é o mais adequado).</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/17.png" width = "900" alt = "Configure o seu repositório"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Na aba "<strong>settings</strong>", você pode realizar uma configuração mais detallhada ao seu repositório.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/18.png" width = "900" alt = "Adicione colaboradores ao seu projeto"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Ainda em "<strong>Settings</strong>", escolhendo "<strong>Manage acess</strong>", você pode adicionar as pessoas que irão fazer parte do projeto com você.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Vale salientar que, independente do nível de conhecimentos em programação que o usuário tenha, a plataforma GitHub é acessível a todos, pois com ela, é possível aprender conteúdos de terceiros para, posteriormente, o usuário também ser um fator de contribuição ativa na plataforma.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Pr&#243;ximos-Passos...">Pr&#243;ximos Passos...<a class="anchor-link" href="#Pr&#243;ximos-Passos...">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Mais adiante, vamos estudar no curso, em detalhes, a criação de repositórios e também aprender a fazer as devidas instalações de alguns softwares para dinamizar o seu uso no GitHub.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Está gostando do conteúdo? Compartilhe com seus amigos para que eles possam aprender também! Ajude a tornar a educação gratuita mais plural e democrática.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src = "Imagens/19.gif" width = "500" alt = "Animação sobre Tecnologia"></p>
+<p><img src = "Imagens/71.gif" width = "500" alt = "Não seja mau e ensine ao seu vovô a usar o computador!"></p>
 
 </div>
 </div>
@@ -13436,7 +13754,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href = "https://www.ev.org.br/curso/administracao/gestao-de-projetos/introducao-a-gestao-de-projetos?return=/cursos/administracao&cst=482" target = "_blank"> Introdução a Gestão de Projetos (Escola Virtual - Bradesco)</a>;</li>
+<li><a href = "https://daringfireball.net/projects/markdown/" target = "_blank">Site Oficial do Marckdown</a>;</li>
 </ul>
 
 </div>
@@ -13446,37 +13764,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href = "https://www.ev.org.br/curso/administracao/fundamentos-da-administracao/empreendedorismo-e-inovacao?return=/cursos/administracao&cst=490" target = "_blank"> Empreendedorismo e Inovação (Escola Virtual - Bradesco)</a>;</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><a href = "https://www.ev.org.br/curso/desenvolvimento-pessoal-e-profissional/aprendendo-na-web?return=/cursos/desenvolvimento-pessoal-e-profissional&cst=394" target = "_blank"> Aprendendo na Web (Escola Virtual - Bradesco)</a>;</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><a href = "https://www.youtube.com/watch?v=hcZ0qtwvN1w&t=1968s" target = "_blank">Explicação sobre o GitHub pelo Professor Gustavo Guanabara</a>;</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><a href = "https://www.youtube.com/watch?v=CJtrNuTTs4Q&t=2281s" target = "_blank"> Explicação sobre a Evolução do Git e GitHub pelo Professor Gustavo Guanabara</a>;</li>
+<li><a href = "https://www.youtube.com/watch?v=LntSB-gl-ZI" target = "_blank">Explicação sobre Marckdown pelo professor Gustavo Guanabara</a>;</li>
 </ul>
 
 </div>
