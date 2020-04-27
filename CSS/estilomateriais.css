@@ -64,50 +64,50 @@ body
 
 .container .box:nth-child(1) .icon
 {
-	box-shadow: 0 0 0 0 #e91e63;
-	background: #e91e63;
+	box-shadow: 0 0 0 0 #da4d39;
+	background: #da4d39;
 }
 
 .container .box:nth-child(1):hover .icon
 {
-	box-shadow: 0 0 0 400px #e91e63;
-	background: #e91e63;
+	box-shadow: 0 0 0 400px #da4d39;
+	background: #da4d39;
 }
 
 .container .box:nth-child(2) .icon
 {
-	box-shadow: 0 0 0 0 #23e629;
-	background: #23e629;
+	box-shadow: 0 0 0 0 #1166e8;
+	background: #1166e8;
 }
 
 .container .box:nth-child(2):hover .icon
 {
-	box-shadow: 0 0 0 400px #23e629;
-	background: #23e629;
+	box-shadow: 0 0 0 400px #1166e8;
+	background: #1166e8;
 }
 
 .container .box:nth-child(3) .icon
 {
-	box-shadow: 0 0 0 0 #2196f3;
-	background: #2196f3;
+	box-shadow: 0 0 0 0 #009c58;
+	background: #009c58;
 }
 
 .container .box:nth-child(3):hover .icon
 {
-	box-shadow: 0 0 0 400px #2196f3;
-	background: #2196f3;
+	box-shadow: 0 0 0 400px #009c58;
+	background: #009c58;
 }
 
 .container .box:nth-child(4) .icon
 {
-	box-shadow: 0 0 0 0 #FFA500;
-	background: #FFA500;
+	box-shadow: 0 0 0 0  #dd4814;
+	background:  #dd4814;
 }
 
 .container .box:nth-child(4):hover .icon
 {
-	box-shadow: 0 0 0 400px #FFA500;
-	background: #FFA500;
+	box-shadow: 0 0 0 400px  #dd4814;
+	background: #dd4814;
 }
 
 .container .box:nth-child(5) .icon
@@ -124,14 +124,38 @@ body
 
 .container .box:nth-child(6) .icon
 {
-	box-shadow: 0 0 0 0 #CDAF95;
-	background: #CDAF95;
+	box-shadow: 0 0 0 0  #627870;
+	background:  #627870;
 }
 
 .container .box:nth-child(6):hover .icon
 {
-	box-shadow: 0 0 0 400px #CDAF95;
-	background: #CDAF95;
+	box-shadow: 0 0 0 400px  #627870;
+	background:  #627870;
+}
+
+.container .box:nth-child(7) .icon
+{
+	box-shadow: 0 0 0 0 rgb(160, 0, 112);
+	background: rgb(160, 0, 112);
+}
+
+.container .box:nth-child(7):hover .icon
+{
+	box-shadow: 0 0 0 400px rgb(160, 0, 112);
+	background: rgb(160, 0, 112);
+}
+
+.container .box:nth-child(8) .icon
+{
+	box-shadow: 0 0 0 0 #f82790;
+	background: #f82790;
+}
+
+.container .box:nth-child(8):hover .icon
+{
+	box-shadow: 0 0 0 400px #f82790;
+	background: #f82790;
 }
 
 
