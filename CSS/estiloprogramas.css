@@ -61,6 +61,16 @@ body
 	font-size: 2em;
 }
 
+.footeratalho p, .footeratalho a
+{
+	color: #069370;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
 .swiper-container .swiper-wrapper .swiper-slide
 {
 	width: 400px;

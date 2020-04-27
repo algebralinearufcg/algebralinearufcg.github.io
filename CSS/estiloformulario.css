@@ -64,3 +64,13 @@ body{
 .fijar{
 	margin-top: -130px;
 }
+
+.footeratalho p, .footeratalho a
+{
+	color: #069370;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-decoration: none;
+}
