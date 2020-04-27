@@ -70,7 +70,7 @@ body
 
 .container .box:nth-child(1):hover .icon
 {
-	box-shadow: 0 0 0 400px #da4d39;
+	box-shadow: 0 0 0 450px #da4d39;
 	background: #da4d39;
 }
 
@@ -82,7 +82,7 @@ body
 
 .container .box:nth-child(2):hover .icon
 {
-	box-shadow: 0 0 0 400px #1166e8;
+	box-shadow: 0 0 0 450px #1166e8;
 	background: #1166e8;
 }
 
@@ -94,7 +94,7 @@ body
 
 .container .box:nth-child(3):hover .icon
 {
-	box-shadow: 0 0 0 400px #009c58;
+	box-shadow: 0 0 0 450px #009c58;
 	background: #009c58;
 }
 
@@ -106,7 +106,7 @@ body
 
 .container .box:nth-child(4):hover .icon
 {
-	box-shadow: 0 0 0 400px  #dd4814;
+	box-shadow: 0 0 0 450px  #dd4814;
 	background: #dd4814;
 }
 
@@ -118,7 +118,7 @@ body
 
 .container .box:nth-child(5):hover .icon
 {
-	box-shadow: 0 0 0 400px #7D26CD;
+	box-shadow: 0 0 0 450px #7D26CD;
 	background: #7D26CD;
 }
 
@@ -130,7 +130,7 @@ body
 
 .container .box:nth-child(6):hover .icon
 {
-	box-shadow: 0 0 0 400px  #627870;
+	box-shadow: 0 0 0 450px  #627870;
 	background:  #627870;
 }
 
@@ -142,7 +142,7 @@ body
 
 .container .box:nth-child(7):hover .icon
 {
-	box-shadow: 0 0 0 400px rgb(160, 0, 112);
+	box-shadow: 0 0 0 450px rgb(160, 0, 112);
 	background: rgb(160, 0, 112);
 }
 
@@ -154,7 +154,7 @@ body
 
 .container .box:nth-child(8):hover .icon
 {
-	box-shadow: 0 0 0 400px #f82790;
+	box-shadow: 0 0 0 450px #f82790;
 	background: #f82790;
 }
 
