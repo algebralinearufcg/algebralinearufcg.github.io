@@ -158,6 +158,18 @@ body
 	background: #f82790;
 }
 
+.container .box:nth-child(9) .icon
+{
+	box-shadow: 0 0 0 0 gray;
+	background: gray;
+}
+
+.container .box:nth-child(9):hover .icon
+{
+	box-shadow: 0 0 0 530px gray;
+	background: gray;
+}
+
 
 .container .box .content
 {
