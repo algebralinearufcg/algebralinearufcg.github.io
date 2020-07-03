@@ -59,7 +59,7 @@ body
 	border-radius: 50%;
 	font-size: 40px;
 	font-weight: 700;
-	transition: 1s;
+	transition: 0.65s;
 }
 
 .container .box:nth-child(1) .icon
@@ -170,6 +170,161 @@ body
 	background: gray;
 }
 
+.container .box:nth-child(10) .icon
+{
+	box-shadow: 0 0 0 0 #da4d39;
+	background: #da4d39;
+}
+
+.container .box:nth-child(10):hover .icon
+{
+	box-shadow: 0 0 0 530px #da4d39;
+	background: #da4d39;
+}
+
+.container .box:nth-child(11) .icon
+{
+	box-shadow: 0 0 0 0 #1166e8;
+	background: #1166e8;
+}
+
+.container .box:nth-child(11):hover .icon
+{
+	box-shadow: 0 0 0 530px #1166e8;
+	background: #1166e8;
+}
+
+.container .box:nth-child(12) .icon
+{
+	box-shadow: 0 0 0 0 #009c58;
+	background: #009c58;
+}
+
+.container .box:nth-child(12):hover .icon
+{
+	box-shadow: 0 0 0 530px #009c58;
+	background: #009c58;
+}
+
+.container .box:nth-child(13) .icon
+{
+	box-shadow: 0 0 0 0  #dd4814;
+	background:  #dd4814;
+}
+
+.container .box:nth-child(13):hover .icon
+{
+	box-shadow: 0 0 0 530px  #dd4814;
+	background: #dd4814;
+}
+
+.container .box:nth-child(14) .icon
+{
+	box-shadow: 0 0 0 0 #7D26CD;
+	background: #7D26CD;
+}
+
+.container .box:nth-child(14):hover .icon
+{
+	box-shadow: 0 0 0 530px #7D26CD;
+	background: #7D26CD;
+}
+
+.container .box:nth-child(15) .icon
+{
+	box-shadow: 0 0 0 0  #627870;
+	background:  #627870;
+}
+
+.container .box:nth-child(15):hover .icon
+{
+	box-shadow: 0 0 0 530px  #627870;
+	background:  #627870;
+}
+
+.container .box:nth-child(16) .icon
+{
+	box-shadow: 0 0 0 0 rgb(160, 0, 112);
+	background: rgb(160, 0, 112);
+}
+
+.container .box:nth-child(16):hover .icon
+{
+	box-shadow: 0 0 0 530px rgb(160, 0, 112);
+	background: rgb(160, 0, 112);
+}
+
+.container .box:nth-child(17) .icon
+{
+	box-shadow: 0 0 0 0 #f82790;
+	background: #f82790;
+}
+
+.container .box:nth-child(17):hover .icon
+{
+	box-shadow: 0 0 0 530px #f82790;
+	background: #f82790;
+}
+
+.container .box:nth-child(18) .icon
+{
+	box-shadow: 0 0 0 0 gray;
+	background: gray;
+}
+
+.container .box:nth-child(18):hover .icon
+{
+	box-shadow: 0 0 0 530px gray;
+	background: gray;
+}
+
+.container .box:nth-child(19) .icon
+{
+	box-shadow: 0 0 0 0 #da4d39;
+	background: #da4d39;
+}
+
+.container .box:nth-child(19):hover .icon
+{
+	box-shadow: 0 0 0 530px #da4d39;
+	background: #da4d39;
+}
+
+.container .box:nth-child(20) .icon
+{
+	box-shadow: 0 0 0 0 #1166e8;
+	background: #1166e8;
+}
+
+.container .box:nth-child(20):hover .icon
+{
+	box-shadow: 0 0 0 530px #1166e8;
+	background: #1166e8;
+}
+
+.container .box:nth-child(21) .icon
+{
+	box-shadow: 0 0 0 0 #009c58;
+	background: #009c58;
+}
+
+.container .box:nth-child(21):hover .icon
+{
+	box-shadow: 0 0 0 530px #009c58;
+	background: #009c58;
+}
+
+.container .box:nth-child(22) .icon
+{
+	box-shadow: 0 0 0 0  #dd4814;
+	background:  #dd4814;
+}
+
+.container .box:nth-child(22):hover .icon
+{
+	box-shadow: 0 0 0 530px  #dd4814;
+	background: #dd4814;
+}
 
 .container .box .content
 {
