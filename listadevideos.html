@@ -19,8 +19,7 @@
     <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
     <!-- Definindo as configurações para o conteúdo da página -->
-	<link rel = "stylesheet" href = "CSS/estiloprogramas.css">
-	<link rel = "stylesheet" href = "CSS/swiper.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/estilomateriais.css">
 
 </head>
 
@@ -68,116 +67,105 @@
 
 	<!-- Definindo o conteúdo da página -->
 
-	<div class = "swiper-container">
-		<div class = "swiper-wrapper">
-
-			<div class = "swiper-slide">
-				<div class = "card">
-					<div class = "sliderText">
-						<h3 align = "center"> Instale o Python 3.0 </h3>
-					</div>
-					<div class = "content">
-						<p> Aprenda a instalar o Python, na versão 3.0, no seu ambiente de trabalho. Com isso, você poderá ter um papel ativo
-						no projeto "Álgebra Linear com Python".</p>
-						<a href = "https://youtu.be/VuKvR1J2LQE" target = "_blank"> Leia Mais </a>
-						<br /> <br />
-						<img class = "setaatalho" src = "Imagens/seta.png">
-					</div>
-				</div>
-			</div>
-
-			<div class = "swiper-slide">
-				<div class = "card">
-					<div class = "sliderText">
-						<h3 align = "center"> Para que Serve o Python? </h3>
-					</div>
-					<div class = "content">
-						<p> Veja as inúmeras aplicações que a linguagem de programação Python pode ter e como ela está presente em nossas vidas atualmente. </p>
-						<a href = "https://youtu.be/Mp0vhMDI7fA" target = "_blank"> Leia Mais </a>
-						<br /> <br />
-						<img class = "setaatalho" src = "Imagens/seta.png">
-					</div>
-				</div>
-			</div>
-
-			<div class = "swiper-slide">
-				<div class = "card">
-					<div class = "sliderText">
-						<h3 align = "center"> Google Colab </h3>
-					</div>
-					<div class = "content">
-						<p> Entenda a importância da plataforma Google Colab Notebooks quando se está trabalhando com Python. </p>
-						<a href = "https://youtu.be/inN8seMm7UI" target = "_blank"> Leia Mais </a>
-						<br /> <br /> <br />
-						<img class = "setaatalho" src = "Imagens/seta.png">
-					</div>
-				</div>
-			</div>
-
-			<div class = "swiper-slide">
-				<div class = "card">
-					<div class = "sliderText">
-						<h3 align = "center"> Microsoft Azure </h3>
-					</div>
-					<div class = "content">
-						<p> Entenda a importância da plataforma Microsoft Azure Notebooks quando se está trabalhando com Python. </p>
-						<a href = "https://youtu.be/qCg8PvOzL7M" target = "_blank"> Read More </a>
-						<br /> <br /> <br />
-						<img class = "setaatalho" src = "Imagens/seta.png">
-					</div>
-				</div>
-			</div>
-
-			<div class = "swiper-slide">
-				<div class = "card">
-					<div class = "sliderText">
-						<h3 align = "center"> Álgebra Linear: Khan Academy </h3>
-					</div>
-					<div class = "content">
-						<p> Tenha acesso a inúmeros vídeos gratuitos sobre Álgebra Linear na Khan Academy, uma plataforma que visa tornar
-						o ensino mais acessível a todos. </p>
-						<a href = "https://pt.khanacademy.org/math/linear-algebra" target = "_blank"> Read More </a>
-						<br /> <br />
-						<img class = "setaatalho" src = "Imagens/seta.png">
-					</div>
-				</div>
-			</div>
-
+	<div class = "container">
+		
+		<div class = "box">
 			
+			<div class = "icon"> 01 </div>
+
+			<div class = "content">
+				
+				<h3> Instale o Python 3.0 </h3>
+				<p> Aprenda a instalar o Python na versão 3.0 no seu ambiente de trabalho. Com isso, você poderá ter um papel ativo no projeto "Álgebra Linear com Python". </p>
+				<br /> 
+				<img src = "Imagens/videoslogo.png" width = "100">
+				<br />
+				<a class = "aatalho" href = "https://youtu.be/VuKvR1J2LQE" target = "_blank"> Leia Mais </a>
+
+			</div>
 
 		</div>
-	</div>
 
-	<script src = "JavaScript/swiper.min.js"></script>
 
-	<script>
+		<div class = "box">
+			
+			<div class = "icon"> 02 </div>
 
-	    var swiper = new Swiper('.swiper-container', {
-	      effect: 'coverflow',
-	      grabCursor: true,
-	      centeredSlides: true,
-	      slidesPerView: 'auto',
-	      coverflowEffect: {
-	        rotate: 30,
-	        stretch: 0,
-	        depth: 200,
-	        modifier: 1,
-	        slideShadows : true,
-	      },
-	      pagination: {
-	        el: '.swiper-pagination',
-	      },
-	    });
+			<div class = "content">
+				
+				<h3> Para que Serve o Python? </h3>
+				<p> Veja as inúmeras aplicações que a linguagem de programação Python pode ter e como ela está presente em nossas vidas atualmente. </p>
+				<br /> 
+				<img src = "Imagens/videoslogo.png" width = "100">
+				<br />
+				<a class = "aatalho" href = "https://youtu.be/Mp0vhMDI7fA" target = "_blank"> Leia Mais </a>
 
-	</script>
-	  
+			</div>
+
+        </div>
+
+
+        <div class = "box">
+			
+			<div class = "icon"> 03 </div>
+
+			<div class = "content">
+				
+				<h3> Google Colab </h3>
+				<p> Entenda a importância da plataforma Google Colab Notebooks quando se está trabalhando com Python. </p>
+				<br /> <br /> 
+				<img src = "Imagens/videoslogo.png" width = "100">
+				<br />
+				<a class = "aatalho" href = "https://youtu.be/inN8seMm7UI" target = "_blank"> Leia Mais </a>
+
+			</div>
+
+        </div>
+
+
+        <div class = "box">
+			
+			<div class = "icon"> 04 </div>
+
+			<div class = "content">
+				
+				<h3> Microsoft Azure </h3>
+				<p> Entenda a importância da plataforma Microsoft Azure Notebooks quando se está trabalhando com Python. </p>
+				<br /> <br /> <br />  
+				<img src = "Imagens/videoslogo.png" width = "100">
+				<br />
+				<a class = "aatalho" href = "https://youtu.be/qCg8PvOzL7M" target = "_blank"> Leia Mais </a>
+
+			</div>
+
+        </div>
+
+        <div class = "box">
+			
+			<div class = "icon"> 05 </div>
+
+			<div class = "content">
+				
+				<h3> Álgebra Linear: Khan Academy </h3>
+				<p> Tenha acesso a inúmeros vídeos gratuitos sobre Álgebra Linear na Khan Academy, uma plataforma que visa tornar o ensino mais acessível a todos. </p>
+				<br />
+				<img src = "Imagens/videoslogo.png" width = "100">
+				<br />
+				<a class = "aatalho" href = "https://pt.khanacademy.org/math/linear-algebra" target = "_blank"> Leia Mais </a>
+
+			</div>
+
+        </div>
+        
+    </div>
+
 	<script type = "text/javascript" src = "JavaScript/pace.min.js"></script>
 
-<footer class = "footeratalho">
+	<footer class = "footeratalho">
 
-	<p align = "center">Criado por:<a href = "mailto:alyssonmachado388@gmail.com" target = "_blank"> Alysson Machado </a> </p>
+		<p align = "center">Criado por:<a href = "mailto:alysson.barbosa@ee.ufcg.edu.br" target = "_blank"> Alysson Machado </a> </p>
 
-</footer>
+	</footer>
 
 </body>
 
