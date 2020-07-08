@@ -2,7 +2,15 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Curso de Git e GitHub</title>
+<title>Git</title>
+
+<link rel = "icon" href = "Imagens/logo2.png" type = "image/x-icon" />
+<link rel = "shortcut icon" href = "Imagens/logo2.png" type = "image/x-icon" />
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+<meta name = "author" content = "Alysson Machado">
+<meta name = "description" content = "Aprenda a usar o Software de Versionamento Git e o Repositório GitHub para auxiliar sua vida acadêmica e profissional.">
+<link rel = "stylesheet" type = "text/css" href = "CSS/estilomenu.css" />
+<link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13047,13 +13055,6 @@ div#notebook {
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
 <link rel="stylesheet" href="custom.css">
-<link rel = "icon" href = "Imagens/logo2.png" type = "image/x-icon" />
-<link rel = "shortcut icon" href = "Imagens/logo2.png" type = "image/x-icon" />
-<meta name = "author" content = "Alysson Machado">
-<meta name = "description" content = "Aprenda a usar o Software de Versionamento Git e o Repositório GitHub para auxiliar sua vida acadêmica e profissional.">
-<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
-<link rel = "stylesheet" type = "text/css" href = "CSS/estilomenu.css" />
-<link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -13081,49 +13082,49 @@ div#notebook {
 
   <header class = "headeratalho"> 
 
-		<a href = "listadegithub.html" class = "logo" target = "_self"> Curso de Git e Github </a>
+    <a href = "listadegithub.html" class = "logo" target = "_self"> Curso de Git e Github </a>
 
-		<div class = "menu-toggle"></div>
+    <div class = "menu-toggle"></div>
 
-		<nav class = "navatalho">
-			
-			<ul>
-				
-				<li><a href = "index.html" target = "_self"> Programas </a></li>
-				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
-				<li><a href = "listademateriais.html" target = "_self" class = "active"> Materiais </a></li>
-				<li><a href = "listadeformulario.html" target = "_self"> Feedback </a></li>
+    <nav class = "navatalho">
+      
+      <ul>
+        
+        <li><a href = "index.html" target = "_self"> Programas </a></li>
+        <li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
+        <li><a href = "listademateriais.html" target = "_self" class = "active"> Materiais </a></li>
+        <li><a href = "listadeformulario.html" target = "_self"> Feedback </a></li>
 
-			</ul>
+      </ul>
 
-		</nav>
+    </nav>
 
-		<div class = "clearfix"></div>
+    <div class = "clearfix"></div>
 
-	</header>
+  </header>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.js" 
-	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
-	crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" 
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+  crossorigin="anonymous"></script>
 
-	<script type="text/javascript">
+  <script type="text/javascript">
 
-		$(document).ready(function(){
-			$('.menu-toggle').click(function(){
-				$('.menu-toggle').toggleClass('active')
-				$('nav').toggleClass('active')
-			})
-		})
+    $(document).ready(function(){
+      $('.menu-toggle').click(function(){
+        $('.menu-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
 
-	</script>
-
+  </script>
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Aprendendo-Sobre-o-Git">Aprendendo Sobre o Git<a class="anchor-link" href="#Aprendendo-Sobre-o-Git">&#182;</a></h1><h3 id="Inicialmente,-quando-n&#227;o-tinhamos-Softwares-de-Versionamento,-diversos-programadores-utilizavam-suas-IDEs-(ou-na-pior-das-situa&#231;&#245;es,-Notepads)-para-desenvolver-suas-partes-do-projeto-e,-ao-final-dele,-juntavam-todos-os-arquivos-visando-obter-um-resultado-para-o-projeto.-Com-o-desenvolvimento-dos-Softwares-de-Versionamento,-tal-como-o-Git-(uma-das-mais-recentes-com-Fluxo-de-Trabalho-Distribuido),-o-trabalho-dos-projetistas-tornaram-se-menos-laborioso.-Sendo-assim,-vamos-conhecer-mais-um-pouco-esse-software-chamado-Git.">Inicialmente, quando n&#227;o tinhamos Softwares de Versionamento, diversos programadores utilizavam suas IDEs (ou na pior das situa&#231;&#245;es, Notepads) para desenvolver suas partes do projeto e, ao final dele, juntavam todos os arquivos visando obter um resultado para o projeto. Com o desenvolvimento dos Softwares de Versionamento, tal como o Git (uma das mais recentes com Fluxo de Trabalho Distribuido), o trabalho dos projetistas tornaram-se menos laborioso. Sendo assim, vamos conhecer mais um pouco esse software chamado Git.<a class="anchor-link" href="#Inicialmente,-quando-n&#227;o-tinhamos-Softwares-de-Versionamento,-diversos-programadores-utilizavam-suas-IDEs-(ou-na-pior-das-situa&#231;&#245;es,-Notepads)-para-desenvolver-suas-partes-do-projeto-e,-ao-final-dele,-juntavam-todos-os-arquivos-visando-obter-um-resultado-para-o-projeto.-Com-o-desenvolvimento-dos-Softwares-de-Versionamento,-tal-como-o-Git-(uma-das-mais-recentes-com-Fluxo-de-Trabalho-Distribuido),-o-trabalho-dos-projetistas-tornaram-se-menos-laborioso.-Sendo-assim,-vamos-conhecer-mais-um-pouco-esse-software-chamado-Git.">&#182;</a></h3>
+<h1 id="Aprendendo-Sobre-o-Git">Aprendendo Sobre o Git<a class="anchor-link" href="#Aprendendo-Sobre-o-Git">&#182;</a></h1><h4 id="Inicialmente,-quando-n&#227;o-tinhamos-Softwares-de-Versionamento,-diversos-programadores-utilizavam-suas-IDEs-(ou-na-pior-das-situa&#231;&#245;es,-Notepads)-para-desenvolver-suas-partes-do-projeto-e,-ao-final-dele,-juntavam-todos-os-arquivos-visando-obter-um-resultado-para-o-projeto.-Com-o-desenvolvimento-dos-Softwares-de-Versionamento,-tal-como-o-Git-(uma-das-mais-recentes-com-Fluxo-de-Trabalho-Distribuido),-o-trabalho-dos-projetistas-tornaram-se-menos-laborioso.-Sendo-assim,-vamos-conhecer-mais-um-pouco-esse-software-chamado-Git.">Inicialmente, quando n&#227;o tinhamos Softwares de Versionamento, diversos programadores utilizavam suas IDEs (ou na pior das situa&#231;&#245;es, Notepads) para desenvolver suas partes do projeto e, ao final dele, juntavam todos os arquivos visando obter um resultado para o projeto. Com o desenvolvimento dos Softwares de Versionamento, tal como o Git (uma das mais recentes com Fluxo de Trabalho Distribuido), o trabalho dos projetistas tornaram-se menos laborioso. Sendo assim, vamos conhecer mais um pouco esse software chamado Git.<a class="anchor-link" href="#Inicialmente,-quando-n&#227;o-tinhamos-Softwares-de-Versionamento,-diversos-programadores-utilizavam-suas-IDEs-(ou-na-pior-das-situa&#231;&#245;es,-Notepads)-para-desenvolver-suas-partes-do-projeto-e,-ao-final-dele,-juntavam-todos-os-arquivos-visando-obter-um-resultado-para-o-projeto.-Com-o-desenvolvimento-dos-Softwares-de-Versionamento,-tal-como-o-Git-(uma-das-mais-recentes-com-Fluxo-de-Trabalho-Distribuido),-o-trabalho-dos-projetistas-tornaram-se-menos-laborioso.-Sendo-assim,-vamos-conhecer-mais-um-pouco-esse-software-chamado-Git.">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13145,7 +13146,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>O <strong>Git</strong> é um <strong>Software de Controle de Versão</strong> onde os programadores trabalham sempre em um mesmo <strong>Servidor Central</strong>, cada um controlando suas tarefas remotamente por <strong>Sub-Servidores</strong>, fazendo todas alterações possíveis em um projeto, como gravar documentação e comentários. o Git gurdará tudo que o programador fizer, todas as vezes que alguma alteração ou adição for feita a um projeto e salva no Git, ele registrará tais alterações.</p>
+<p>O <strong>Git</strong> é um <strong>Software de Controle de Versão</strong> onde os programadores trabalham sempre em um mesmo <strong>Servidor Central</strong>, cada um controlando suas tarefas remotamente por <strong>Sub-Servidores</strong>, fazendo todas alterações possíveis em um projeto, como gravar documentação e comentários. o Git guardará tudo que o programador fizer, todas as vezes que alguma alteração ou adição for feita a um projeto e salva no Git, ele registrará tais alterações.</p>
 
 </div>
 </div>
@@ -13165,7 +13166,7 @@ div#notebook {
 <p>Vale salientar, que o Git tem algumas vantagens para quem a escolhe como método para versionar o seu projeto. São elas:</p>
 <blockquote><ol>
 <li>Criação de áreas separadas para testes ou projetos diferentes, ou técnicamente chamadas de "<strong>branches</strong>".</li>
-<li>Desfazer alterações problemáticas, voltando para a versão estável, um conceito denominado de "reset".</li>
+<li>Desfazer alterações problemáticas, voltando para a versão estável, um conceito denominado de "<strong>reset</strong>".</li>
 <li>Trabalhar em equipe de forma mais simples e com mais segurança, em que cada um faz de sua máquina (<strong>repositório local</strong>) um <strong>Sub-Servidor</strong>, para ao final de uma versão enviar ao <strong>servidor central</strong>, comumente conhecida como GitHub, a rede social Open Source dos programadores.</li>
 </ol>
 </blockquote>
@@ -13192,7 +13193,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Quando se está organizando um projeto, é inerente que o mesmo passe por inúmeras versões até chegar em sua versão final. Um exemplo rotineiro no nosso dia a dia, são os inúmeros <strong>Sistemas Operacionais</strong> que usamos, em que constumeiramente são submetidos a novas versões e, se pensarmos na equipe de desenvolvedores para esse sistema, dificilmente eles lançam alguma atualização sem ter cometido nenhum erro antes de testá-los. Como ajuda, os Softwares de Versionamento permitem retroceder até a parte em que o código estava integro, garantindo uma nova bifurcação no software mais segura.</p>
+<p>Quando se está organizando um projeto, é inerente que o mesmo passe por inúmeras versões até chegar em sua versão final. Um exemplo rotineiro no nosso dia a dia, são os inúmeros <strong>Sistemas Operacionais</strong> que usamos, em que constumeiramente são submetidos a novas versões e, se pensarmos na equipe de desenvolvedores para esse sistema, dificilmente eles lançam alguma atualização sem ter cometido nenhum erro antes de testá-los. Como ajuda, os Softwares de Versionamento permitem retroceder até a parte em que o código estava integro, garantindo uma nova bifurcação no software de forma segura.</p>
 
 </div>
 </div>
@@ -13343,7 +13344,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Veja abaixo algumas imagens que ilustram alguns comandos e conceitos básicos explicados acima. Vale a pena salientar que não vamos mostrar esses comandos na prática sendo usados diretamente no Git Bash, pois há formas mais ágeis de se fazer o mesmo trabalho usando o GitHub Desktop, esse que será o principal ambiente de trabalho para fazer a comunicação dos repositório locais com os remotos (muito embora ele utilize o Git como pano de fundo). Por enquanto, vamos nos segurar em apenas entendar a finalidade de um software de versionamento.</p>
+<p>Veja abaixo algumas imagens que ilustram alguns comandos e conceitos básicos explicados acima. Vale a pena salientar que não vamos mostrar esses comandos na prática sendo usados diretamente no Git Bash, pois há formas mais ágeis de se fazer o mesmo trabalho usando o GitHub Desktop, esse que será o principal ambiente de trabalho para fazer a comunicação dos repositório locais com os remotos (muito embora ele utilize o Git em suas operações). Por enquanto, vamos nos segurar em apenas entendar a finalidade de um software de versionamento.</p>
 
 </div>
 </div>
@@ -13480,7 +13481,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Possui-alguma-d&#250;vida?-Entre-em-contato-comigo:">Possui alguma d&#250;vida? Entre em contato comigo:<a class="anchor-link" href="#Possui-alguma-d&#250;vida?-Entre-em-contato-comigo:">&#182;</a></h2>
+<h3 id="Alguma-d&#250;vida?-Entre-em-contato-comigo:">Alguma d&#250;vida? Entre em contato comigo:<a class="anchor-link" href="#Alguma-d&#250;vida?-Entre-em-contato-comigo:">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13488,17 +13489,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href = "mailto:alyssonmachado388@gmail.com" target = "_blank"> Enviar um e-mail </a>;</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><a href = "https://www.instagram.com/alyssonmach/" target = "_blank"> Página Pessoal do Instagram </a>;</li>
+<li><a href = "mailto:alysson.barbosa@ee.ufcg.edu.br" target = "_blank"> Enviar um e-mail </a>;</li>
 </ul>
 
 </div>
@@ -13506,7 +13497,9 @@ div#notebook {
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
