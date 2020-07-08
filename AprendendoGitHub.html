@@ -2,7 +2,15 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Curso de Git e GitHub</title>
+<title>GitHub</title>
+
+<link rel = "icon" href = "Imagens/logo2.png" type = "image/x-icon" />
+<link rel = "shortcut icon" href = "Imagens/logo2.png" type = "image/x-icon" />
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+<meta name = "author" content = "Alysson Machado">
+<meta name = "description" content = "Aprenda a usar o Software de Versionamento Git e o Repositório GitHub para auxiliar sua vida acadêmica e profissional.">
+<link rel = "stylesheet" type = "text/css" href = "CSS/estilomenu.css" />
+<link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -26,7 +34,6 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-
 body {
   margin: 0;
 }
@@ -13048,13 +13055,6 @@ div#notebook {
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
 <link rel="stylesheet" href="custom.css">
-<link rel = "icon" href = "Imagens/logo2.png" type = "image/x-icon" />
-<link rel = "shortcut icon" href = "Imagens/logo2.png" type = "image/x-icon" />
-<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
-<meta name = "author" content = "Alysson Machado">
-<meta name = "description" content = "Aprenda a usar o Software de Versionamento Git e o Repositório GitHub para auxiliar sua vida acadêmica e profissional.">
-<link rel = "stylesheet" type = "text/css" href = "CSS/estilomenu.css" />
-<link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -13082,49 +13082,49 @@ div#notebook {
 
   <header class = "headeratalho"> 
 
-		<a href = "listadegithub.html" class = "logo" target = "_self"> Curso de Git e Github </a>
+    <a href = "listadegithub.html" class = "logo" target = "_self"> Curso de Git e Github </a>
 
-		<div class = "menu-toggle"></div>
+    <div class = "menu-toggle"></div>
 
-		<nav class = "navatalho">
-			
-			<ul>
-				
-				<li><a href = "index.html" target = "_self"> Programas </a></li>
-				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
-				<li><a href = "listademateriais.html" target = "_self" class = "active"> Materiais </a></li>
-				<li><a href = "listadeformulario.html" target = "_self"> Feedback </a></li>
+    <nav class = "navatalho">
+      
+      <ul>
+        
+        <li><a href = "index.html" target = "_self"> Programas </a></li>
+        <li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
+        <li><a href = "listademateriais.html" target = "_self" class = "active"> Materiais </a></li>
+        <li><a href = "listadeformulario.html" target = "_self"> Feedback </a></li>
 
-			</ul>
+      </ul>
 
-		</nav>
+    </nav>
 
-		<div class = "clearfix"></div>
+    <div class = "clearfix"></div>
 
-	</header>
+  </header>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.js" 
-	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
-	crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" 
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+  crossorigin="anonymous"></script>
 
-	<script type="text/javascript">
+  <script type="text/javascript">
 
-		$(document).ready(function(){
-			$('.menu-toggle').click(function(){
-				$('.menu-toggle').toggleClass('active')
-				$('nav').toggleClass('active')
-			})
-		})
+    $(document).ready(function(){
+      $('.menu-toggle').click(function(){
+        $('.menu-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
 
-	</script>
-
+  </script>
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Aprendendo-e-Criando-no-GitHub">Aprendendo e Criando no GitHub<a class="anchor-link" href="#Aprendendo-e-Criando-no-GitHub">&#182;</a></h1><h3 id="Nessa-parte-do-curso,-vamos-falar-sobre-a-plataforma-GitHub,-uma-das-maiores-comunidades-Open-Source-do-mundo.-Vamos-tamb&#233;m-criar-o-nosso-perfil-e-um-reposit&#243;rio-na-plataforma.">Nessa parte do curso, vamos falar sobre a plataforma GitHub, uma das maiores comunidades Open Source do mundo. Vamos tamb&#233;m criar o nosso perfil e um reposit&#243;rio na plataforma.<a class="anchor-link" href="#Nessa-parte-do-curso,-vamos-falar-sobre-a-plataforma-GitHub,-uma-das-maiores-comunidades-Open-Source-do-mundo.-Vamos-tamb&#233;m-criar-o-nosso-perfil-e-um-reposit&#243;rio-na-plataforma.">&#182;</a></h3>
+<h1 id="Aprendendo-e-Criando-no-GitHub">Aprendendo e Criando no GitHub<a class="anchor-link" href="#Aprendendo-e-Criando-no-GitHub">&#182;</a></h1><h4 id="Nessa-parte-do-curso,-vamos-falar-sobre-a-plataforma-GitHub,-uma-das-maiores-comunidades-Open-Source-do-mundo.-Vamos-tamb&#233;m-criar-o-nosso-perfil-e-um-reposit&#243;rio-na-plataforma.">Nessa parte do curso, vamos falar sobre a plataforma GitHub, uma das maiores comunidades Open Source do mundo. Vamos tamb&#233;m criar o nosso perfil e um reposit&#243;rio na plataforma.<a class="anchor-link" href="#Nessa-parte-do-curso,-vamos-falar-sobre-a-plataforma-GitHub,-uma-das-maiores-comunidades-Open-Source-do-mundo.-Vamos-tamb&#233;m-criar-o-nosso-perfil-e-um-reposit&#243;rio-na-plataforma.">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13147,8 +13147,15 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>O <strong>GitHub</strong> é um dos maiores e mais famosos repositórios remotos que existem mundialmente, sendo ele uma plataforma que hospeda códigos fonte com auxílio do software de versionamento <strong>Git</strong>. Se você ainda não viu nossa parte do curso que fala sobre o Git, acesse o link abaixo, nele há itens importantes para você estudar e conseguir avançar bem no curso.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href = "https://algebralinearufcg.github.io/AprendendoSobreoGit.html" target = "_blank">Veja nossa parte do curso que fala sobre o Git</a>;</li>
+<li><a href = "AprendendoSobreoGit.html" target = "_blank">Veja nossa parte do curso que fala sobre o Git</a>;</li>
 </ul>
 
 </div>
@@ -13207,7 +13214,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos também usar um recursos muito interessante para hospedar o nosso site gratuitamente chamado de <strong>GitHub Pages</strong>, usando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Entretanto, não podemos criar páginas muito complexas que envolvam <strong>mySQL</strong> para banco de dados em comum com <strong>PHP</strong>, estamos falando de páginas simples com fins educativos.</p>
+<p>Podemos também usar um recursos muito interessante para hospedar o nosso site gratuitamente chamado de <strong>GitHub Pages</strong>, usando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Entretanto, não podemos criar páginas muito complexas que envolvam ferramentas de banco de dados, estamos falando de páginas simples com fins educativos.</p>
 
 </div>
 </div>
@@ -13342,7 +13349,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Edite o seu perfil. A escolha de uma boa foto, seguida de informações claras, ajudam a torná-lo mais profissional. Além disso, na aba do perfil você também pode visualizar todos os seus repositórios criados e analisar também um pequeno infográfico dos dias contribuidos por você ao longo dos tempos.</p>
+<blockquote><p>Edite o seu perfil. A escolha de uma boa foto, seguida de informações claras, ajudam a torná-lo mais profissional. Além disso, na aba do perfil você também pode visualizar todos os seus repositórios criados e analisar também um pequeno infográfico dos dias contribuidos por você ao longo do tempo.</p>
 </blockquote>
 
 </div>
@@ -13540,17 +13547,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href = "mailto:alyssonmachado388@gmail.com" target = "_blank"> Me envie um e-mail</a>;</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><a href = "https://www.instagram.com/alyssonmach/" target = "_blank"> Página Pessoal do Instagram</a>;</li>
+<li><a href = "mailto:alysson.barbosa@ee.ufcg.edu.br" target = "_blank"> Me envie um e-mail</a>;</li>
 </ul>
 
 </div>
@@ -13558,7 +13555,9 @@ div#notebook {
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
