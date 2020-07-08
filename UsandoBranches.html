@@ -2,7 +2,15 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Curso de Git e GitHub</title>
+<title>Branches</title>
+
+<link rel = "icon" href = "Imagens/logo2.png" type = "image/x-icon" />
+<link rel = "shortcut icon" href = "Imagens/logo2.png" type = "image/x-icon" />
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+<meta name = "author" content = "Alysson Machado">
+<meta name = "description" content = "Aprenda a usar o Software de Versionamento Git e o Repositório GitHub para auxiliar sua vida acadêmica e profissional.">
+<link rel = "stylesheet" type = "text/css" href = "CSS/estilomenu.css" />
+<link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13047,13 +13055,6 @@ div#notebook {
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
 <link rel="stylesheet" href="custom.css">
-<link rel = "icon" href = "Imagens/logo2.png" type = "image/x-icon" />
-<link rel = "shortcut icon" href = "Imagens/logo2.png" type = "image/x-icon" />
-<meta name = "author" content = "Alysson Machado">
-<meta name = "description" content = "Aprenda a usar o Software de Versionamento Git e o Repositório GitHub para auxiliar sua vida acadêmica e profissional.">
-<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
-<link rel = "stylesheet" type = "text/css" href = "CSS/estilomenu.css" />
-<link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -13081,41 +13082,42 @@ div#notebook {
 
   <header class = "headeratalho"> 
 
-		<a href = "listadegithub.html" class = "logo" target = "_self"> Curso de Git e Github </a>
+    <a href = "listadegithub.html" class = "logo" target = "_self"> Curso de Git e Github </a>
 
-		<div class = "menu-toggle"></div>
+    <div class = "menu-toggle"></div>
 
-		<nav class = "navatalho">
-			
-			<ul>
-				
-				<li><a href = "index.html" target = "_self"> Programas </a></li>
-				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
-				<li><a href = "listademateriais.html" target = "_self" class = "active"> Materiais </a></li>
-				<li><a href = "listadeformulario.html" target = "_self"> Feedback </a></li>
+    <nav class = "navatalho">
+      
+      <ul>
+        
+        <li><a href = "index.html" target = "_self"> Programas </a></li>
+        <li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
+        <li><a href = "listademateriais.html" target = "_self" class = "active"> Materiais </a></li>
+        <li><a href = "listadeformulario.html" target = "_self"> Feedback </a></li>
 
-			</ul>
+      </ul>
 
-		</nav>
+    </nav>
 
-		<div class = "clearfix"></div>
+    <div class = "clearfix"></div>
 
-	</header>
+  </header>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.js" 
-	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
-	crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" 
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+  crossorigin="anonymous"></script>
 
-	<script type="text/javascript">
+  <script type="text/javascript">
 
-		$(document).ready(function(){
-			$('.menu-toggle').click(function(){
-				$('.menu-toggle').toggleClass('active')
-				$('nav').toggleClass('active')
-			})
-		})
+    $(document).ready(function(){
+      $('.menu-toggle').click(function(){
+        $('.menu-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
 
   </script>
+
   
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -13123,7 +13125,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Usando-as-Branches">Usando as Branches<a class="anchor-link" href="#Usando-as-Branches">&#182;</a></h1><h3 id="Com-as-branches-ou-ramifica&#231;&#245;es,-voc&#234;-pode-criar-dentro-de-um-mesmo-reposit&#243;rio-outros-paralelos-a-ele.-Dessa-forma,-&#233;-poss&#237;vel-garantir-mais-organiza&#231;&#227;o-e-seguran&#231;a-a-sua-branch-padr&#227;o-(&quot;default&quot;),-tamb&#233;m-chamado-de-&quot;branch-master&quot;.">Com as branches ou ramifica&#231;&#245;es, voc&#234; pode criar dentro de um mesmo reposit&#243;rio outros paralelos a ele. Dessa forma, &#233; poss&#237;vel garantir mais organiza&#231;&#227;o e seguran&#231;a a sua branch padr&#227;o ("default"), tamb&#233;m chamado de "branch master".<a class="anchor-link" href="#Com-as-branches-ou-ramifica&#231;&#245;es,-voc&#234;-pode-criar-dentro-de-um-mesmo-reposit&#243;rio-outros-paralelos-a-ele.-Dessa-forma,-&#233;-poss&#237;vel-garantir-mais-organiza&#231;&#227;o-e-seguran&#231;a-a-sua-branch-padr&#227;o-(&quot;default&quot;),-tamb&#233;m-chamado-de-&quot;branch-master&quot;.">&#182;</a></h3>
+<h1 id="Usando-as-Branches">Usando as Branches<a class="anchor-link" href="#Usando-as-Branches">&#182;</a></h1><h4 id="Com-as-branches-ou-ramifica&#231;&#245;es,-voc&#234;-pode-criar-dentro-de-um-mesmo-reposit&#243;rio-outros-paralelos-a-ele.-Dessa-forma,-&#233;-poss&#237;vel-garantir-mais-organiza&#231;&#227;o-e-seguran&#231;a-a-sua-branch-padr&#227;o-(&quot;default&quot;),-tamb&#233;m-chamado-de-&quot;branch-master&quot;.">Com as branches ou ramifica&#231;&#245;es, voc&#234; pode criar dentro de um mesmo reposit&#243;rio outros paralelos a ele. Dessa forma, &#233; poss&#237;vel garantir mais organiza&#231;&#227;o e seguran&#231;a a sua branch padr&#227;o ("default"), tamb&#233;m chamado de "branch master".<a class="anchor-link" href="#Com-as-branches-ou-ramifica&#231;&#245;es,-voc&#234;-pode-criar-dentro-de-um-mesmo-reposit&#243;rio-outros-paralelos-a-ele.-Dessa-forma,-&#233;-poss&#237;vel-garantir-mais-organiza&#231;&#227;o-e-seguran&#231;a-a-sua-branch-padr&#227;o-(&quot;default&quot;),-tamb&#233;m-chamado-de-&quot;branch-master&quot;.">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13145,7 +13147,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nesse arquivo, vamos aprender um incrível recurso do GitHub chamado "<strong>branch</strong>". Com ele podemos criar ramificações dentro do nosso repositório. Fazendo uma analogia, é como se houvesse mundos paralelos, em que cada mundo paralelo seria uma versão diferente de um mesmo projeto. Essa diferença pode ser entendida como implementações de testes dentro do projeto, uma forma de mostrar novas implementações aos colaboradores sem necessariamente adicionar ao branch padrão (também conhecida com "<strong>branch master</strong>") e manter salva versões antigas do projeto, de forma a garantir a segurança do código caso ocorra algum problema nas últimas versões criadas do repositório.</p>
+<p>Nesse arquivo, vamos aprender um incrível recurso do GitHub chamado "<strong>branch</strong>". Com ele podemos criar ramificações dentro do nosso repositório. Fazendo uma analogia, é como se houvesse mundos paralelos, em que cada um deles seria uma versão diferente de um mesmo projeto. Essa diferença pode ser entendida como implementações de testes dentro do projeto, uma forma de mostrar novas implementações aos colaboradores sem necessariamente adicionar ao branch padrão (também conhecida com "<strong>branch master</strong>") e manter salva versões antigas do projeto, de forma a garantir a segurança do código caso ocorra algum problema nas últimas versões criadas do repositório.</p>
 
 </div>
 </div>
@@ -13375,7 +13377,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Após ter feito os passos acima, escolha o repositório que você deseja enviar para otro. Nesse caso, vamos enviar "versão-1-5-(final)" para "versão-1-5-(beta)" e dar um "push" no repositório remoto GitHub.</p>
+<blockquote><p>Após ter feito os passos acima, escolha a branch que você deseja enviar para outro. Nesse caso, vamos enviar "versão-1-5-(final)" para "versão-1-5-(beta)" e dar um "push" no repositório remoto GitHub.</p>
 </blockquote>
 
 </div>
@@ -13491,7 +13493,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href = "mailto:alyssonmachado388@gmail.com" target = "_blank">Me Envie um E-mail</a>;</li>
+<li><a href = "mailto:alysson.barbosa@ee.ufcg.edu.br" target = "_blank">Me Envie um E-mail</a>;</li>
 </ul>
 
 </div>
@@ -13500,5 +13502,8 @@ div#notebook {
     </div>
   </div>
 </body>
+
+ 
+
 
 </html>
