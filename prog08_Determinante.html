@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Determinante</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13115,8 +13115,9 @@ div#notebook {
 			})
 		})
 
-	</script>
-
+  </script>
+  
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -13130,8 +13131,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Em matemática, determinante é uma função matricial que associa a cada matriz quadrada um escalar. Essa função transforma essa matriz em um número real. Esta função permite saber se a matriz tem ou não inversa, pois as que não têm são precisamente aquelas cujo determinante é igual a 0. O cálculo de determinantes está ligado com o conjunto solução de um sistema linear, pois se o cálculo da matriz dos coeficientes de um sistema de equações lineares, onde o número de equações é igual o número de incógnitas (uma matriz quadrada) for um valor diferente de zero, possuímos uma única solução para o sistema, caso o valor do determinante for zero, temos um sistema possível indeterminado ou impossível.</p>
-</blockquote>
+<p>Em matemática, determinante é uma função matricial que associa a cada matriz quadrada um escalar. Essa função transforma essa matriz em um número real. Esta função permite saber se a matriz tem ou não inversa, pois as que não têm são precisamente aquelas cujo determinante é igual a 0. O cálculo de determinantes está ligado com o conjunto solução de um sistema linear, pois se o cálculo da matriz dos coeficientes de um sistema de equações lineares, onde o número de equações é igual o número de incógnitas (uma matriz quadrada) for um valor diferente de zero, possuímos uma única solução para o sistema, caso o valor do determinante for zero, temos um sistema possível indeterminado ou impossível.</p>
 
 </div>
 </div>
@@ -13141,27 +13141,60 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1">#Importa Funções da biblioteca Numpy</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importa Funções da biblioteca Numpy</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+</pre></div>
 
-<span class="n">qtd</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Informe o ordem da matriz: &#39;</span><span class="p">))</span> <span class="c1">#Recebe a ordem da matriz</span>
+    </div>
+</div>
+</div>
 
-<span class="n">matriz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">qtd</span><span class="p">,</span> <span class="n">qtd</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> <span class="c1">#Inicializa a matriz, ainda com &#39;lixo de endereços de memória&#39; nele</span>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># função que calcula o determinante de uma matriz</span>
+<span class="k">def</span> <span class="nf">determinante</span><span class="p">():</span>
+    
+    <span class="c1"># Recebe a ordem da matriz</span>
+    <span class="n">qtd</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Informe o ordem da matriz: &#39;</span><span class="p">))</span> 
+    
+    <span class="c1"># Inicializa a matriz, ainda com &#39;lixo de endereços de memória&#39; nele</span>
+    <span class="n">matriz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">qtd</span><span class="p">,</span> <span class="n">qtd</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="c1">#Adiciona elementos na matriz</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">qtd</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">qtd</span><span class="p">):</span>
+            <span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Digite [</span><span class="si">{}</span><span class="s1">][</span><span class="si">{}</span><span class="s1">] da matriz: &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
 
-<span class="c1">#Adiciona elementos na matriz</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">qtd</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">qtd</span><span class="p">):</span>
-        <span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Digite [</span><span class="si">{}</span><span class="s1">][</span><span class="si">{}</span><span class="s1">] da matriz: &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
+    <span class="c1">#Imprime a matriz</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">A matriz é:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">matriz</span><span class="p">)</span>
 
-<span class="c1">#Imprime a matriz</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">A matriz é:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">matriz</span><span class="p">)</span>
+    <span class="c1">#a variável &#39;determinante&#39; recebe o determinante da matriz</span>
+    <span class="n">determinante</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">matriz</span><span class="p">)</span>
 
-<span class="c1">#a variável &#39;determinante&#39; recebe o determinante da matriz</span>
-<span class="n">determinante</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">matriz</span><span class="p">)</span>
+    <span class="c1">#Imprime o determinante</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">O determinante da matriz é: </span><span class="si">{:.2f}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">determinante</span><span class="p">))</span>
+    
+    <span class="c1"># função não retorna nada</span>
+    <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
 
-<span class="c1">#Imprime o determinante</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">O determinante da matriz é: </span><span class="si">{:.2f}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">determinante</span><span class="p">))</span>
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprimindo a função determinante</span>
+<span class="n">determinante</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13208,12 +13241,11 @@ div#notebook {
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 A matriz é:
- [[ 4.  5. -3.  0.]
- [ 2. -1.  3.  1.]
- [ 1. -3.  2.  1.]
- [ 0.  2. -2.  5.]]
+ [[1. 2. 3.]
+ [3. 4. 4.]
+ [7. 8. 9.]]
 
-O determinante da matriz é: 210.00.
+O determinante da matriz é: -6.00.
 </pre>
 </div>
 </div>
@@ -13225,27 +13257,25 @@ O determinante da matriz é: 210.00.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Aprenda mais:</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href = "http://matematicaufsj.files.wordpress.com/2012/12/caderno_al_vol1.pdf" target = "_blank"> Álgebra Linear - Vol 1 </a></td>
-</tr>
-<tr>
-<td style="text-align:left"><a href = "https://www.youtube.com/watch?v=yt3eoYvGel0" target = "_blank"> Determinante, Essência da Álgebra Linear </a></td>
-</tr>
-</tbody>
-</table>
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
