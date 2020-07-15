@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Criptografia</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13115,29 +13115,23 @@ div#notebook {
 			})
 		})
 
-	</script>
-
+  </script>
+  
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Criptografia---Cifra-de-Hill">Criptografia - Cifra de Hill<a class="anchor-link" href="#Criptografia---Cifra-de-Hill">&#182;</a></h1>
+<h1 id="Criptografia---Cifra-de-Hill">Criptografia - Cifra de Hill<a class="anchor-link" href="#Criptografia---Cifra-de-Hill">&#182;</a></h1><h4 id="Vamos-aprender-um-m&#233;todo-para-codificar-mensagens-utilizando-Cifras-de-Hill,-cujo-princ&#237;pio-reside-em-transforma&#231;&#245;es-matriciais.-Para-isso,-vamos-usar-uma-matriz-chave-e-sua-inversa-mod-26.">Vamos aprender um m&#233;todo para codificar mensagens utilizando Cifras de Hill, cujo princ&#237;pio reside em transforma&#231;&#245;es matriciais. Para isso, vamos usar uma matriz chave e sua inversa mod 26.<a class="anchor-link" href="#Vamos-aprender-um-m&#233;todo-para-codificar-mensagens-utilizando-Cifras-de-Hill,-cujo-princ&#237;pio-reside-em-transforma&#231;&#245;es-matriciais.-Para-isso,-vamos-usar-uma-matriz-chave-e-sua-inversa-mod-26.">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Vamos-aprender-um-m&#233;todo-para-codificar-mensagens-utilizando-Cifras-de-Hill,-cujo-princ&#237;pio-reside-em-transforma&#231;&#245;es-matriciais.-Para-isso,-vamos-usar-uma-matriz-chave-e-sua-inversa-mod-26.">Vamos aprender um m&#233;todo para codificar mensagens utilizando Cifras de Hill, cujo princ&#237;pio reside em transforma&#231;&#245;es matriciais. Para isso, vamos usar uma matriz chave e sua inversa mod 26.<a class="anchor-link" href="#Vamos-aprender-um-m&#233;todo-para-codificar-mensagens-utilizando-Cifras-de-Hill,-cujo-princ&#237;pio-reside-em-transforma&#231;&#245;es-matriciais.-Para-isso,-vamos-usar-uma-matriz-chave-e-sua-inversa-mod-26.">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">Refer&#234;ncia: &#193;lgebra Linear com aplica&#231;&#245;es / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.<a class="anchor-link" href="#Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#182;</a></h6>
+<h5 id="Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">Refer&#234;ncia: &#193;lgebra Linear com aplica&#231;&#245;es / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.<a class="anchor-link" href="#Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -13172,7 +13166,8 @@ $$\begin{bmatrix}
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">numpy</span> <span class="c1"># importando a biblioteca de funções numpy do Python</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># importando a biblioteca de funções numpy do Python</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">numpy</span> 
 </pre></div>
 
     </div>
@@ -13419,7 +13414,8 @@ $$p = \begin{bmatrix}
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando uma matriz A, responsável pela segurança da criptografia</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span> <span class="c1"># definindo a matriz A</span>
+<span class="c1"># definindo a matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -13451,30 +13447,40 @@ $$p = \begin{bmatrix}
     
         <span class="c1"># estrutura de seleção if responsável por adicionar o valor numérico para a primeira letra do par</span>
         <span class="k">if</span><span class="p">(</span><span class="n">indice</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">indice</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-            <span class="n">valor</span> <span class="o">=</span> <span class="n">equivalenteDecimal</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">indice</span><span class="p">])</span> <span class="c1"># pega exatamente a letra localizada no elemento numerico de &#39;indice&#39;</span>
-            <span class="n">valorNumerico</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">valor</span> <span class="c1"># adiciona na primeira linha da primeira coluna</span>
+            
+            <span class="c1"># pega exatamente a letra localizada no elemento numerico de &#39;indice&#39;</span>
+            <span class="n">valor</span> <span class="o">=</span> <span class="n">equivalenteDecimal</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">indice</span><span class="p">])</span> 
+            <span class="c1"># adiciona na primeira linha da primeira coluna</span>
+            <span class="n">valorNumerico</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">valor</span> 
     
         <span class="c1"># estrutura de seleção responsável por adicionar o valor numérico para a segunda letra do par</span>
         <span class="k">if</span><span class="p">(</span><span class="n">indice</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">indice</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">):</span>
-            <span class="n">valor</span> <span class="o">=</span> <span class="n">equivalenteDecimal</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">indice</span><span class="p">])</span>  <span class="c1"># pega exatamente a letra localizada no elemento numerico de &#39;indice&#39;</span>
-            <span class="n">valorNumerico</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">valor</span> <span class="c1"># adiciona na segunda linha da primeira coluna</span>
+            
+            <span class="c1"># pega exatamente a letra localizada no elemento numerico de &#39;indice&#39;</span>
+            <span class="n">valor</span> <span class="o">=</span> <span class="n">equivalenteDecimal</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">indice</span><span class="p">])</span>  
+            <span class="c1"># adiciona na segunda linha da primeira coluna</span>
+            <span class="n">valorNumerico</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">valor</span> 
         
-        <span class="c1"># estrutura de seleção responsável por calcular a multiplicação da matriz A pelo vetor-coluna dos pares numéricos</span>
+        <span class="c1"># estrutura de seleção responsável por calcular a multiplicação da matriz A pelo vetor-coluna </span>
+        <span class="c1"># dos pares numéricos</span>
         <span class="k">if</span><span class="p">(</span><span class="n">indice</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">indice</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">):</span>
             <span class="c1"># realiza a multiplicação da matriz A com os pares de números equivalentes a letras</span>
             <span class="n">valorCodificado</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">chave</span><span class="p">,</span> <span class="n">valorNumerico</span><span class="p">)</span>
         
-            <span class="c1"># caso o valor do resultado codificado no primeiro par da letra seja maior que 25, substitui pelo valor </span>
+            <span class="c1"># caso o valor do resultado codificado no primeiro par da letra seja maior que 25, </span>
+            <span class="c1"># substitui pelo valor </span>
             <span class="c1"># do seu módulo por 26</span>
             <span class="k">if</span><span class="p">(</span><span class="n">valorCodificado</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">):</span>
                 <span class="n">valorCodificado</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">valorCodificado</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">%</span> <span class="mi">26</span><span class="p">)</span>
         
-            <span class="c1"># caso o valor do resultado codificado no segundo par da letra seja maior que 25, substitui pelo valor </span>
+            <span class="c1"># caso o valor do resultado codificado no segundo par da letra seja maior que 25, </span>
+            <span class="c1"># substitui pelo valor </span>
             <span class="c1"># do seu módulo por 26</span>
             <span class="k">if</span><span class="p">(</span><span class="n">valorCodificado</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">):</span>
                 <span class="n">valorCodificado</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">valorCodificado</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">%</span> <span class="mi">26</span><span class="p">)</span>
         
-            <span class="c1"># pega o equivalente alfabético para os novos números codificados, visando construir a frase codificada</span>
+            <span class="c1"># pega o equivalente alfabético para os novos números codificados, visando </span>
+            <span class="c1"># construir a frase codificada</span>
             <span class="n">a</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">equivalenteAlfabetico</span><span class="p">(</span><span class="n">valorCodificado</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span> <span class="c1"># primeira linha do vetor-coluna</span>
             <span class="n">b</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">equivalenteAlfabetico</span><span class="p">(</span><span class="n">valorCodificado</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span> <span class="c1"># segunda linha do vetor-coluna</span>
         
@@ -13484,7 +13490,8 @@ $$p = \begin{bmatrix}
         
     <span class="c1"># remove os caracteres desnecessários e mostra somente a parte codificada</span>
     <span class="n">codigo</span> <span class="o">=</span> <span class="n">codigo</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">codigo</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">texto</span><span class="p">):</span> <span class="nb">len</span><span class="p">(</span><span class="n">codigo</span><span class="p">)]</span>
-        
+    
+    <span class="c1"># função retorna código</span>
     <span class="k">return</span> <span class="n">codigo</span>
 </pre></div>
 
@@ -13541,8 +13548,10 @@ $$p = \begin{bmatrix}
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">texto</span> <span class="o">=</span> <span class="n">inserirFrase</span><span class="p">()</span> <span class="c1"># chama a função para adicionar um texto a variável</span>
-<span class="c1"># a opção por criar tal função advém da necessidade da frase ter que atender aos requisitos informados acima para ser codificada</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># chama a função para adicionar um texto a variável</span>
+<span class="n">texto</span> <span class="o">=</span> <span class="n">inserirFrase</span><span class="p">()</span> 
+<span class="c1"># a opção por criar tal função advém da necessidade da frase ter que atender aos requisitos </span>
+<span class="c1"># informados acima para ser codificada</span>
 </pre></div>
 
     </div>
@@ -13586,7 +13595,7 @@ $$p = \begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cifraHill</span><span class="p">(</span><span class="n">texto</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span> <span class="c1"># função responsável por criptografar o texto</span>
@@ -13603,7 +13612,7 @@ $$p = \begin{bmatrix}
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13621,7 +13630,7 @@ $$p = \begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Cifras-de-Hill-(Descriptografia)">Cifras de Hill (Descriptografia)<a class="anchor-link" href="#Cifras-de-Hill-(Descriptografia)">&#182;</a></h4>
+<h3 id="Cifras-de-Hill-(Descriptografia)">Cifras de Hill (Descriptografia)<a class="anchor-link" href="#Cifras-de-Hill-(Descriptografia)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13636,7 +13645,15 @@ $$p = \begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Defini&#231;&#227;o:">Defini&#231;&#227;o:<a class="anchor-link" href="#Defini&#231;&#227;o:">&#182;</a></h6><p>Dados um número inteiro positivo m e dois inteiros a e b quaisquer, dizemos que a é equivalente a b módulo m, e escrevemos a = b (mod m), se a - b é um múltiplo inteiro de m.</p>
+<h4 id="Defini&#231;&#227;o:">Defini&#231;&#227;o:<a class="anchor-link" href="#Defini&#231;&#227;o:">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Dados um número inteiro positivo m e dois inteiros a e b quaisquer, dizemos que a é equivalente a b módulo m, e escrevemos a = b (mod m), se a - b é um múltiplo inteiro de m.</p>
+</blockquote>
 
 </div>
 </div>
@@ -13644,7 +13661,7 @@ $$p = \begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Exemplos">Exemplos<a class="anchor-link" href="#Exemplos">&#182;</a></h6>
+<h4 id="Exemplos">Exemplos<a class="anchor-link" href="#Exemplos">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13683,7 +13700,15 @@ $$p = \begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Defini&#231;&#227;o:">Defini&#231;&#227;o:<a class="anchor-link" href="#Defini&#231;&#227;o:">&#182;</a></h6><p>Dado um número a em $Z_{m}$, dizemos que um número $a^{-1}$ em $Z_{m}$ é um recíproco, ou inverso multiplicativo de a módulo m se $aa^{-1} = a^{-1}a = 1 (mod m)$.</p>
+<h4 id="Defini&#231;&#227;o:">Defini&#231;&#227;o:<a class="anchor-link" href="#Defini&#231;&#227;o:">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Dado um número a em $Z_{m}$, dizemos que um número $a^{-1}$ em $Z_{m}$ é um recíproco, ou inverso multiplicativo de a módulo m se $aa^{-1} = a^{-1}a = 1 (mod m)$.</p>
+</blockquote>
 
 </div>
 </div>
@@ -13699,10 +13724,18 @@ $$p = \begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Rec&#237;procos-M&#243;dulo-26:">Rec&#237;procos M&#243;dulo 26:<a class="anchor-link" href="#Rec&#237;procos-M&#243;dulo-26:">&#182;</a></h6>$$\begin{bmatrix}
+<h4 id="Rec&#237;procos-M&#243;dulo-26:">Rec&#237;procos M&#243;dulo 26:<a class="anchor-link" href="#Rec&#237;procos-M&#243;dulo-26:">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\begin{bmatrix}
           a &amp; 1 &amp; 3 &amp; 5 &amp; 7 &amp; 9 &amp; 11 &amp; 15 &amp; 17 &amp; 19 &amp; 21 &amp; 23 &amp; 25 \\
           a^{-1} &amp; 1 &amp; 9 &amp; 21 &amp; 15 &amp; 3 &amp; 19 &amp; 7 &amp; 23 &amp; 11 &amp; 5 &amp; 17 &amp; 25 \\
-          \end{bmatrix}$$
+          \end{bmatrix}$</p>
+
 </div>
 </div>
 </div>
@@ -13772,7 +13805,15 @@ $$p = A^{-1}c$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Color&#225;rio:">Color&#225;rio:<a class="anchor-link" href="#Color&#225;rio:">&#182;</a></h6><p>Uma matriz quadrada A com entradas em $Z_{m}$ é invertível módulo m se, e somente se, m e o resíduo de det(A) módulo m não têm fatores primos comuns.</p>
+<h4 id="Color&#225;rio:">Color&#225;rio:<a class="anchor-link" href="#Color&#225;rio:">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Uma matriz quadrada A com entradas em $Z_{m}$ é invertível módulo m se, e somente se, m e o resíduo de det(A) módulo m não têm fatores primos comuns.</p>
+</blockquote>
 
 </div>
 </div>
@@ -13780,7 +13821,15 @@ $$p = A^{-1}c$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Color&#225;rio:">Color&#225;rio:<a class="anchor-link" href="#Color&#225;rio:">&#182;</a></h6><p>Uma matriz quadrada A com entradas em $Z_{26}$ é invertível módulo 26 se, e somente se, o resíduo de det(A) módulo 26 não é divisível por 2 ou 13.</p>
+<h4 id="Color&#225;rio:">Color&#225;rio:<a class="anchor-link" href="#Color&#225;rio:">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Uma matriz quadrada A com entradas em $Z_{26}$ é invertível módulo 26 se, e somente se, o resíduo de det(A) módulo 26 não é divisível por 2 ou 13.</p>
+</blockquote>
 
 </div>
 </div>
@@ -13821,10 +13870,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">A</span><span class="p">))</span> <span class="c1"># imprime a matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz A</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">A</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -13853,11 +13903,13 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span> <span class="c1"># definindo a matriz A</span>
-<span class="n">residuo</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">%</span> <span class="mi">26</span> <span class="c1"># calculando o resíduo (ad - bc)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># definindo a matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span> 
+<span class="c1"># calculando o resíduo (ad - bc)</span>
+<span class="n">residuo</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">%</span> <span class="mi">26</span> 
 <span class="c1"># temos a.a^{-1} = 1 (mod 26)</span>
 <span class="c1"># residuo.reciproco = x  = 1 (mod 26)</span>
 </pre></div>
@@ -13869,10 +13921,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">residuo</span><span class="p">))</span> <span class="c1"># imprime o residuo </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime o residuo </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">residuo</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -13916,13 +13969,17 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reciproco</span> <span class="o">=</span> <span class="mi">9</span> <span class="c1"># definindo o reciproco</span>
-<span class="n">descriptografia</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="o">-</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]],</span> <span class="p">[</span><span class="o">-</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]]])</span> <span class="c1"># definindo o posicionamento da matriz invertível (mod 26)</span>
-<span class="n">descriptografia</span> <span class="o">*=</span> <span class="n">reciproco</span> <span class="c1"># realizando a multiplicação com o recíproco</span>
-<span class="n">descriptografia</span> <span class="o">%=</span> <span class="mi">26</span> <span class="c1"># definindo o módulo 26 de cada elemento</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># definindo o reciproco</span>
+<span class="n">reciproco</span> <span class="o">=</span> <span class="mi">9</span> 
+<span class="c1"># definindo o posicionamento da matriz invertível (mod 26)</span>
+<span class="n">descriptografia</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="o">-</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]],</span> <span class="p">[</span><span class="o">-</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]]])</span> 
+<span class="c1"># realizando a multiplicação com o recíproco</span>
+<span class="n">descriptografia</span> <span class="o">*=</span> <span class="n">reciproco</span> 
+<span class="c1"># definindo o módulo 26 de cada elemento</span>
+<span class="n">descriptografia</span> <span class="o">%=</span> <span class="mi">26</span> 
 </pre></div>
 
     </div>
@@ -13932,10 +13989,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">descriptografia</span><span class="p">))</span> <span class="c1"># imprimindo a matriz descriptograda</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprimindo a matriz descriptograda</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">descriptografia</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -13972,10 +14030,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cifra</span> <span class="o">=</span> <span class="s2">&quot;fhgviocepytuidezsmxeikizijywylmcnfylyhembe&quot;</span> <span class="c1"># definindo a cifra criptografada, dada anteriormente pela criptografia com A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># definindo a cifra criptografada, dada anteriormente pela criptografia com A</span>
+<span class="n">cifra</span> <span class="o">=</span> <span class="s2">&quot;fhgviocepytuidezsmxeikizijywylmcnfylyhembe&quot;</span> 
 </pre></div>
 
     </div>
@@ -13985,10 +14044,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cifraHill</span><span class="p">(</span><span class="n">cifra</span><span class="p">,</span><span class="n">descriptografia</span><span class="p">)</span> <span class="c1"># chamando a função responsável por criptografar/descriptografar</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># chamando a função responsável por criptografar/descriptografar</span>
+<span class="n">cifraHill</span><span class="p">(</span><span class="n">cifra</span><span class="p">,</span><span class="n">descriptografia</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14001,7 +14061,7 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -14019,7 +14079,7 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Cifras-de-Hill-(N-Camadas-de-Criptografia)">Cifras de Hill (N Camadas de Criptografia)<a class="anchor-link" href="#Cifras-de-Hill-(N-Camadas-de-Criptografia)">&#182;</a></h4>
+<h3 id="Cifras-de-Hill-(N-Camadas-de-Criptografia)">Cifras de Hill (N Camadas de Criptografia)<a class="anchor-link" href="#Cifras-de-Hill-(N-Camadas-de-Criptografia)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14041,10 +14101,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frase</span> <span class="o">=</span> <span class="n">inserirFrase</span><span class="p">()</span> <span class="c1"># chama a função para receber uma frase e configurá-la para a criptografia</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># chama a função para receber uma frase e configurá-la para a criptografia</span>
+<span class="n">frase</span> <span class="o">=</span> <span class="n">inserirFrase</span><span class="p">()</span> 
 <span class="c1"># A Frase é: &quot;Quem Estuda Passa&quot;</span>
 </pre></div>
 
@@ -14081,7 +14142,7 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cifraHill</span><span class="p">(</span><span class="n">frase</span><span class="p">,</span><span class="n">A</span><span class="p">)</span> <span class="c1"># imprime a frase criptografada</span>
@@ -14097,7 +14158,7 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -14114,10 +14175,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frase</span> <span class="o">=</span> <span class="n">inserirFrase</span><span class="p">()</span> <span class="c1"># vamos inserir a frase criptografada</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># vamos inserir a frase criptografada</span>
+<span class="n">frase</span> <span class="o">=</span> <span class="n">inserirFrase</span><span class="p">()</span> 
 </pre></div>
 
     </div>
@@ -14153,10 +14215,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cifraHill</span><span class="p">(</span><span class="n">frase</span><span class="p">,</span><span class="n">A</span><span class="p">)</span> <span class="c1"># vamos encriptar uma segunda camada</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># vamos encriptar uma segunda camada</span>
+<span class="n">cifraHill</span><span class="p">(</span><span class="n">frase</span><span class="p">,</span><span class="n">A</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14169,7 +14232,7 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -14186,10 +14249,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frase</span> <span class="o">=</span> <span class="n">inserirFrase</span><span class="p">()</span> <span class="c1"># vamos inserir a frase encriptada por duas vezes consecutivas</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># vamos inserir a frase encriptada por duas vezes consecutivas</span>
+<span class="n">frase</span> <span class="o">=</span> <span class="n">inserirFrase</span><span class="p">()</span> 
 </pre></div>
 
     </div>
@@ -14225,10 +14289,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cifraHill</span><span class="p">(</span><span class="n">frase</span><span class="p">,</span><span class="n">descriptografia</span><span class="p">)</span> <span class="c1"># vamos descriptografar a primeira camada</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># vamos descriptografar a primeira camada</span>
+<span class="n">cifraHill</span><span class="p">(</span><span class="n">frase</span><span class="p">,</span><span class="n">descriptografia</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14241,7 +14306,7 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14258,10 +14323,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frase</span> <span class="o">=</span> <span class="n">inserirFrase</span><span class="p">()</span> <span class="c1"># vamos inserir a frase novamente para quebrar a segunda e última camada</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># vamos inserir a frase novamente para quebrar a segunda e última camada</span>
+<span class="n">frase</span> <span class="o">=</span> <span class="n">inserirFrase</span><span class="p">()</span> 
 </pre></div>
 
     </div>
@@ -14297,10 +14363,11 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cifraHill</span><span class="p">(</span><span class="n">frase</span><span class="p">,</span><span class="n">descriptografia</span><span class="p">)</span> <span class="c1"># por fim, vamos descriptografar por completo</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># por fim, vamos descriptografar por completo</span>
+<span class="n">cifraHill</span><span class="p">(</span><span class="n">frase</span><span class="p">,</span><span class="n">descriptografia</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14313,7 +14380,7 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -14331,30 +14398,48 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center>Aprenda Mais Sobre Criptografia<center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">ABRAHAM SINKOV, Elementary Criptanalysis, a Mathematical Approach(Mathematical Association of America, Mathematical Library, 1966)</td>
-</tr>
-<tr>
-<td style="text-align:left">ALAN G. KONHEIM, Cryptography, a Primer(Wiley-Interscience, 1981)</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href = "https://www.youtube.com/watch?v=_Eeg1LxVWa8" target = "_blank"> Nerdologia Tech - Criptografia </a></td>
-</tr>
-</tbody>
-</table>
+<h4 id="Aprenda-Mais-Sobre-Criptografia">Aprenda Mais Sobre Criptografia<a class="anchor-link" href="#Aprenda-Mais-Sobre-Criptografia">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>1 - ) ABRAHAM SINKOV, Elementary Criptanalysis, a Mathematical Approach(Mathematical Association of America, Mathematical Library, 1966).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>2 - ) ALAN G. KONHEIM, Cryptography, a Primer(Wiley-Interscience, 1981).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
