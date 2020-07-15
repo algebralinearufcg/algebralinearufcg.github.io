@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Teoria dos Grafos</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13115,29 +13115,37 @@ div#notebook {
 			})
 		})
 
-	</script>
-
+  </script>
+  
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Teoria-dos-Grafos">Teoria dos Grafos<a class="anchor-link" href="#Teoria-dos-Grafos">&#182;</a></h1><h5 id="Vamos-utilizar-representa&#231;&#245;es-matriciais-das-rela&#231;&#245;es-entre-elementos-de-um-conjunto-e,-atrav&#233;s-de-ar&#237;tim&#233;tica-matricial,-vamos-analisar-essas-rela&#231;&#245;es.">Vamos utilizar representa&#231;&#245;es matriciais das rela&#231;&#245;es entre elementos de um conjunto e, atrav&#233;s de ar&#237;tim&#233;tica matricial, vamos analisar essas rela&#231;&#245;es.<a class="anchor-link" href="#Vamos-utilizar-representa&#231;&#245;es-matriciais-das-rela&#231;&#245;es-entre-elementos-de-um-conjunto-e,-atrav&#233;s-de-ar&#237;tim&#233;tica-matricial,-vamos-analisar-essas-rela&#231;&#245;es.">&#182;</a></h5>
+<h1 id="Teoria-dos-Grafos">Teoria dos Grafos<a class="anchor-link" href="#Teoria-dos-Grafos">&#182;</a></h1><h4 id="Vamos-utilizar-representa&#231;&#245;es-matriciais-das-rela&#231;&#245;es-entre-elementos-de-um-conjunto-e,-atrav&#233;s-de-ar&#237;tim&#233;tica-matricial,-vamos-analisar-essas-rela&#231;&#245;es.">Vamos utilizar representa&#231;&#245;es matriciais das rela&#231;&#245;es entre elementos de um conjunto e, atrav&#233;s de ar&#237;tim&#233;tica matricial, vamos analisar essas rela&#231;&#245;es.<a class="anchor-link" href="#Vamos-utilizar-representa&#231;&#245;es-matriciais-das-rela&#231;&#245;es-entre-elementos-de-um-conjunto-e,-atrav&#233;s-de-ar&#237;tim&#233;tica-matricial,-vamos-analisar-essas-rela&#231;&#245;es.">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">Refer&#234;ncia: &#193;lgebra Linear com aplica&#231;&#245;es / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.<a class="anchor-link" href="#Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#182;</a></h6>
+<h5 id="Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">Refer&#234;ncia: &#193;lgebra Linear com aplica&#231;&#245;es / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.<a class="anchor-link" href="#Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#182;</a></h5>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Rela&#231;&#245;es-entre-membros-do-conjunto">Rela&#231;&#245;es entre membros do conjunto<a class="anchor-link" href="#Rela&#231;&#245;es-entre-membros-do-conjunto">&#182;</a></h6><p>Existem inúmeros exemplos de conjuntos com um número finito de elementos nos quais existe alguma relação entre os elementos do conjunto. Por exemplo, o conjunto poderia consistir de uma coleção de pessoas, animais, países, companhias, equipes esportivas ou cidades; e a relação entre dois elementos A e B de um tal conjunto poderia ser que a pessoa A domina a pessoa B, o animal A alimenta-se do animal B, o país A apoia militarmente o país B, A companhia A vende seus produtos para a companhia B, a equipe A derrota sistematicamente a equipe B ou a cidade A possui um vôo sem escalas para a cidade B.</p>
+<h3 id="Rela&#231;&#245;es-entre-membros-do-conjunto">Rela&#231;&#245;es entre membros do conjunto<a class="anchor-link" href="#Rela&#231;&#245;es-entre-membros-do-conjunto">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Existem inúmeros exemplos de conjuntos com um número finito de elementos nos quais existe alguma relação entre os elementos do conjunto. Por exemplo, o conjunto poderia consistir de uma coleção de pessoas, animais, países, companhias, equipes esportivas ou cidades; e a relação entre dois elementos A e B de um tal conjunto poderia ser que a pessoa A domina a pessoa B, o animal A alimenta-se do animal B, o país A apoia militarmente o país B, A companhia A vende seus produtos para a companhia B, a equipe A derrota sistematicamente a equipe B ou a cidade A possui um vôo sem escalas para a cidade B.</p>
 
 </div>
 </div>
@@ -13145,7 +13153,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Exemplo:-Influ&#234;ncias-numa-fam&#237;lia">Exemplo: Influ&#234;ncias numa fam&#237;lia<a class="anchor-link" href="#Exemplo:-Influ&#234;ncias-numa-fam&#237;lia">&#182;</a></h6><p>Uma certa família consiste de uma mãe, um pai, uma filha e dois filhos. Os membros da família exercem influência, ou poder, sobre os outros membros da família da seguinte maneira: a mãe pode influenciar a filha e o filho mais velho; o pai pode influenciar os dois filhos; a filha pode influenciar o pai; o filho mais velho pode influenciar o filho mais novo; o filho mais novo pode influenciar a mãe.</p>
+<h3 id="Exemplo:-Influ&#234;ncias-numa-fam&#237;lia">Exemplo: Influ&#234;ncias numa fam&#237;lia<a class="anchor-link" href="#Exemplo:-Influ&#234;ncias-numa-fam&#237;lia">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Uma certa família consiste de uma mãe, um pai, uma filha e dois filhos. Os membros da família exercem influência, ou poder, sobre os outros membros da família da seguinte maneira: a mãe pode influenciar a filha e o filho mais velho; o pai pode influenciar os dois filhos; a filha pode influenciar o pai; o filho mais velho pode influenciar o filho mais novo; o filho mais novo pode influenciar a mãe.</p>
 
 </div>
 </div>
@@ -13161,50 +13176,55 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$\begin{bmatrix}
+<p>$\begin{bmatrix}
            [] &amp; Mae &amp; Pai &amp; Filha &amp; Filho Velho &amp; Filho Novo \\
           Mae &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
-          \end{bmatrix}$$
+          \end{bmatrix}$</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$\begin{bmatrix}
+<p>$\begin{bmatrix}
            [] &amp; Mae &amp; Pai &amp; Filha &amp; Filho Velho &amp; Filho Novo \\
           Pai &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\
-          \end{bmatrix}$$
+          \end{bmatrix}$</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$\begin{bmatrix}
+<p>$\begin{bmatrix}
             []  &amp; Mae &amp; Pai &amp; Filha &amp; Filho Velho &amp; Filho Novo \\
           Filha &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
-          \end{bmatrix}$$
+          \end{bmatrix}$</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$\begin{bmatrix}
+<p>$\begin{bmatrix}
               []      &amp; Mae &amp; Pai &amp; Filha &amp; Filho Velho &amp; Filho Novo \\
           Filho Velho &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
-          \end{bmatrix}$$
+          \end{bmatrix}$</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$\begin{bmatrix}
+<p>$\begin{bmatrix}
               []     &amp; Mae &amp; Pai &amp; Filha &amp; Filho Velho &amp; Filho Novo \\
           Filho Novo &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
-          \end{bmatrix}$$
+          \end{bmatrix}$</p>
+
 </div>
 </div>
 </div>
@@ -13243,7 +13263,8 @@ $$\begin{bmatrix}
 <div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># importando a biblioteca numpy do Python</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># importando a biblioteca numpy do Python</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 </pre></div>
 
     </div>
@@ -13314,7 +13335,9 @@ $$\begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>1-) Todas entradas são 0 ou 1.</p>
+<ol>
+<li>Todas entradas são 0 ou 1.</li>
+</ol>
 
 </div>
 </div>
@@ -13322,7 +13345,9 @@ $$\begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>2-) Todas entradas na diagonal principal são 0.</p>
+<ol>
+<li>Todas entradas na diagonal principal são 0.</li>
+</ol>
 
 </div>
 </div>
@@ -13338,7 +13363,10 @@ $$\begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$m_{ij}^{(2)} = m_{i1}m_{1j} + m_{i2}m_{2j} + ... + m_{in}m_{nj}$$
+<ul>
+<li>$m_{ij}^{(2)} = m_{i1}m_{1j} + m_{i2}m_{2j} + ... + m_{in}m_{nj}$</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -13361,7 +13389,15 @@ $$m_{ij}^{(2)} = m_{i1}m_{1j} + m_{i2}m_{2j} + ... + m_{in}m_{nj}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Teorema:">Teorema:<a class="anchor-link" href="#Teorema:">&#182;</a></h6><p>Seja M a matriz de vértices de um grafo dirigido e seja $m_{ij}^{(r)}$ o (i,j)-ésimo elemento de $M^{r}$. Então $m_{ij}^{(r)}$ é igual ao número de conexões de r passos de $_{i}$ para $P_{j}$.</p>
+<h3 id="Teorema:">Teorema:<a class="anchor-link" href="#Teorema:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Seja M a matriz de vértices de um grafo dirigido e seja $m_{ij}^{(r)}$ o (i,j)-ésimo elemento de $M^{r}$. Então $m_{ij}^{(r)}$ é igual ao número de conexões de r passos de $_{i}$ para $P_{j}$.</p>
+</blockquote>
 
 </div>
 </div>
@@ -13377,7 +13413,7 @@ $$m_{ij}^{(2)} = m_{i1}m_{1j} + m_{i2}m_{2j} + ... + m_{in}m_{nj}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Exemplo:-Influ&#234;ncia-na-Fam&#237;lia-por-2-passos">Exemplo: Influ&#234;ncia na Fam&#237;lia por 2 passos<a class="anchor-link" href="#Exemplo:-Influ&#234;ncia-na-Fam&#237;lia-por-2-passos">&#182;</a></h6>
+<h3 id="Exemplo:-Influ&#234;ncia-na-Fam&#237;lia-por-2-passos">Exemplo: Influ&#234;ncia na Fam&#237;lia por 2 passos<a class="anchor-link" href="#Exemplo:-Influ&#234;ncia-na-Fam&#237;lia-por-2-passos">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13386,7 +13422,8 @@ $$m_{ij}^{(2)} = m_{i1}m_{1j} + m_{i2}m_{2j} + ... + m_{in}m_{nj}$$
 <div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">influenciaFamilia_2passos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_power</span><span class="p">(</span><span class="n">influenciaFamilia</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># calcula a matriz elevada a segunda potência.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># calcula a matriz elevada a segunda potência.</span>
+<span class="n">influenciaFamilia_2passos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_power</span><span class="p">(</span><span class="n">influenciaFamilia</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -13444,7 +13481,7 @@ $$m_{ij}^{(2)} = m_{i1}m_{1j} + m_{i2}m_{2j} + ... + m_{in}m_{nj}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Exemplo:-Influ&#234;ncia-na-Fam&#237;lia-por-3-passos">Exemplo: Influ&#234;ncia na Fam&#237;lia por 3 passos<a class="anchor-link" href="#Exemplo:-Influ&#234;ncia-na-Fam&#237;lia-por-3-passos">&#182;</a></h6>
+<h3 id="Exemplo:-Influ&#234;ncia-na-Fam&#237;lia-por-3-passos">Exemplo: Influ&#234;ncia na Fam&#237;lia por 3 passos<a class="anchor-link" href="#Exemplo:-Influ&#234;ncia-na-Fam&#237;lia-por-3-passos">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13453,7 +13490,8 @@ $$m_{ij}^{(2)} = m_{i1}m_{1j} + m_{i2}m_{2j} + ... + m_{in}m_{nj}$$
 <div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">influenciaFamilia_3passos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_power</span><span class="p">(</span><span class="n">influenciaFamilia</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># calcula a matriz elevada a terceira potência.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># calcula a matriz elevada a terceira potência.</span>
+<span class="n">influenciaFamilia_3passos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_power</span><span class="p">(</span><span class="n">influenciaFamilia</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -13503,7 +13541,7 @@ $$m_{ij}^{(2)} = m_{i1}m_{1j} + m_{i2}m_{2j} + ... + m_{in}m_{nj}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Exemplo:-Rota-A&#233;rea">Exemplo: Rota A&#233;rea<a class="anchor-link" href="#Exemplo:-Rota-A&#233;rea">&#182;</a></h6>
+<h3 id="Exemplo:-Rota-A&#233;rea">Exemplo: Rota A&#233;rea<a class="anchor-link" href="#Exemplo:-Rota-A&#233;rea">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13582,15 +13620,24 @@ $$\begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se comunicando diretamente temos:
-$$P_{1} -&gt; P_{2}$$
-$$P_{1} -&gt; P_{3}$$
-$$P_{2} -&gt; P_{1}$$
-$$P_{2} -&gt; P_{3}$$
-$$P_{3} -&gt; P_{1}$$
-$$P_{3} -&gt; P_{4}$$
-$$P_{4} -&gt; P_{2}$$
-$$P_{4} -&gt; P_{3}$$</p>
+<p>Se comunicando diretamente temos:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>$P_{1} -&gt; P_{2}$</li>
+<li>$P_{1} -&gt; P_{3}$</li>
+<li>$P_{2} -&gt; P_{1}$</li>
+<li>$P_{2} -&gt; P_{3}$</li>
+<li>$P_{3} -&gt; P_{1}$</li>
+<li>$P_{3} -&gt; P_{4}$</li>
+<li>$P_{4} -&gt; P_{2}$</li>
+<li>$P_{4} -&gt; P_{3}$</li>
+</ul>
 
 </div>
 </div>
@@ -13608,7 +13655,8 @@ $$P_{4} -&gt; P_{3}$$</p>
 <div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># definindo a matriz de rotaAerea_2passos para uma comunicação em dois passos, elevando-a na segunda potência</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># definindo a matriz de rotaAerea_2passos para uma comunicação em dois passos, elevando-a </span>
+<span class="c1"># na segunda potência</span>
 <span class="n">rotaAerea_2passos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_power</span><span class="p">(</span><span class="n">rotaAerea</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
@@ -13683,7 +13731,22 @@ $$P_{4} -&gt; P_{3}$$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>$P_{3} -&gt; P_{1} -&gt; P_{3}$</p>
-<h6 id="ou">ou<a class="anchor-link" href="#ou">&#182;</a></h6><p>$P_{3} -&gt; P_{4} -&gt; P_{3}$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>ou</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$P_{3} -&gt; P_{4} -&gt; P_{3}$</p>
 
 </div>
 </div>
@@ -13767,7 +13830,22 @@ $$P_{4} -&gt; P_{3}$$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>$P_{1} -&gt; P_{3} -&gt; P_{4} -&gt; P_{2}$</p>
-<h6 id="ou">ou<a class="anchor-link" href="#ou">&#182;</a></h6><p>$P_{1} -&gt; P_{3} -&gt; P_{1} -&gt; P_{2}$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>ou</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$P_{1} -&gt; P_{3} -&gt; P_{1} -&gt; P_{2}$</p>
 
 </div>
 </div>
@@ -13783,30 +13861,46 @@ $$P_{4} -&gt; P_{3}$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center>Aprenda mais Sobre Teoria dos Grafos<center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">P. Feofiloff, Y. Kohayakawa, Y. Wakabayashi, Uma Introdução Sucinta à Teoria dos Grafos, 2004</td>
-</tr>
-<tr>
-<td style="text-align:left">J.M.S. Simões Pereira, Matemática Discreta: Grafos, Redes, Aplicações, Ed. Luz da Vida (Portugal), 2009</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href = "https://www.youtube.com/watch?v=pbDHIMFGgLk" target = "_blank"> UNIVESP: Introdução a Teoria dos Grafos </a></td>
-</tr>
-</tbody>
-</table>
+<h4 id="Aprenda-mais-Sobre-Teoria-dos-Grafos">Aprenda mais Sobre Teoria dos Grafos<a class="anchor-link" href="#Aprenda-mais-Sobre-Teoria-dos-Grafos">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id="P.-Feofiloff,-Y.-Kohayakawa,-Y.-Wakabayashi,---Uma-Introdu&#231;&#227;o-Sucinta-&#224;-Teoria-dos-Grafos,--2004.">P. Feofiloff, Y. Kohayakawa, Y. Wakabayashi,   Uma Introdu&#231;&#227;o Sucinta &#224; Teoria dos Grafos,  2004.<a class="anchor-link" href="#P.-Feofiloff,-Y.-Kohayakawa,-Y.-Wakabayashi,---Uma-Introdu&#231;&#227;o-Sucinta-&#224;-Teoria-dos-Grafos,--2004.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id="J.M.S.-Sim&#245;es-Pereira,--Matem&#225;tica-Discreta:-Grafos,-Redes,-Aplica&#231;&#245;es,--Ed.-Luz-da-Vida-(Portugal),-2009.">J.M.S. Sim&#245;es Pereira,  Matem&#225;tica Discreta: Grafos, Redes, Aplica&#231;&#245;es,  Ed. Luz da Vida (Portugal), 2009.<a class="anchor-link" href="#J.M.S.-Sim&#245;es-Pereira,--Matem&#225;tica-Discreta:-Grafos,-Redes,-Aplica&#231;&#245;es,--Ed.-Luz-da-Vida-(Portugal),-2009.">&#182;</a></h6>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
