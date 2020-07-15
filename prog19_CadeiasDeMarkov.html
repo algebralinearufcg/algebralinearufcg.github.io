@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Cadeias de Markov</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13115,36 +13115,30 @@ div#notebook {
 			})
 		})
 
-	</script>
-
+  </script>
+  
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Cadeias-de-Markov">Cadeias de Markov<a class="anchor-link" href="#Cadeias-de-Markov">&#182;</a></h1>
+<h1 id="Cadeias-de-Markov">Cadeias de Markov<a class="anchor-link" href="#Cadeias-de-Markov">&#182;</a></h1><h4 id="Vamos-descrever-um-modelo-geral-de-um-sistema-que-muda-de-estado-para-estado.-Uma-cadeia-de-Markov-&#233;-um-caso-particular-de-processo-estoc&#225;stico-com-estados-discretos-(o-par&#226;metro,-em-geral-o-tempo,-pode-ser-discreto-ou-cont&#237;nuo)-com-a-propriedade-de-que-a-distribui&#231;&#227;o-de-probabilidade-do-pr&#243;ximo-estado-depende-apenas-do-estado-atual-e-n&#227;o-na-sequ&#234;ncia-de-eventos-que-precederam.">Vamos descrever um modelo geral de um sistema que muda de estado para estado. Uma cadeia de Markov &#233; um caso particular de processo estoc&#225;stico com estados discretos (o par&#226;metro, em geral o tempo, pode ser discreto ou cont&#237;nuo) com a propriedade de que a distribui&#231;&#227;o de probabilidade do pr&#243;ximo estado depende apenas do estado atual e n&#227;o na sequ&#234;ncia de eventos que precederam.<a class="anchor-link" href="#Vamos-descrever-um-modelo-geral-de-um-sistema-que-muda-de-estado-para-estado.-Uma-cadeia-de-Markov-&#233;-um-caso-particular-de-processo-estoc&#225;stico-com-estados-discretos-(o-par&#226;metro,-em-geral-o-tempo,-pode-ser-discreto-ou-cont&#237;nuo)-com-a-propriedade-de-que-a-distribui&#231;&#227;o-de-probabilidade-do-pr&#243;ximo-estado-depende-apenas-do-estado-atual-e-n&#227;o-na-sequ&#234;ncia-de-eventos-que-precederam.">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Vamos-descrever-um-modelo-geral-de-um-sistema-que-muda-de-estado-para-estado.-Uma-cadeia-de-Markov-&#233;-um-caso-particular-de-processo-estoc&#225;stico-com-estados-discretos-(o-par&#226;metro,-em-geral-o-tempo,-pode-ser-discreto-ou-cont&#237;nuo)-com-a-propriedade-de-que-a-distribui&#231;&#227;o-de-probabilidade-do-pr&#243;ximo-estado-depende-apenas-do-estado-atual-e-n&#227;o-na-sequ&#234;ncia-de-eventos-que-precederam.">Vamos descrever um modelo geral de um sistema que muda de estado para estado. Uma cadeia de Markov &#233; um caso particular de processo estoc&#225;stico com estados discretos (o par&#226;metro, em geral o tempo, pode ser discreto ou cont&#237;nuo) com a propriedade de que a distribui&#231;&#227;o de probabilidade do pr&#243;ximo estado depende apenas do estado atual e n&#227;o na sequ&#234;ncia de eventos que precederam.<a class="anchor-link" href="#Vamos-descrever-um-modelo-geral-de-um-sistema-que-muda-de-estado-para-estado.-Uma-cadeia-de-Markov-&#233;-um-caso-particular-de-processo-estoc&#225;stico-com-estados-discretos-(o-par&#226;metro,-em-geral-o-tempo,-pode-ser-discreto-ou-cont&#237;nuo)-com-a-propriedade-de-que-a-distribui&#231;&#227;o-de-probabilidade-do-pr&#243;ximo-estado-depende-apenas-do-estado-atual-e-n&#227;o-na-sequ&#234;ncia-de-eventos-que-precederam.">&#182;</a></h4>
+<h5 id="&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#193;lgebra Linear com aplica&#231;&#245;es / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.<a class="anchor-link" href="#&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#182;</a></h5>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#193;lgebra Linear com aplica&#231;&#245;es / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.<a class="anchor-link" href="#&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#182;</a></h6>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Um-Processo-de-Markov">Um Processo de Markov<a class="anchor-link" href="#Um-Processo-de-Markov">&#182;</a></h6>
+<h3 id="Um-Processo-de-Markov">Um Processo de Markov<a class="anchor-link" href="#Um-Processo-de-Markov">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13159,7 +13153,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Defini&#231;&#227;o">Defini&#231;&#227;o<a class="anchor-link" href="#Defini&#231;&#227;o">&#182;</a></h6>
+<h3 id="Defini&#231;&#227;o">Defini&#231;&#227;o<a class="anchor-link" href="#Defini&#231;&#227;o">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13457,24 +13451,24 @@ nas observações subsequentes.</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><none></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">$$x^{(1)} = PX^{(0)}$$</td>
+<td>$$x^{(1)} = PX^{(0)}$$</td>
 </tr>
 <tr>
-<td style="text-align:left">$$x^{(2)} = PX^{(1)} = P^{2}x^{(0)}$$</td>
+<td>$$x^{(2)} = PX^{(1)} = P^{2}x^{(0)}$$</td>
 </tr>
 <tr>
-<td style="text-align:left">$$x^{(3)} = PX^{(2)} = P^{3}x^{(0)}$$</td>
+<td>$$x^{(3)} = PX^{(2)} = P^{3}x^{(0)}$$</td>
 </tr>
 <tr>
-<td style="text-align:left"><center> &vellip; <center></td>
+<td><center> &vellip; <center></td>
 </tr>
 <tr>
-<td style="text-align:left">$$x^{(n)} = PX^{(n - 1)} = P^{n}x^{(0)}$$</td>
+<td>$$x^{(n)} = PX^{(n - 1)} = P^{n}x^{(0)}$$</td>
 </tr>
 </tbody>
 </table>
@@ -14076,17 +14070,8 @@ nas observações subsequentes.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><none></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Duas coisas  deveriam ser observadas neste exemplo. Em primeiro lugar, não foi necessário saber por quanto tempo o cliente permaneceu com o carro. Ou seja, num processo de Markov o tempo entre as observações não precisa ser regular. Em segundo lugar, os vetores-estado comvergem a um vetor fixo à medida que n cresce, exatamente como no exemplo anterior.</td>
-</tr>
-</tbody>
-</table>
+<blockquote><p>Duas coisas  deveriam ser observadas neste exemplo. Em primeiro lugar, não foi necessário saber por quanto tempo o cliente permaneceu com o carro. Ou seja, num processo de Markov o tempo entre as observações não precisa ser regular. Em segundo lugar, os vetores-estado comvergem a um vetor fixo à medida que n cresce, exatamente como no exemplo anterior.</p>
+</blockquote>
 
 </div>
 </div>
@@ -14396,30 +14381,25 @@ nas observações subsequentes.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Aprenda mais:</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href = "https://m3.ime.unicamp.br/recursos/1135" target = "_blank"> Música quase por acaso</a>: Um jovem aprende com um experiente músico como compor usando estatística, Cadeias de Markov, matrizes e probabilidade.</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href = "https://m3.ime.unicamp.br/recursos/1071" target = "_blank"> Coisas do amor</a>: Juliana precisa saber com quem sua irmã sairá daqui a três dias. Com ajuda de seu irmão, define um modelo matemático de probabilidades condicionais que pode responder a sua pergunta.</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href = "https://m3.ime.unicamp.br/recursos/1166" target = "_blank"> Que a força esteja com você</a>: Dois Trainees têm a missão de mostrar ao chefe que a rebertura de uma usina hidroelétrica é sustentável. Para isso, eles criam um modelo matemático que envolve operações entre matrizes e vetores.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
