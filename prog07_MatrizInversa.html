@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Matriz Inversa</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13115,8 +13115,9 @@ div#notebook {
 			})
 		})
 
-	</script>
-
+  </script>
+  
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -13130,14 +13131,21 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">Refer&#234;ncia: &#193;lgebra Linear com aplica&#231;&#245;es / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.<a class="anchor-link" href="#Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#182;</a></h6>
+<h5 id="Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">Refer&#234;ncia: &#193;lgebra Linear com aplica&#231;&#245;es / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.<a class="anchor-link" href="#Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#182;</a></h5>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Defini&#231;&#227;o">Defini&#231;&#227;o<a class="anchor-link" href="#Defini&#231;&#227;o">&#182;</a></h6><p>Dada uma matriz quadrada <strong>A</strong>, se pudermos encontrar uma matriz <strong>B</strong> de mesmo tamanho tal que <strong>AB = BA = I</strong>, então diremos que <strong>A</strong> é <strong>invertível</strong> e que <strong>B</strong> é uma <strong>inversa</strong> de <strong>A</strong>. Se não puder ser encontrada uma tal matriz <strong>B</strong> então diremos que <strong>A</strong> é <strong>não-invertível</strong> ou <strong>singular</strong>.</p>
+<h3 id="Defini&#231;&#227;o">Defini&#231;&#227;o<a class="anchor-link" href="#Defini&#231;&#227;o">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dada uma matriz quadrada <strong>A</strong>, se pudermos encontrar uma matriz <strong>B</strong> de mesmo tamanho tal que <strong>AB = BA = I</strong>, então diremos que <strong>A</strong> é <strong>invertível</strong> e que <strong>B</strong> é uma <strong>inversa</strong> de <strong>A</strong>. Se não puder ser encontrada uma tal matriz <strong>B</strong> então diremos que <strong>A</strong> é <strong>não-invertível</strong> ou <strong>singular</strong>.</p>
 
 </div>
 </div>
@@ -13145,19 +13153,39 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A matriz
+<p>A matriz</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 $$A = \begin{bmatrix}
               a &amp; b \\
               c &amp; d \\
               \end{bmatrix}$$
-é invertível se <strong>ad - bc &ne; 0</strong> ou <strong>det(A) &ne; 0</strong>, caso em que a inversa é dada pela fórmula
-$$A^{-1} = \frac{1}{ad-bc}\begin{bmatrix}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>é invertível se <strong>ad - bc &ne; 0</strong> ou <strong>det(A) &ne; 0</strong>, caso em que a inversa é dada pela fórmula</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$A^{-1} = \frac{1}{ad-bc}\begin{bmatrix}
                                   d &amp; -b \\
                                   -c &amp; a \\
                                   \end{bmatrix} = \begin{bmatrix}
                                                           \frac{d}{ad-bc} &amp; \frac{-b}{ad-bc} \\
                                                           \frac{-c}{ad-bc} &amp; \frac{a}{ad-bc} \\
-                                                          \end{bmatrix}$$</p>
+                                                          \end{bmatrix}$</p>
 
 </div>
 </div>
@@ -13165,7 +13193,7 @@ $$A^{-1} = \frac{1}{ad-bc}\begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Exemplo:-Encontrando-Matrizes-Inversas-com-Python">Exemplo: Encontrando Matrizes Inversas com Python<a class="anchor-link" href="#Exemplo:-Encontrando-Matrizes-Inversas-com-Python">&#182;</a></h4>
+<h3 id="Exemplo:-Encontrando-Matrizes-Inversas-com-Python">Exemplo: Encontrando Matrizes Inversas com Python<a class="anchor-link" href="#Exemplo:-Encontrando-Matrizes-Inversas-com-Python">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13179,35 +13207,67 @@ $$A^{-1} = \frac{1}{ad-bc}\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># importando a biblioteca de funções numpy</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># função que calcula a matriz inversa</span>
+<span class="k">def</span> <span class="nf">inversa</span><span class="p">():</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Progama que calcula a matriz inversa&quot;</span><span class="p">)</span>
+
+    <span class="c1"># variáveis que recebem a quantidade de linhas e colunas da matriz</span>
+    <span class="n">linha</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Informe a quantidade de linhas da sua matriz: &quot;</span><span class="p">))</span>
+    <span class="n">coluna</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Informe a quantidade de colunas de sua matriz: &quot;</span><span class="p">))</span>
+
+    <span class="c1"># inicializando a matriz com seu devido tamanho</span>
+    <span class="n">matriz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">linha</span><span class="p">,</span><span class="n">coluna</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span>
+
+    <span class="c1"># estrutura de repetição for que permite introduzir os elementos da matriz</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">linha</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">coluna</span><span class="p">):</span>
+            <span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Insira o elemento [</span><span class="si">{}</span><span class="s2">][</span><span class="si">{}</span><span class="s2">] da matriz: &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
+
+    <span class="c1"># imprime a matriz digitada na tela</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">A matriz digitada é:</span><span class="se">\n\n</span><span class="si">{}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">matriz</span><span class="p">))</span>
+
+    <span class="c1"># calcula a matriz inversa ou retorna uma mensagem de aviso que a matriz não possui inversa</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">matriz</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">inversa</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">matriz</span><span class="p">)</span>
+        <span class="c1">#imprime a matriz inversa</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A matriz inversa é:</span><span class="se">\n\n</span><span class="si">{}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">inversa</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">A matriz não é inversível.&quot;</span><span class="p">)</span>
+        
+    <span class="c1"># função não retorna nenhum valor</span>
+    <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># importando a biblioteca de funções numpy</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Progama que calcula a matriz inversa&quot;</span><span class="p">)</span>
-
-<span class="c1"># variáveis que recebem a quantidade de linhas e colunas da matriz</span>
-<span class="n">linha</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Informe a quantidade de linhas da sua matriz: &quot;</span><span class="p">))</span>
-<span class="n">coluna</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Informe a quantidade de colunas de sua matriz: &quot;</span><span class="p">))</span>
-
-<span class="c1"># inicializando a matriz com seu devido tamanho</span>
-<span class="n">matriz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">linha</span><span class="p">,</span><span class="n">coluna</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span>
-
-<span class="c1"># estrutura de repetição for que permite introduzir os elementos da matriz</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">linha</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">coluna</span><span class="p">):</span>
-        <span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Insira o elemento [</span><span class="si">{}</span><span class="s2">][</span><span class="si">{}</span><span class="s2">] da matriz: &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
-        
-<span class="c1"># imprime a matriz digitada na tela</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">A matriz digitada é:</span><span class="se">\n\n</span><span class="si">{}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">matriz</span><span class="p">))</span>
-
-<span class="c1"># calcula a matriz inversa ou retorna uma mensagem de aviso que a matriz não possui inversa</span>
-<span class="k">if</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">matriz</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">):</span>
-    <span class="n">inversa</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">matriz</span><span class="p">)</span>
-    <span class="c1">#imprime a matriz inversa</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A matriz inversa é:</span><span class="se">\n\n</span><span class="si">{}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">inversa</span><span class="p">))</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">A matriz não é inversível.&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprimindo a função inversa</span>
+<span class="n">inversa</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13246,16 +13306,16 @@ $$A^{-1} = \frac{1}{ad-bc}\begin{bmatrix}
 <pre>
 A matriz digitada é:
 
-[[ 3.  0.  2.]
- [ 2.  0. -2.]
- [ 0.  1.  1.]]
+[[1. 5. 6.]
+ [2. 5. 8.]
+ [2. 5. 7.]]
 
 
 A matriz inversa é:
 
-[[ 2.00000000e-01  2.00000000e-01 -6.67894241e-19]
- [-2.00000000e-01  3.00000000e-01  1.00000000e+00]
- [ 2.00000000e-01 -3.00000000e-01  8.61308896e-17]]
+[[-1.00000000e+00 -1.00000000e+00  2.00000000e+00]
+ [ 4.00000000e-01 -1.00000000e+00  8.00000000e-01]
+ [-1.58676765e-16  1.00000000e+00 -1.00000000e+00]]
 
 
 </pre>
@@ -13269,24 +13329,25 @@ A matriz inversa é:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Aprenda mais:</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href = "http://matematicaufsj.files.wordpress.com/2012/12/caderno_al_vol1.pdf" target = "_blank"> Álgebra Linear - Vol 1 </a></td>
-</tr>
-</tbody>
-</table>
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
