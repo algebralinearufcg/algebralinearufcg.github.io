@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Google Page Rank</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13115,22 +13115,16 @@ div#notebook {
 			})
 		})
 
-	</script>
-
+  </script>
+  
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Google-PageRank">Google PageRank<a class="anchor-link" href="#Google-PageRank">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Atualmente,-a-pesquisa-na-Web-usa-uma-variedade-de-tecnologias,-mas-o-algoritmo-original-que-levou-o-Google-ao-topo-dos-mecanismos-de-pesquisa-&#233;-o-algoritmo-PageRank.-Vamos-analisar-como-&#233;-a-ideia-desse-algoritmo.">Atualmente, a pesquisa na Web usa uma variedade de tecnologias, mas o algoritmo original que levou o Google ao topo dos mecanismos de pesquisa &#233; o algoritmo PageRank. Vamos analisar como &#233; a ideia desse algoritmo.<a class="anchor-link" href="#Atualmente,-a-pesquisa-na-Web-usa-uma-variedade-de-tecnologias,-mas-o-algoritmo-original-que-levou-o-Google-ao-topo-dos-mecanismos-de-pesquisa-&#233;-o-algoritmo-PageRank.-Vamos-analisar-como-&#233;-a-ideia-desse-algoritmo.">&#182;</a></h4>
+<h1 id="Google-PageRank">Google PageRank<a class="anchor-link" href="#Google-PageRank">&#182;</a></h1><h4 id="Atualmente,-a-pesquisa-na-Web-usa-uma-variedade-de-tecnologias,-mas-o-algoritmo-original-que-levou-o-Google-ao-topo-dos-mecanismos-de-pesquisa-&#233;-o-algoritmo-PageRank.-Vamos-analisar-como-&#233;-a-ideia-desse-algoritmo.">Atualmente, a pesquisa na Web usa uma variedade de tecnologias, mas o algoritmo original que levou o Google ao topo dos mecanismos de pesquisa &#233; o algoritmo PageRank. Vamos analisar como &#233; a ideia desse algoritmo.<a class="anchor-link" href="#Atualmente,-a-pesquisa-na-Web-usa-uma-variedade-de-tecnologias,-mas-o-algoritmo-original-que-levou-o-Google-ao-topo-dos-mecanismos-de-pesquisa-&#233;-o-algoritmo-PageRank.-Vamos-analisar-como-&#233;-a-ideia-desse-algoritmo.">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13163,21 +13157,21 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><center><strong>Relação de hiperlinks entre quatro sites:</strong><center></th>
+<th><strong>Relação de hiperlinks entre quatro sites:</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">A página <strong>A</strong> aponta para a página <strong>B</strong>, <strong>C</strong> e <strong>D</strong>;</td>
+<td>A página <strong>A</strong> aponta para a página <strong>B</strong>, <strong>C</strong> e <strong>D</strong>;</td>
 </tr>
 <tr>
-<td style="text-align:left">A página <strong>B</strong> aponta para a página <strong>C</strong> e <strong>D</strong>;</td>
+<td>A página <strong>B</strong> aponta para a página <strong>C</strong> e <strong>D</strong>;</td>
 </tr>
 <tr>
-<td style="text-align:left">A página <strong>C</strong> não aponta para niguém;</td>
+<td>A página <strong>C</strong> não aponta para niguém;</td>
 </tr>
 <tr>
-<td style="text-align:left">A página <strong>D</strong> aponta para a página <strong>A</strong> e <strong>C</strong>;</td>
+<td>A página <strong>D</strong> aponta para a página <strong>A</strong> e <strong>C</strong>;</td>
 </tr>
 </tbody>
 </table>
@@ -13297,41 +13291,41 @@ $$PR_{t + 1}(P_{i}) = \sum_{P_{j}}\frac{PR_{t}(P_{j})}{C(T_{j})}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left">Sites</th>
-<th style="text-align:left">0 interação</th>
-<th style="text-align:left">1 interação</th>
-<th style="text-align:left">2 interações</th>
-<th style="text-align:left">PageRank</th>
+<th>Sites</th>
+<th>0 interação</th>
+<th>1 interação</th>
+<th>2 interações</th>
+<th>PageRank</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">A</td>
-<td style="text-align:left">$\frac{1}{4}$</td>
-<td style="text-align:left">$\frac{\frac{1}{4}}{2}$ = $\frac{1}{8}$</td>
-<td style="text-align:left">$\frac{\frac{1}{8}}{2}$ = $\frac{1}{16}$</td>
-<td style="text-align:left">0.0625</td>
+<td>A</td>
+<td>$\frac{1}{4}$</td>
+<td>$\frac{\frac{1}{4}}{2}$ = $\frac{1}{8}$</td>
+<td>$\frac{\frac{1}{8}}{2}$ = $\frac{1}{16}$</td>
+<td>0.0625</td>
 </tr>
 <tr>
-<td style="text-align:left">B</td>
-<td style="text-align:left">$\frac{1}{4}$</td>
-<td style="text-align:left">$\frac{\frac{1}{4}}{3}$ = $\frac{1}{12}$</td>
-<td style="text-align:left">$\frac{\frac{1}{8}}{3}$ = $\frac{1}{24}$</td>
-<td style="text-align:left">0.0416</td>
+<td>B</td>
+<td>$\frac{1}{4}$</td>
+<td>$\frac{\frac{1}{4}}{3}$ = $\frac{1}{12}$</td>
+<td>$\frac{\frac{1}{8}}{3}$ = $\frac{1}{24}$</td>
+<td>0.0416</td>
 </tr>
 <tr>
-<td style="text-align:left">C</td>
-<td style="text-align:left">$\frac{1}{4}$</td>
-<td style="text-align:left">$\frac{\frac{1}{4}}{3}$ + $\frac{\frac{1}{4}}{2}$ + $\frac{\frac{1}{4}}{2}$ = $\frac{1}{3}$</td>
-<td style="text-align:left">$\frac{\frac{1}{8}}{3}$ + $\frac{\frac{1}{12}}{2}$ + $\frac{\frac{1}{8}}{2}$ = $\frac{7}{48}$</td>
-<td style="text-align:left">0.1458</td>
+<td>C</td>
+<td>$\frac{1}{4}$</td>
+<td>$\frac{\frac{1}{4}}{3}$ + $\frac{\frac{1}{4}}{2}$ + $\frac{\frac{1}{4}}{2}$ = $\frac{1}{3}$</td>
+<td>$\frac{\frac{1}{8}}{3}$ + $\frac{\frac{1}{12}}{2}$ + $\frac{\frac{1}{8}}{2}$ = $\frac{7}{48}$</td>
+<td>0.1458</td>
 </tr>
 <tr>
-<td style="text-align:left">D</td>
-<td style="text-align:left">$\frac{1}{4}$</td>
-<td style="text-align:left">$\frac{\frac{1}{4}}{2} = \frac{1}{8}$</td>
-<td style="text-align:left">$\frac{\frac{1}{12}}{2}$ = $\frac{1}{24}$</td>
-<td style="text-align:left">0.0416</td>
+<td>D</td>
+<td>$\frac{1}{4}$</td>
+<td>$\frac{\frac{1}{4}}{2} = \frac{1}{8}$</td>
+<td>$\frac{\frac{1}{12}}{2}$ = $\frac{1}{24}$</td>
+<td>0.0416</td>
 </tr>
 </tbody>
 </table>
@@ -13425,21 +13419,21 @@ $$PR_{t + 1}(P_{i}) = \sum_{P_{j}}\frac{PR_{t}(P_{j})}{C(T_{j})}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><center><strong>Organização de Links das Páginas</strong><center></th>
+<th><strong>Organização de Links das Páginas</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">A página <strong>A</strong> possui 3 links: passa $\frac{1}{3}$ de sua classificação para <strong>B</strong>, <strong>C</strong>, <strong>D</strong>;</td>
+<td>A página <strong>A</strong> possui 3 links: passa $\frac{1}{3}$ de sua classificação para <strong>B</strong>, <strong>C</strong>, <strong>D</strong>;</td>
 </tr>
 <tr>
-<td style="text-align:left">A página <strong>B</strong> possui 2 links: passa $\frac{1}{2}$ de sua classificação para <strong>C</strong> e <strong>D</strong>;</td>
+<td>A página <strong>B</strong> possui 2 links: passa $\frac{1}{2}$ de sua classificação para <strong>C</strong> e <strong>D</strong>;</td>
 </tr>
 <tr>
-<td style="text-align:left">A página <strong>C</strong> possui 0 links;</td>
+<td>A página <strong>C</strong> possui 0 links;</td>
 </tr>
 <tr>
-<td style="text-align:left">A página <strong>D</strong> possui 2 links: passa $\frac{1}{2}$ de sua classificação para <strong>A</strong> e <strong>C</strong>;</td>
+<td>A página <strong>D</strong> possui 2 links: passa $\frac{1}{2}$ de sua classificação para <strong>A</strong> e <strong>C</strong>;</td>
 </tr>
 </tbody>
 </table>
@@ -13452,41 +13446,41 @@ $$PR_{t + 1}(P_{i}) = \sum_{P_{j}}\frac{PR_{t}(P_{j})}{C(T_{j})}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><strong>Matriz de Transição</strong></th>
-<th style="text-align:left"><strong>A</strong></th>
-<th style="text-align:left"><strong>B</strong></th>
-<th style="text-align:left"><strong>C</strong></th>
-<th style="text-align:left"><strong>D</strong></th>
+<th><strong>Matriz de Transição</strong></th>
+<th><strong>A</strong></th>
+<th><strong>B</strong></th>
+<th><strong>C</strong></th>
+<th><strong>D</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>A</strong></td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">$\frac{1}{2}$</td>
+<td><strong>A</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>$\frac{1}{2}$</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>B</strong></td>
-<td style="text-align:left">$\frac{1}{3}$</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">0</td>
+<td><strong>B</strong></td>
+<td>$\frac{1}{3}$</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>C</strong></td>
-<td style="text-align:left">$\frac{1}{3}$</td>
-<td style="text-align:left">$\frac{1}{2}$</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">$\frac{1}{2}$</td>
+<td><strong>C</strong></td>
+<td>$\frac{1}{3}$</td>
+<td>$\frac{1}{2}$</td>
+<td>0</td>
+<td>$\frac{1}{2}$</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>D</strong></td>
-<td style="text-align:left">$\frac{1}{3}$</td>
-<td style="text-align:left">$\frac{1}{2}$</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">0</td>
+<td><strong>D</strong></td>
+<td>$\frac{1}{3}$</td>
+<td>$\frac{1}{2}$</td>
+<td>0</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -13840,26 +13834,26 @@ $$x = \begin{bmatrix}
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><strong>Rank</strong></th>
-<th style="text-align:left"><strong>Página</strong></th>
+<th><strong>Rank</strong></th>
+<th><strong>Página</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>1º</strong></td>
-<td style="text-align:left">Página <strong>C</strong></td>
+<td><strong>1º</strong></td>
+<td>Página <strong>C</strong></td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>2º</strong></td>
-<td style="text-align:left">Página <strong>D</strong></td>
+<td><strong>2º</strong></td>
+<td>Página <strong>D</strong></td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>3º</strong></td>
-<td style="text-align:left">Página <strong>A</strong></td>
+<td><strong>3º</strong></td>
+<td>Página <strong>A</strong></td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>4º</strong></td>
-<td style="text-align:left">Página <strong>B</strong></td>
+<td><strong>4º</strong></td>
+<td>Página <strong>B</strong></td>
 </tr>
 </tbody>
 </table>
@@ -13870,26 +13864,14 @@ $$x = \begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Referências</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href = "http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf" target = "_blank"> Page, Lawrence; Brin, Sergey; Motwani, Rajeev and Winograd, Terry (1998), The PageRank Citation Ranking: Bringing Order to the Web, Relatório Técnico, Stanford University </a></td>
-</tr>
-<tr>
-<td style="text-align:left">Álgebra Linear com aplicações / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001</td>
-</tr>
-<tr>
-<td style="text-align:left">Leon, Steven J., 1943 - Álgebra Linear com Aplicações/ Steven J. Leon; tradução Valéria de Magalhães Iório - [reimpr]. Rio de Janeiro: LTC, 2008</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href = "https://www.globalsoftwaresupport.com/pagerank-algorithm-explained" target = "_blank"> PageRank (Google) Algorithm Explained. Global Software Support, 26, Setembro 2019 </a></td>
-</tr>
-</tbody>
-</table>
+<h3 id="O-que-a-Intelig&#234;ncia-Artificial-tem-Haver-com-Isso?">O que a Intelig&#234;ncia Artificial tem Haver com Isso?<a class="anchor-link" href="#O-que-a-Intelig&#234;ncia-Artificial-tem-Haver-com-Isso?">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Praticamente mihões de pessoas utilizam sistemas de streaming para o seu entretenimento. Nesses serviços, geralmente existem um sistema complexo de recomendação de conteúdos com base no gosto do usuário, fazendo com que conteúdos aparecem personalizados para o cliente, mais próximos da sua personalidade. Os algoritmos que estão por trás dessa ideia são algoritmos de Machine Learning que fazem classificação. Por exemplo, a partir de um filme A assistido, é recomendado um filme B, esse que possui semelhanças com o filme A. Um dos algoritmos de Machine Learning que tem esse poder é chamado de KNN, ele calcula os chamados 'vizinhos próximos' de um dado através de fórmulas de distância, coma distância média quadrática (também conhecida como distância euclidiana). Vale a pena estudar sobre isso!</p>
 
 </div>
 </div>
@@ -13897,24 +13879,45 @@ $$x = \begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Aprenda Mais:</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href = "https://www.youtube.com/watch?v=UcxkleN7Wek"> A História da Google - TecMundo </a></td>
-</tr>
-</tbody>
-</table>
+<h4 id="Refer&#234;ncias">Refer&#234;ncias<a class="anchor-link" href="#Refer&#234;ncias">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Page, Lawrence; Brin, Sergey; Motwani, Rajeev and Winograd, Terry (1998), The PageRank Citation Ranking: Bringing Order to the Web, Relatório Técnico, Stanford University. Disponível em: <a href="http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf">http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf</a>. Acesso em: 10, Fevereiro 2020.</li>
+<li>Álgebra Linear com aplicações / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.</li>
+<li>Leon, Steven J., 1943 - Álgebra Linear com Aplicações/ Steven J. Leon; tradução Valéria de Magalhães Iório - [reimpr]. Rio de Janeiro: LTC, 2008.</li>
+<li>PageRank (Google) Algorithm Explained. Global Software Support, 26, Setembro 2019. Disponível em: <a href="https://www.globalsoftwaresupport.com/pagerank-algorithm-explained/">https://www.globalsoftwaresupport.com/pagerank-algorithm-explained/</a>. Acesso em: 10, Fevereiro 2020.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
