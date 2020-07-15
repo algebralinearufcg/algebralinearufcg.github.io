@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Imagens Digitais</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13115,15 +13115,16 @@ div#notebook {
 			})
 		})
 
-	</script>
-
+  </script>
+  
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Processamento-de-Imagens-com-Python">Processamento de Imagens com Python<a class="anchor-link" href="#Processamento-de-Imagens-com-Python">&#182;</a></h1><h4 id="Imagens-digitais-s&#227;o-representadas-por-in&#250;meros-pixels.-Cada-pixel-corresponde-a-um-elemento-de-uma-matriz-que-representa-a-imagem-digital.-Vamos-ver-como-podemos-usar-algumas-opera&#231;&#245;es-com-matrizes-para-fazer-processamento-de-imagens-usando-a-linguagem-de-progama&#231;&#227;o-Python-e-os-t&#243;picos-aprendidos-em-&#193;lgebra-Linear.">Imagens digitais s&#227;o representadas por in&#250;meros pixels. Cada pixel corresponde a um elemento de uma matriz que representa a imagem digital. Vamos ver como podemos usar algumas opera&#231;&#245;es com matrizes para fazer processamento de imagens usando a linguagem de progama&#231;&#227;o Python e os t&#243;picos aprendidos em &#193;lgebra Linear.<a class="anchor-link" href="#Imagens-digitais-s&#227;o-representadas-por-in&#250;meros-pixels.-Cada-pixel-corresponde-a-um-elemento-de-uma-matriz-que-representa-a-imagem-digital.-Vamos-ver-como-podemos-usar-algumas-opera&#231;&#245;es-com-matrizes-para-fazer-processamento-de-imagens-usando-a-linguagem-de-progama&#231;&#227;o-Python-e-os-t&#243;picos-aprendidos-em-&#193;lgebra-Linear.">&#182;</a></h4>
+<h1 id="Introdu&#231;&#227;o-a-Processamento-de-Imagens">Introdu&#231;&#227;o a Processamento de Imagens<a class="anchor-link" href="#Introdu&#231;&#227;o-a-Processamento-de-Imagens">&#182;</a></h1><h4 id="Imagens-digitais-s&#227;o-representadas-por-in&#250;meros-pixels.-Cada-pixel-corresponde-a-um-elemento-de-uma-matriz-que-representa-a-imagem-digital.-Vamos-ver-como-podemos-usar-algumas-opera&#231;&#245;es-com-matrizes-para-fazer-processamento-de-imagens-usando-a-linguagem-de-progama&#231;&#227;o-Python-e-os-t&#243;picos-aprendidos-em-&#193;lgebra-Linear.">Imagens digitais s&#227;o representadas por in&#250;meros pixels. Cada pixel corresponde a um elemento de uma matriz que representa a imagem digital. Vamos ver como podemos usar algumas opera&#231;&#245;es com matrizes para fazer processamento de imagens usando a linguagem de progama&#231;&#227;o Python e os t&#243;picos aprendidos em &#193;lgebra Linear.<a class="anchor-link" href="#Imagens-digitais-s&#227;o-representadas-por-in&#250;meros-pixels.-Cada-pixel-corresponde-a-um-elemento-de-uma-matriz-que-representa-a-imagem-digital.-Vamos-ver-como-podemos-usar-algumas-opera&#231;&#245;es-com-matrizes-para-fazer-processamento-de-imagens-usando-a-linguagem-de-progama&#231;&#227;o-Python-e-os-t&#243;picos-aprendidos-em-&#193;lgebra-Linear.">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13138,7 +13139,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Imagens-Digitais">Imagens Digitais<a class="anchor-link" href="#Imagens-Digitais">&#182;</a></h5>
+<h3 id="Imagens-Digitais">Imagens Digitais<a class="anchor-link" href="#Imagens-Digitais">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13153,7 +13154,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="O-que-Podemos-Fazer-Usando-o-Python?">O que Podemos Fazer Usando o Python?<a class="anchor-link" href="#O-que-Podemos-Fazer-Usando-o-Python?">&#182;</a></h5>
+<h4 id="O-que-Podemos-Fazer-Usando-o-Python?">O que Podemos Fazer Usando o Python?<a class="anchor-link" href="#O-que-Podemos-Fazer-Usando-o-Python?">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13443,7 +13444,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="O-que-a-&#193;lgebra-Linear-tem-haver-com-isso?">O que a &#193;lgebra Linear tem haver com isso?<a class="anchor-link" href="#O-que-a-&#193;lgebra-Linear-tem-haver-com-isso?">&#182;</a></h5>
+<h3 id="O-que-a-&#193;lgebra-Linear-tem-haver-com-isso?">O que a &#193;lgebra Linear tem haver com isso?<a class="anchor-link" href="#O-que-a-&#193;lgebra-Linear-tem-haver-com-isso?">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13701,7 +13702,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Matriz-de-Rota&#231;&#227;o">Matriz de Rota&#231;&#227;o<a class="anchor-link" href="#Matriz-de-Rota&#231;&#227;o">&#182;</a></h5>
+<h3 id="Matriz-de-Rota&#231;&#227;o">Matriz de Rota&#231;&#227;o<a class="anchor-link" href="#Matriz-de-Rota&#231;&#227;o">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13895,7 +13896,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Desvendando-as-Camadas-que-Comp&#245;em-a-Imagem">Desvendando as Camadas que Comp&#245;em a Imagem<a class="anchor-link" href="#Desvendando-as-Camadas-que-Comp&#245;em-a-Imagem">&#182;</a></h5>
+<h3 id="Desvendando-as-Camadas-que-Comp&#245;em-a-Imagem">Desvendando as Camadas que Comp&#245;em a Imagem<a class="anchor-link" href="#Desvendando-as-Camadas-que-Comp&#245;em-a-Imagem">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14215,7 +14216,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Alterando-as-intensidades-da-imagem">Alterando as intensidades da imagem<a class="anchor-link" href="#Alterando-as-intensidades-da-imagem">&#182;</a></h5>
+<h3 id="Alterando-as-intensidades-da-imagem">Alterando as intensidades da imagem<a class="anchor-link" href="#Alterando-as-intensidades-da-imagem">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14323,20 +14324,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Aprenda mais:</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href = "https://www.youtube.com/watch?v=mjXqgD_qt2o" target = "_blank"> LED ou OLED? Abrimos 4 TVs! Entenda AGORA!</a>:  Qual a diferença entre uma TV de tela plana de LED e uma OLED? As duas são LCD? Mas o que é exatamente LCD? Como a imagem é formada nessas TVs? E as TVs de quantum dots? E aquelas nanocell? Qual a melhor imagem? Abrimos 4 TVs incríveis para que você entenda cada ponto!</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href = "https://www.youtube.com/watch?v=zVcnzG7_f70" target = "_blank"> Computação Forense em Imagens Digitais</a>: Diariamente, um número gigantesco de documentos digitais é produzido e compartilhado com pessoas de todas as partes do mundo através da internet. Documentos como fotos, vídeos, arquivos texto e tantos outros são apenas alguns dos exemplos dos documentos digitais presentes em nosso dia-a-dia. Mas nem sempre a autenticidade de um documento digital é preservada dado que, adulterá-lo utilizando ferramentas disponíveis atualmente torna-se a cada dia mais simples. Isso diminui nossa confiança em documentos digitais a cada dia e torna necessário o desenvolvimento de métodos forenses eficazes para restaurar tal confiança. Na palestra, uma visão geral da computação forense ao longo do tempo, os principais problemas tratados na computação forense e suas mais recentes soluções.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="O-que-Intelig&#234;ncia-Artificial-tem-haver-com-Isso?">O que Intelig&#234;ncia Artificial tem haver com Isso?<a class="anchor-link" href="#O-que-Intelig&#234;ncia-Artificial-tem-haver-com-Isso?">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Partindo do princípio que algoritmos inteligentes aprendem com os dados através de etapas de treinamento, será que um computador teria a capacidade de reconhecer imagens? A resposta é sim! Através do processamento digital das imagens (como você viu, não são nada mais e nada menos que arrays com dados numéricos), esses dados podem passar por inúmeras etapas, usando geralmente redes neurais artificiais e, através disso, o algoritmo pode identificar padrões nesse dados. Desse modo, podemos criar sistemas inteligentes como o que reconhece pessoas através de câmeras. Vale a pena estudar sobre isso!</p>
 
 </div>
 </div>
@@ -14344,24 +14339,40 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Referência</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href = "http://gazeta.spm.pt/getArtigo?gid=407" target = "_blank"> Imagens Digitais e Matrizes. Universidade Federal Fluminense (UFF), Gazeta da Matemática. Rio de Janeiro. </a></td>
-</tr>
-</tbody>
-</table>
+<h3 id="Refer&#234;ncia">Refer&#234;ncia<a class="anchor-link" href="#Refer&#234;ncia">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Imagens Digitais e Matrizes. Universidade Federal Fluminense (UFF), Gazeta da Matemática. Rio de Janeiro. Acesso em 01 de março de 2020. Disponível em: <a href="http://gazeta.spm.pt/getArtigo?gid=407">http://gazeta.spm.pt/getArtigo?gid=407</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-
 </body>
+
+ 
+
 
 </html>
