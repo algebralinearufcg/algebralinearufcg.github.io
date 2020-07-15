@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Aprendendo Python</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13115,22 +13115,23 @@ div#notebook {
 			})
 		})
 
-	</script>
-
+  </script>
+  
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Estudando-a-Linguagem-de-Progama&#231;&#227;o-Python">Estudando a Linguagem de Progama&#231;&#227;o Python<a class="anchor-link" href="#Estudando-a-Linguagem-de-Progama&#231;&#227;o-Python">&#182;</a></h1><h4 id="Neste-notebook,-vamos-analisar-as-estruturas-b&#225;sicas-da-linguagem-de-progama&#231;&#227;o-Python.-&#201;-pertinente-saber-que-tal-linguagem-possui-bastante-uso-atualmente-e-ela-&#233;-uma-das-mais-simples-de-usar,-mas-gra&#231;as-a-colaboratividade-dos-usu&#225;rio,-temos-in&#250;meras-bibliotecas-prontas-para-uso-que-nos-possibilitam-executar-tarefas-complexas-na-progama&#231;&#227;o.">Neste notebook, vamos analisar as estruturas b&#225;sicas da linguagem de progama&#231;&#227;o Python. &#201; pertinente saber que tal linguagem possui bastante uso atualmente e ela &#233; uma das mais simples de usar, mas gra&#231;as a colaboratividade dos usu&#225;rio, temos in&#250;meras bibliotecas prontas para uso que nos possibilitam executar tarefas complexas na progama&#231;&#227;o.<a class="anchor-link" href="#Neste-notebook,-vamos-analisar-as-estruturas-b&#225;sicas-da-linguagem-de-progama&#231;&#227;o-Python.-&#201;-pertinente-saber-que-tal-linguagem-possui-bastante-uso-atualmente-e-ela-&#233;-uma-das-mais-simples-de-usar,-mas-gra&#231;as-a-colaboratividade-dos-usu&#225;rio,-temos-in&#250;meras-bibliotecas-prontas-para-uso-que-nos-possibilitam-executar-tarefas-complexas-na-progama&#231;&#227;o.">&#182;</a></h4>
+<h1 id="Estudando-a-Linguagem-de-Programa&#231;&#227;o-Python">Estudando a Linguagem de Programa&#231;&#227;o Python<a class="anchor-link" href="#Estudando-a-Linguagem-de-Programa&#231;&#227;o-Python">&#182;</a></h1><h4 id="Neste-notebook,-vamos-analisar-as-estruturas-b&#225;sicas-da-linguagem-de-programa&#231;&#227;o-Python.-&#201;-pertinente-saber-que-tal-linguagem-possui-bastante-uso-atualmente-e-ela-&#233;-uma-das-mais-simples-de-usar,-mas-gra&#231;as-a-colaboratividade-dos-usu&#225;rio,-temos-in&#250;meras-bibliotecas-prontas-para-uso-que-nos-possibilitam-executar-tarefas-complexas-na-programa&#231;&#227;o.">Neste notebook, vamos analisar as estruturas b&#225;sicas da linguagem de programa&#231;&#227;o Python. &#201; pertinente saber que tal linguagem possui bastante uso atualmente e ela &#233; uma das mais simples de usar, mas gra&#231;as a colaboratividade dos usu&#225;rio, temos in&#250;meras bibliotecas prontas para uso que nos possibilitam executar tarefas complexas na programa&#231;&#227;o.<a class="anchor-link" href="#Neste-notebook,-vamos-analisar-as-estruturas-b&#225;sicas-da-linguagem-de-programa&#231;&#227;o-Python.-&#201;-pertinente-saber-que-tal-linguagem-possui-bastante-uso-atualmente-e-ela-&#233;-uma-das-mais-simples-de-usar,-mas-gra&#231;as-a-colaboratividade-dos-usu&#225;rio,-temos-in&#250;meras-bibliotecas-prontas-para-uso-que-nos-possibilitam-executar-tarefas-complexas-na-programa&#231;&#227;o.">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Vamos começar o nosso estudo em <strong>Python</strong> por uma definição que resume os ideais dessa linguagem de progamação:</p>
+<p>Vamos começar o nosso estudo em <strong>Python</strong> por uma definição que resume os ideais dessa linguagem de programação:</p>
 
 </div>
 </div>
@@ -13147,14 +13148,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Dissecando-a-Defini&#231;&#227;o">Dissecando a Defini&#231;&#227;o<a class="anchor-link" href="#Dissecando-a-Defini&#231;&#227;o">&#182;</a></h5>
+<h3 id="Dissecando-a-Defini&#231;&#227;o">Dissecando a Defini&#231;&#227;o<a class="anchor-link" href="#Dissecando-a-Defini&#231;&#227;o">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Acima foi copiado um pequeno trecho da <strong>Wikipédia</strong> que fala sobre a <strong>linguagem de progamação Python</strong>. Nele, podemos aprender diversas caracteristicas da linguagem em sí, tais como:</p>
+<p>Acima foi copiado um pequeno trecho da <strong>Wikipédia</strong> que fala sobre a <strong>linguagem de programação Python</strong>. Nele, podemos aprender diversas características da linguagem em sí, tais como:</p>
 
 </div>
 </div>
@@ -13164,12 +13165,12 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><center><strong>Características da Linguagem de Progamação Python</strong> <center></th>
+<th style="text-align:left"><strong>Características da Linguagem de Programação Python</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Linguagem de Progamação de Alto Nível:</strong> Python é uma linguagem que sua escrita é bem próxima da linguagem humana usando como idioma principal o inglês, dado que é a linguagem nativa de seus país onde a mesma foi originada. Dessa forma, podemos nos comunicar com a máquina através de um forte e intuitivo interpretador.</td>
+<td style="text-align:left"><strong>Linguagem de Progamação de Alto Nível:</strong> Python é uma linguagem que sua escrita é bem próxima da linguagem humana usando como idioma principal o inglês, dado que é a sua linguagem nativa. Dessa forma, podemos nos comunicar com a máquina através de um forte e intuitivo interpretador.</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Linguagem Interpretada:</strong> o código fonte nessa linguagem é executado por um programa de computador chamado interpretador, que em seguida é executado pelo sistema operacional ou processador. Método esse que difere das linguagens que são compiladas para a linguagem de máquina, tais como a linguagem de progamação C e suas derivadas.</td>
@@ -13178,22 +13179,22 @@ div#notebook {
 <td style="text-align:left"><strong>Linguagem de Script:</strong> é básicamente o ato de desenvolver um algoritmo para automatizar a execução de tarefas que poderiam alternativamente ser executadas uma por vez por um operador humano.</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Linguagem Imperativa:</strong> Trata do ato de usar ações para dar ordens, ou seja, através de comandos podemos dar ordens para serem executadas determinadas ações pelo progama. Desse modo, surgem os laços de repetição, estruturas condicionais, atribuição de valor à variáveis e controle de estado para implementar melhor essa ideia de imperatividade.</td>
+<td style="text-align:left"><strong>Linguagem Imperativa:</strong> Trata do ato de usar ações para dar ordens, ou seja, através de comandos podemos dar ordens para serem executadas determinadas ações pelo programa. Desse modo, surgem os laços de repetição, estruturas condicionais, atribuição de valor à variáveis e controle de estado para implementar melhor essa ideia de imperatividade.</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Linguagem Orientada a Objetos:</strong> Trata da ideia de se ter uma linguagem de progamações voltada ao conceito de "objetos", usando para isso atributos (dados na forma de campo) e métodos (procedimentos de execução).</td>
+<td style="text-align:left"><strong>Linguagem Orientada a Objetos:</strong> Trata da ideia de se ter uma linguagem de programação voltada ao conceito de "objetos", usando para isso atributos (dados na forma de campo) e métodos (procedimentos de execução).</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Linguagem Funcional:</strong> Trata a ideia de possuir uma linguagem com avaliação de funções para executar determinadas ações. Especificamente o Python, possui inúmeras bibliotecas repletas de funções para serem importadas e usadas, dando ênfase a inúmeros campos de estudo na qual a progamação se aplica.</td>
+<td style="text-align:left"><strong>Linguagem Funcional:</strong> Trata da ideia de possuir uma linguagem com avaliação de funções para executar determinadas ações. Especificamente o Python, possui inúmeras bibliotecas repletas de funções para serem importadas e usadas, dando ênfase a inúmeros campos de estudo na qual a programação se aplica.</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Linguagem de Tipagem Dinâmica:</strong> sendo uma caracteristica positiva para o Python, esse tipo de tipagem permite o uso de variáveis que não exigem declarações de tipos de dados, pois são capazes de escolher que tipo utilizar dinamicamente para cada variável, podendo alterá-lo durante a compilação ou a execução do programa.</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Linguagem forte:</strong> Python é uma linguagem de progamação multiplataforma e atualmente está presente em diversos sistemas operacionais, seja eles embarcados ou não. Temos a Microsoft usando nos consoles Xbox, de mesmo modo a Sony nos consoles Playstation, a empresa Apple a utiliza nos seus sistema operacionais IOS ou macOS, está presente em inúmeras SmartTvs, presente em operações para realizar automações em residências e indústrias e diversas outras plataformas.</td>
+<td style="text-align:left"><strong>Linguagem forte:</strong> Python é uma linguagem de programação multiplataforma e atualmente está presente em diversos sistemas operacionais, seja eles embarcados ou não. Temos a Microsoft usando nos consoles Xbox, de mesmo modo a Sony nos consoles Playstation, a empresa Apple a utiliza nos seus sistema operacionais IOS ou macOS, está presente em inúmeras SmartTvs, presente em operações para realizar automações em residências, automação industrial e várias outras aplicações.</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Além disso:</strong> o recurso de ponto e vírgula para paradas de comandos foi substituido pelo recuo utilizado no progama, juntamente com os dois pontos (:) usando para delimitar subcomandos de operações maiores.</td>
+<td style="text-align:left"><strong>Além disso:</strong> o recurso de ponto e vírgula para paradas de comandos foi substituido pelo recuo utilizado na construção do código, juntamente com os dois pontos (:) usando para delimitar subcomandos de operações maiores.</td>
 </tr>
 </tbody>
 </table>
@@ -13204,7 +13205,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Agora, vamos ver como funciona a linguagem de progamação Python. Vale a pena lembrar que esse progama está sendo escrito levando em consideração que o leitor já foi introduzido a progamação e, dado a amplitude de recursos que o Python possui, vamos nos ater somente a comandos básicos que permitem um bom início com a linguagem de progamação Python, visando trazer todo o conhecimento necessário para lidar com os outros progamas utilizados nesse repositório.</p>
+<p>Agora, vamos ver como funciona a linguagem de progamação Python. Vale a pena lembrar que esse progama está sendo escrito levando em consideração que o leitor já foi introduzido a programação e, dado a amplitude de recursos que o Python possui, vamos nos ater somente a comandos básicos que permitem um bom início com ela, visando trazer todo o conhecimento necessário para lidar com os outros programas utilizados nesse repositório.</p>
 
 </div>
 </div>
@@ -13212,7 +13213,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Imprimindo-Dados-de-Sa&#237;da">Imprimindo Dados de Sa&#237;da<a class="anchor-link" href="#Imprimindo-Dados-de-Sa&#237;da">&#182;</a></h5>
+<h3 id="Imprimindo-Dados-de-Sa&#237;da-(Outputs)">Imprimindo Dados de Sa&#237;da (Outputs)<a class="anchor-link" href="#Imprimindo-Dados-de-Sa&#237;da-(Outputs)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13303,7 +13304,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Entretanto, esse tipo de impressão dos dados de saída na tela é demasiadamente utilizado em operações simples, sendo de maior uso para testar recursos simples que podem ser implementados em funções maiores.</p>
+<p>Entretanto, esse tipo de impressão dos dados de saída na tela é demasiadamente utilizado em operações simples, sendo de maior uso para testar recursos triviais que podem ser implementados em funções maiores.</p>
 
 </div>
 </div>
@@ -13391,14 +13392,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Tipagem-Din&#226;mica:-Tipos-de-Dados-em-Vari&#225;veis">Tipagem Din&#226;mica: Tipos de Dados em Vari&#225;veis<a class="anchor-link" href="#Tipagem-Din&#226;mica:-Tipos-de-Dados-em-Vari&#225;veis">&#182;</a></h5>
+<h3 id="Tipagem-Din&#226;mica:-Tipos-de-Dados-em-Vari&#225;veis">Tipagem Din&#226;mica: Tipos de Dados em Vari&#225;veis<a class="anchor-link" href="#Tipagem-Din&#226;mica:-Tipos-de-Dados-em-Vari&#225;veis">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como foi explanado anteriormente, na linguagem de progamação Python, não há mais a necessidade de se inicializar variáveis, pois usamos um recurso chamado <strong>Tipagem Dinâmica</strong>, esse que permite o uso de variáveis que não exigem declarações de <strong>Tipos de Dados</strong>, pois são capazes de escolher que tipo utilizar dinamicamente para cada variável, podendo ser alterados em qualquer momento do progama.</p>
+<p>Como foi explanado anteriormente, na linguagem de programação Python, não há mais a necessidade de se inicializar variáveis, pois usamos um recurso chamado <strong>Tipagem Dinâmica</strong>, esse que permite o uso de variáveis que não exigem declarações de <strong>Tipos de Dados</strong>, pois a linguagem é capaz de escolher que tipo utilizar dinamicamente para cada variável, podendo ser alterado em qualquer momento do programa.</p>
 
 </div>
 </div>
@@ -13406,7 +13407,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Vamos agora aprender a trabalhar com <strong>variáveis</strong> na linguagem de progamação Python.</p>
+<p>Vamos agora aprender a trabalhar com <strong>variáveis</strong> no Python.</p>
 
 </div>
 </div>
@@ -13416,38 +13417,38 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><center><strong>Tipos de Dados Básicos</strong><center></th>
-<th style="text-align:left"><center><strong>Comandos</strong><center></th>
+<th><strong>Tipos de Dados Básicos</strong></th>
+<th><strong>Comandos</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Números</td>
-<td style="text-align:left">int, long, float e complex</td>
+<td>Números</td>
+<td>int, long, float e complex</td>
 </tr>
 <tr>
-<td style="text-align:left">Strings</td>
-<td style="text-align:left">str</td>
+<td>Strings</td>
+<td>str</td>
 </tr>
 <tr>
-<td style="text-align:left">Lista e Tuplas</td>
-<td style="text-align:left">list, tuple</td>
+<td>Lista e Tuplas</td>
+<td>list, tuple</td>
 </tr>
 <tr>
-<td style="text-align:left">Dicionários</td>
-<td style="text-align:left">dict</td>
+<td>Dicionários</td>
+<td>dict</td>
 </tr>
 <tr>
-<td style="text-align:left">Arquívos</td>
-<td style="text-align:left">file</td>
+<td>Arquívos</td>
+<td>file</td>
 </tr>
 <tr>
-<td style="text-align:left">Booleanos</td>
-<td style="text-align:left">bool(True, False)</td>
+<td>Booleanos</td>
+<td>bool(True, False)</td>
 </tr>
 <tr>
-<td style="text-align:left">Conjuntos</td>
-<td style="text-align:left">set, frozenset</td>
+<td>Conjuntos</td>
+<td>set, frozenset</td>
 </tr>
 </tbody>
 </table>
@@ -13784,7 +13785,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Logo, a tipagem dinâmica nos permite mais versatilidade na criação dos nossos progamas. De modo que não há necessida de se manter preso ao cuidado de não alterar o tipo de dado de uma variável. Todavia, o mesmo recurso que pode ser de grande ajuda também pode permitir erros lógicos. Por conseguinte, todo cuidado é necessário para se evitar erros lógicos durante a execução do progama.</p>
+<p>Logo, a tipagem dinâmica nos permite mais versatilidade na criação dos nossos progamas. De modo que não há necessida de se manter preso ao cuidado de não alterar o tipo de dado de uma variável. Todavia, o mesmo recurso que pode ser de grande ajuda também pode permitir erros lógicos, sendo necessário ter todo cuidado necessário para se evitar erros lógicos durante a execução do código.</p>
 
 </div>
 </div>
@@ -13792,7 +13793,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Listas-e-Tuplas,-qual-a-principal-diferen&#231;a-entre-elas?">Listas e Tuplas, qual a principal diferen&#231;a entre elas?<a class="anchor-link" href="#Listas-e-Tuplas,-qual-a-principal-diferen&#231;a-entre-elas?">&#182;</a></h5>
+<h3 id="Listas-e-Tuplas,-qual-a-principal-diferen&#231;a-entre-elas?">Listas e Tuplas, qual a principal diferen&#231;a entre elas?<a class="anchor-link" href="#Listas-e-Tuplas,-qual-a-principal-diferen&#231;a-entre-elas?">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14071,7 +14072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Veja que não é possível adicionar ou remover nenhum elemento da tupla. Portanto, essas são as principais diferenças entre listas e tuplas no Python. A primeira é plástica e a segunda é rígida.</p>
+<p>Veja que não é possível adicionar ou remover nenhum elemento da tupla. Portanto, essas são as principais diferenças entre listas e tuplas no Python. Ou seja, em relação a mutabilidade a lista é plástica e a tupla é rígida.</p>
 
 </div>
 </div>
@@ -14079,7 +14080,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Operadores-Aritm&#233;ticos">Operadores Aritm&#233;ticos<a class="anchor-link" href="#Operadores-Aritm&#233;ticos">&#182;</a></h5>
+<h3 id="Operadores-Aritm&#233;ticos">Operadores Aritm&#233;ticos<a class="anchor-link" href="#Operadores-Aritm&#233;ticos">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14088,30 +14089,30 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><center><strong>Operadores Aritméticos</strong><center></th>
-<th style="text-align:left"><center><strong>Comando</strong><center></th>
+<th><strong>Operadores Aritméticos</strong></th>
+<th><strong>Comando</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Soma</td>
-<td style="text-align:left">+</td>
+<td>Soma</td>
+<td>+</td>
 </tr>
 <tr>
-<td style="text-align:left">Subtração</td>
-<td style="text-align:left">-</td>
+<td>Subtração</td>
+<td>-</td>
 </tr>
 <tr>
-<td style="text-align:left">Multiplicação</td>
-<td style="text-align:left">*</td>
+<td>Multiplicação</td>
+<td>*</td>
 </tr>
 <tr>
-<td style="text-align:left">Divisão</td>
-<td style="text-align:left">/</td>
+<td>Divisão</td>
+<td>/</td>
 </tr>
 <tr>
-<td style="text-align:left">Exponenciação</td>
-<td style="text-align:left">**</td>
+<td>Exponenciação</td>
+<td>**</td>
 </tr>
 </tbody>
 </table>
@@ -14122,7 +14123,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como já dizia <strong>Bill Gates</strong>, progamar não é nada mais e nada menos do que somar, subtrair, multiplicar e dividir. De fato, a partir desses princípios matemáticos básicos podemos desenvolver qualquer operação complexa sob tutela da manipulação aritmética. Então, vamos mostrar exemplos de uso para cada operador individualmente. Antes de fazermos isso, é importante saber a ordem pela qual as operações são realizadas, visando contornar erros lógicos em seus progamas.</p>
+<p>Como já dizia <strong>Bill Gates</strong>, progamar não é nada mais e nada menos do que somar, subtrair, multiplicar e dividir. De fato, a partir desses princípios matemáticos básicos podemos desenvolver qualquer operação complexa sob tutela da manipulações aritméticas. Então, vamos mostrar exemplos de uso para cada operador individualmente. Antes de fazermos isso, é importante saber a ordem pela qual as operações são realizadas, visando contornar erros lógicos em seus progamas.</p>
 
 </div>
 </div>
@@ -14132,21 +14133,21 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><center><strong>Ordem de Precedência dos Operadores Aritméticos</strong><center></th>
+<th><strong>Ordem de Precedência dos Operadores Aritméticos</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">1 - Parentêses</td>
+<td>1 - Parentêses</td>
 </tr>
 <tr>
-<td style="text-align:left">2 - Exponenciação</td>
+<td>2 - Exponenciação</td>
 </tr>
 <tr>
-<td style="text-align:left">3 - Multiplicação e Divisão</td>
+<td>3 - Multiplicação e Divisão</td>
 </tr>
 <tr>
-<td style="text-align:left">4 - Soma e Subtração</td>
+<td>4 - Soma e Subtração</td>
 </tr>
 </tbody>
 </table>
@@ -14157,7 +14158,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Os operadores com a mesma precedência são avaliados da esquerda para a direita. Quando essa ordem não for tão clara assim, opte por usar parênteses para forçar as ordens das operações, sejam por motivos de esquecimentos ou motivos propositais.</p>
+<p>Os operadores com a mesma precedência são avaliados da esquerda para a direita. Quando essa ordem não for tão clara assim, opte por usar parênteses para forçar as ordens das operações, seja por motivos de esquecimentos ou motivos propositais.</p>
 
 </div>
 </div>
@@ -14325,7 +14326,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Fun&#231;&#245;es-da-biblioteca-Python">Fun&#231;&#245;es da biblioteca Python<a class="anchor-link" href="#Fun&#231;&#245;es-da-biblioteca-Python">&#182;</a></h5>
+<h3 id="Fun&#231;&#245;es-da-biblioteca-Python">Fun&#231;&#245;es da biblioteca Python<a class="anchor-link" href="#Fun&#231;&#245;es-da-biblioteca-Python">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14540,7 +14541,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Imprimindo-Usando-o-comando-&quot;print&quot;">Imprimindo Usando o comando "print"<a class="anchor-link" href="#Imprimindo-Usando-o-comando-&quot;print&quot;">&#182;</a></h5>
+<h3 id="Imprimindo-Usando-o-comando-&quot;print&quot;">Imprimindo Usando o comando "print"<a class="anchor-link" href="#Imprimindo-Usando-o-comando-&quot;print&quot;">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14751,7 +14752,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Recebendo-Dados-de-Entrada">Recebendo Dados de Entrada<a class="anchor-link" href="#Recebendo-Dados-de-Entrada">&#182;</a></h5>
+<h3 id="Recebendo-Dados-de-Entrada">Recebendo Dados de Entrada<a class="anchor-link" href="#Recebendo-Dados-de-Entrada">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14815,7 +14816,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Alysson Machado Esteve Aqui!
+<pre>Álgebra Linear é uma disciplina importante
 </pre>
 </div>
 </div>
@@ -14868,7 +14869,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># recebendo um dado de entrada do tipo de dado float e atribuindo a uma variável</span>
@@ -14897,7 +14898,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprimindo o dado usando na variável entrada usando a função &quot;print&quot;</span>
@@ -14918,7 +14919,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>123.456
+<pre>3.14159
 </pre>
 </div>
 </div>
@@ -14929,7 +14930,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># verificando o tipo de dado armazenado na variável entrada</span>
@@ -14946,7 +14947,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[42]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -14964,7 +14965,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Desse modo, caso não seja especificado o tipo de dado a ser inicializado na variável, automaticamente ele será armazenado como uma string. Por esse motivo, especificar o tipo de dado a ser requerido do usuário usando na função <strong>"input"</strong> é uma boa prática de progamação.</p>
+<p>Desse modo, caso não seja especificado o tipo de dado a ser inicializado na variável, automaticamente ele será armazenado como uma string. Por esse motivo, especificar o tipo de dado a ser requerido do usuário usando na função <strong>"input"</strong> é uma boa prática de programação.</p>
 
 </div>
 </div>
@@ -14972,7 +14973,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Fatiamento">Fatiamento<a class="anchor-link" href="#Fatiamento">&#182;</a></h5>
+<h3 id="Fatiamento">Fatiamento<a class="anchor-link" href="#Fatiamento">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14986,7 +14987,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fatiando uma string</span>
@@ -15026,12 +15027,49 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fatiando uma lista</span>
-<span class="c1"># lembrando que começamos a contar a partir do 0 e vamos do 2º elemento até o 3º elemento, nesse exemplo</span>
+<span class="c1"># lembrando que começamos a contar a partir do 0 e vamos do 2º elemento até o 3º elemento, </span>
+<span class="c1"># nesse exemplo</span>
 <span class="n">lista</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[43]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[3, &#39;cachorro&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fatiando uma tupla</span>
+<span class="c1"># lembrando que começamos a contar a partir do 0 e vamos do 1º elemento até o 2º elemento, </span>
+<span class="c1"># nesse exemplo</span>
+<span class="n">lista</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -15050,7 +15088,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[3, &#39;cachorro&#39;]</pre>
+<pre>[2, 3]</pre>
 </div>
 
 </div>
@@ -15058,15 +15096,77 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Operadores-L&#243;gicos">Operadores L&#243;gicos<a class="anchor-link" href="#Operadores-L&#243;gicos">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+<thead><tr>
+<th><strong>Operadores Lógicos</strong></th>
+<th><strong>Comandos</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Igual</td>
+<td>==</td>
+</tr>
+<tr>
+<td>Diferente</td>
+<td>!=</td>
+</tr>
+<tr>
+<td>Menor</td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td>Maior</td>
+<td>&gt;</td>
+</tr>
+<tr>
+<td>Menor igual</td>
+<td>&lt;=</td>
+</tr>
+<tr>
+<td>Maior Igual</td>
+<td>&gt;=</td>
+</tr>
+<tr>
+<td>Booleanos</td>
+<td>True, False</td>
+</tr>
+<tr>
+<td>Conectivos</td>
+<td>and, or</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Os <strong>operadores lógicos</strong> são usados para representar situações lógicas responsáveis por ajudar na tomada de decisões pela máquina e escolhas de opções definidas. Também são chamados conectivos lógicos por unirem duas expressões simples numa composta. Dessa forma, podemos ter ótimas ferramentas computacionais para realizar os nossos algoritmos.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fatiando uma tupla</span>
-<span class="c1"># lembrando que começamos a contar a partir do 0 e vamos do 1º elemento até o 2º elemento, nesse exemplo</span>
-<span class="n">lista</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de igualdade</span>
+<span class="mi">7</span> <span class="o">==</span> <span class="mi">8</span>
 </pre></div>
 
     </div>
@@ -15085,7 +15185,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[2, 3]</pre>
+<pre>False</pre>
 </div>
 
 </div>
@@ -15093,69 +15193,6 @@ div#notebook {
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Operadores-L&#243;gicos">Operadores L&#243;gicos<a class="anchor-link" href="#Operadores-L&#243;gicos">&#182;</a></h5>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Operadores Lógicos</strong><center></th>
-<th style="text-align:left"><center><strong>Comandos</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Igual</td>
-<td style="text-align:left">==</td>
-</tr>
-<tr>
-<td style="text-align:left">Diferente</td>
-<td style="text-align:left">!=</td>
-</tr>
-<tr>
-<td style="text-align:left">Menor</td>
-<td style="text-align:left">&lt;</td>
-</tr>
-<tr>
-<td style="text-align:left">Maior</td>
-<td style="text-align:left">&gt;</td>
-</tr>
-<tr>
-<td style="text-align:left">Menor igual</td>
-<td style="text-align:left">&lt;=</td>
-</tr>
-<tr>
-<td style="text-align:left">Maior Igual</td>
-<td style="text-align:left">&gt;=</td>
-</tr>
-<tr>
-<td style="text-align:left">Booleanos</td>
-<td style="text-align:left">True, False</td>
-</tr>
-<tr>
-<td style="text-align:left">Conectivos</td>
-<td style="text-align:left">and, or</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Os <strong>operadores lógicos</strong> são usados para representar situações lógicas responsáveis por ajudar na tomada de decisões pela máquina e escolhas de opções definidas. Também são chamados conectivos lógicos por unirem duas expressões simples numa composta. Dessa forma, podemos ter ótimas ferramentas computacionais para realizar os nossos algoritmos.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -15163,7 +15200,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de igualdade</span>
-<span class="mi">7</span> <span class="o">==</span> <span class="mi">8</span>
+<span class="mi">7</span> <span class="o">==</span> <span class="mi">7</span>
 </pre></div>
 
     </div>
@@ -15182,7 +15219,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
+<pre>True</pre>
 </div>
 
 </div>
@@ -15196,8 +15233,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de igualdade</span>
-<span class="mi">7</span> <span class="o">==</span> <span class="mi">7</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de diferença</span>
+<span class="mi">7</span> <span class="o">!=</span> <span class="mi">8</span>
 </pre></div>
 
     </div>
@@ -15231,7 +15268,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de diferença</span>
-<span class="mi">7</span> <span class="o">!=</span> <span class="mi">8</span>
+<span class="mi">7</span> <span class="o">!=</span> <span class="mi">7</span>
 </pre></div>
 
     </div>
@@ -15250,7 +15287,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
+<pre>False</pre>
 </div>
 
 </div>
@@ -15264,8 +15301,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de diferença</span>
-<span class="mi">7</span> <span class="o">!=</span> <span class="mi">7</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de menor</span>
+<span class="mi">8</span> <span class="o">&lt;</span> <span class="mi">4</span>
 </pre></div>
 
     </div>
@@ -15298,8 +15335,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de menor</span>
-<span class="mi">8</span> <span class="o">&lt;</span> <span class="mi">4</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de menor ou igual</span>
+<span class="mi">5</span> <span class="o">&lt;=</span> <span class="mi">5</span>
 </pre></div>
 
     </div>
@@ -15318,7 +15355,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
+<pre>True</pre>
 </div>
 
 </div>
@@ -15332,8 +15369,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de menor ou igual</span>
-<span class="mi">5</span> <span class="o">&lt;=</span> <span class="mi">5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de maior</span>
+<span class="mi">8</span> <span class="o">&gt;</span> <span class="mi">4</span>
 </pre></div>
 
     </div>
@@ -15366,8 +15403,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de maior</span>
-<span class="mi">8</span> <span class="o">&gt;</span> <span class="mi">4</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de maior ou igual</span>
+<span class="mi">5</span> <span class="o">&gt;=</span> <span class="mi">5</span>
 </pre></div>
 
     </div>
@@ -15400,8 +15437,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o operador lógico de maior ou igual</span>
-<span class="mi">5</span> <span class="o">&gt;=</span> <span class="mi">5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o concectivo and (e)</span>
+<span class="p">(</span><span class="mi">7</span> <span class="o">==</span> <span class="mi">8</span> <span class="ow">and</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">7</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15420,7 +15457,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
+<pre>False</pre>
 </div>
 
 </div>
@@ -15434,8 +15471,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o concectivo and (e)</span>
-<span class="p">(</span><span class="mi">7</span> <span class="o">==</span> <span class="mi">8</span> <span class="ow">and</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">7</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o conectivo or (ou)</span>
+<span class="p">(</span><span class="mi">7</span> <span class="o">==</span> <span class="mi">8</span> <span class="ow">or</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">7</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15454,40 +15491,6 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># analisando o conectivo or (ou)</span>
-<span class="p">(</span><span class="mi">7</span> <span class="o">==</span> <span class="mi">8</span> <span class="ow">or</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">7</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[55]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
 <pre>True</pre>
 </div>
 
@@ -15500,7 +15503,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Estrutura-de-Decis&#227;o">Estrutura de Decis&#227;o<a class="anchor-link" href="#Estrutura-de-Decis&#227;o">&#182;</a></h5>
+<h3 id="Estrutura-de-Decis&#227;o">Estrutura de Decis&#227;o<a class="anchor-link" href="#Estrutura-de-Decis&#227;o">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15522,7 +15525,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># recebendo o valor do primeiro número inteiro (int)</span>
@@ -15570,9 +15573,9 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-número 01 = 12 e número 02 = 34
+número 01 = 3 e número 02 = 4
 
-12 é menor a 34
+3 é menor a 4
 </pre>
 </div>
 </div>
@@ -15584,7 +15587,7 @@ número 01 = 12 e número 02 = 34
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nesse exemplo, observe que os comandos <strong>"if"</strong>, <strong>"elif"</strong> e <strong>"else"</strong> devem estar acompanhados por <strong>dois pontos</strong> para indicar o momento pelo qual o conteúdo para cada decisão deve ser implementado. Além disso, observe o <strong>recuo</strong> entre as linhas de código, esse que muito além de estilístico, é usado para indicar <strong>subcomandos de comandos superiores</strong>, sendo obrigatório o seu uso. Além disso, o comando <strong>"\n"</strong> indica ao progama para ir a próxima linha.</p>
+<p>Nesse exemplo, observe que os comandos <strong>"if"</strong>, <strong>"elif"</strong> e <strong>"else"</strong> devem estar acompanhados por <strong>dois pontos</strong> para indicar o momento pelo qual o conteúdo para cada decisão deve ser implementado. Além disso, observe o <strong>recuo</strong> entre as linhas de código, esse que muito além de estilístico, é usado para indicar <strong>subcomandos de comandos superiores</strong>, sendo obrigatório o seu uso. Além disso, o comando <strong>"\n"</strong> indica ao progama uma quebra de linha.</p>
 
 </div>
 </div>
@@ -15592,21 +15595,21 @@ número 01 = 12 e número 02 = 34
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Estrutura-de-Repeti&#231;&#227;o:-for">Estrutura de Repeti&#231;&#227;o: for<a class="anchor-link" href="#Estrutura-de-Repeti&#231;&#227;o:-for">&#182;</a></h5>
+<h3 id="Estrutura-de-Repeti&#231;&#227;o:-for">Estrutura de Repeti&#231;&#227;o: for<a class="anchor-link" href="#Estrutura-de-Repeti&#231;&#227;o:-for">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A estrutura de repetição <strong>"for"</strong> é utilizada quando se deseja repetir determinados passos progamados em um número determinando de vezes previamente conhecidos. E para esse fim, geralmente deve-se utilizar o comando auxiliar <strong>"range"</strong>, esse que recebe dois comandos de entrada: o número inicial da contagem e o número pela qual deve-se parar. Veja abaixo um exemplo simples de como deve-se usar a estrutura de repetição <strong>"for"</strong>:</p>
+<p>A estrutura de repetição <strong>"for"</strong> é utilizada quando se deseja repetir determinados passos programados em um número determinando de vezes previamente conhecidos. E para esse fim, geralmente deve-se utilizar o comando auxiliar <strong>"range"</strong>, esse que recebe dois comandos de entrada: o número inicial da contagem e o número pela qual deve-se parar. Veja abaixo um exemplo simples de como deve-se usar a estrutura de repetição <strong>"for"</strong>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># estrutura de repetição for que vai de 0 - 10</span>
@@ -15650,7 +15653,7 @@ número 01 = 12 e número 02 = 34
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># definindo uma lista</span>
@@ -15689,7 +15692,7 @@ número 01 = 12 e número 02 = 34
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Estrutura-de-repeti&#231;&#227;o:-While">Estrutura de repeti&#231;&#227;o: While<a class="anchor-link" href="#Estrutura-de-repeti&#231;&#227;o:-While">&#182;</a></h5>
+<h3 id="Estrutura-de-repeti&#231;&#227;o:-While">Estrutura de repeti&#231;&#227;o: While<a class="anchor-link" href="#Estrutura-de-repeti&#231;&#227;o:-While">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15703,7 +15706,7 @@ número 01 = 12 e número 02 = 34
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># inicializando as variáveis &quot;a&quot; e &quot;b&quot; com o número inteiro (int) 1</span>
@@ -15763,7 +15766,7 @@ número 01 = 12 e número 02 = 34
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Comandos:-break-e-continue">Comandos: break e continue<a class="anchor-link" href="#Comandos:-break-e-continue">&#182;</a></h5>
+<h3 id="Comandos:-break-e-continue">Comandos: break e continue<a class="anchor-link" href="#Comandos:-break-e-continue">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15777,7 +15780,7 @@ número 01 = 12 e número 02 = 34
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># estrutura de repetição que vai de 1 - 10</span>
@@ -15819,7 +15822,7 @@ número 01 = 12 e número 02 = 34
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># estrutura de repetição que vai de 1 - 10</span>
@@ -15875,7 +15878,7 @@ número 01 = 12 e número 02 = 34
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Criando-Suas-Pr&#243;pias-Fun&#231;&#245;es">Criando Suas Pr&#243;pias Fun&#231;&#245;es<a class="anchor-link" href="#Criando-Suas-Pr&#243;pias-Fun&#231;&#245;es">&#182;</a></h5>
+<h3 id="Criando-Suas-Pr&#243;pias-Fun&#231;&#245;es">Criando Suas Pr&#243;pias Fun&#231;&#245;es<a class="anchor-link" href="#Criando-Suas-Pr&#243;pias-Fun&#231;&#245;es">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15889,7 +15892,7 @@ número 01 = 12 e número 02 = 34
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># definindo uma função de nome fibonacci, cujo parâmetro de entrada é o termo que se deseja obter da </span>
@@ -15923,20 +15926,20 @@ número 01 = 12 e número 02 = 34
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como toda operação com funções, precisamos de uma <strong>função principal</strong> para organizar o nosso progama. No nosso repositório, essa ideia não será tão relevante, pois estamos mais interessados em mostrar processos da progamação aplicadas em Álgebra Linear do que em desenvolver um produto final. Entretanto, é importante mostrar como se faz a chamada da função principal, dado que para montar um bom progama, esse quesito faz parte da necessidade do mesmo e é uma boa prática de programação.</p>
+<p>Como toda operação com funções, precisamos de uma <strong>função principal</strong> para organizar o nosso progama. No nosso repositório, essa ideia não será tão relevante, pois estamos mais interessados em mostrar processos da programação aplicados em Álgebra Linear do que em desenvolver um produto final. Entretanto, é importante mostrar como se faz a chamada da função principal, dado que para montar um bom progama, esse quesito faz parte da necessidade do mesmo e é uma boa prática de programação.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># definindo a função principal do nosso exemplo</span>
 <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="c1"># dando um título ao nosso progama exemplo</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Progama Sequência de Fibonacci.</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Programa Sequência de Gibonacci.</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
     
     <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Digite o termo da sequência desejada, em números inteiros: &quot;</span><span class="p">))</span>
     
@@ -15966,7 +15969,7 @@ número 01 = 12 e número 02 = 34
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
@@ -15987,7 +15990,7 @@ número 01 = 12 e número 02 = 34
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Progama Sequência de Fibonacci.
+<pre>Programa Sequência de Gibonacci.
 
 
 </pre>
@@ -16008,7 +16011,7 @@ número 01 = 12 e número 02 = 34
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1 ,1 ,2 ,3 ,5 ,8 ,13 ,21 ,34 ,55 ,89 ,144 ,233 ,377 ,610 ,987 ,1597 ,2584 ,4181 ,6765 ,10946 ,17711 ,28657 ,46368 ,75025 ,121393 ,196418 ,317811 ,514229 ,832040 ,</pre>
+<pre>1 ,1 ,2 ,3 ,5 ,8 ,13 ,21 ,34 ,55 ,</pre>
 </div>
 </div>
 
@@ -16019,7 +16022,7 @@ número 01 = 12 e número 02 = 34
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Há um problema no GitHub que não é possível visualizar os dados de entrada que o usuário digita, mas para exemplicar foi digitado o número inteiro 30, equivalente a quantidade de números da sequência desejada.</p>
+<p>Há um problema no GitHub que não é possível visualizar os dados de entrada que o usuário digita, mas para exemplicar foi digitado o número inteiro 10, equivalente a quantidade de números da sequência desejada.</p>
 
 </div>
 </div>
@@ -16027,25 +16030,7 @@ número 01 = 12 e número 02 = 34
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Tem alguma dúvida?</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Entre em contato com o meu e-mail: <a href = "mailto:alyssonmachado388@gmail.com" target = "_blank"> alyssonmachado388@gmail.com </a></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Aprenda-mais">Aprenda mais<a class="anchor-link" href="#Aprenda-mais">&#182;</a></h5>
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -16053,7 +16038,7 @@ número 01 = 12 e número 02 = 34
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href = "https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" target = "_blank"> Curso Gratuito de Python </a></li>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
 </ul>
 
 </div>
@@ -16061,7 +16046,9 @@ número 01 = 12 e número 02 = 34
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
