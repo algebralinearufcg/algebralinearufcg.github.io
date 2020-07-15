@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Operações Matriciais</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13115,8 +13115,9 @@ div#notebook {
 			})
 		})
 
-	</script>
-
+  </script>
+  
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -13130,7 +13131,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Soma">Soma<a class="anchor-link" href="#Soma">&#182;</a></h5>
+<h3 id="Soma">Soma<a class="anchor-link" href="#Soma">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13161,7 +13162,7 @@ $$\begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Subtra&#231;&#227;o">Subtra&#231;&#227;o<a class="anchor-link" href="#Subtra&#231;&#227;o">&#182;</a></h5>
+<h3 id="Subtra&#231;&#227;o">Subtra&#231;&#227;o<a class="anchor-link" href="#Subtra&#231;&#227;o">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13192,7 +13193,7 @@ $$\begin{bmatrix}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Multiplica&#231;&#227;o">Multiplica&#231;&#227;o<a class="anchor-link" href="#Multiplica&#231;&#227;o">&#182;</a></h5>
+<h3 id="Multiplica&#231;&#227;o">Multiplica&#231;&#227;o<a class="anchor-link" href="#Multiplica&#231;&#227;o">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13206,7 +13207,7 @@ $$A_{m_{x}n}.B_{n_{x}p} = C_{m_{x}p}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Multiplica&#231;&#227;o-de-uma-Matriz-por-um-Escalar">Multiplica&#231;&#227;o de uma Matriz por um Escalar<a class="anchor-link" href="#Multiplica&#231;&#227;o-de-uma-Matriz-por-um-Escalar">&#182;</a></h5>
+<h3 id="Multiplica&#231;&#227;o-de-uma-Matriz-por-um-Escalar">Multiplica&#231;&#227;o de uma Matriz por um Escalar<a class="anchor-link" href="#Multiplica&#231;&#227;o-de-uma-Matriz-por-um-Escalar">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13238,15 +13239,28 @@ $$x_{escalar}.\begin{bmatrix}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># importando a biblioteca numpy do Python </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># importando a biblioteca numpy do Python </span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+</pre></div>
 
-<span class="c1"># criando a função principal</span>
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando a função principal</span>
 <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span> <span class="c1"># menu de escolhas do progama em um loop com uma ordem de parada</span>
+    <span class="c1"># menu de escolhas do progama em um loop com uma ordem de parada</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
     
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Escolha uma das opções de operações com matrizes abaixo:&quot;</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   1 - Soma entre duas matrizes.&quot;</span><span class="p">)</span>
@@ -13254,13 +13268,16 @@ $$x_{escalar}.\begin{bmatrix}
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   3 - Multiplicação entre duas matrizes.&quot;</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   4 - Multiplicação de uma matriz por um escalar.&quot;</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   5 - Sair do progama&quot;</span><span class="p">)</span>
-
-        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span> <span class="c1"># loop com ordem de parada para que o progama aceite a entrada correta</span>
+        
+        <span class="c1"># loop com ordem de parada para que o progama aceite a entrada correta</span>
+        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+            
             <span class="n">opcao</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Insira uma opção abaixo: &quot;</span><span class="p">))</span>
             
             <span class="k">if</span> <span class="n">opcao</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">opcao</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
                 <span class="k">break</span>
-            <span class="k">elif</span><span class="p">(</span><span class="n">opcao</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span> <span class="c1"># parar a execução do loop caso o usuário queira terminar o progama</span>
+            <span class="c1"># parar a execução do loop caso o usuário queira terminar o progama</span>
+            <span class="k">elif</span><span class="p">(</span><span class="n">opcao</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span> 
                 <span class="k">break</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrada errada. Digite novamente.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -13331,8 +13348,19 @@ $$x_{escalar}.\begin{bmatrix}
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Multiplicação de um escalar com uma matriz: </span><span class="se">\n\n</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">multiplicaEscalar</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">escalar</span><span class="p">)))</span>
     
     <span class="k">return</span> <span class="mi">0</span>
-    
-<span class="c1"># função que realiza a soma entre duas matrizes</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># função que realiza a soma entre duas matrizes</span>
 <span class="k">def</span> <span class="nf">soma</span><span class="p">(</span><span class="n">matrizA</span><span class="p">,</span> <span class="n">linhaA</span><span class="p">,</span> <span class="n">colunaA</span><span class="p">,</span> <span class="n">matrizB</span><span class="p">,</span> <span class="n">linhaB</span><span class="p">,</span> <span class="n">colunaB</span><span class="p">):</span>
     
     <span class="c1"># verificando se a operação está definida</span>
@@ -13345,8 +13373,19 @@ $$x_{escalar}.\begin{bmatrix}
     
     <span class="c1"># retornando o resultado da função</span>
     <span class="k">return</span> <span class="n">somando</span>
+</pre></div>
 
-<span class="c1"># função que realiza a subtração de duas matrizes</span>
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># função que realiza a subtração de duas matrizes</span>
 <span class="k">def</span> <span class="nf">subtracao</span><span class="p">(</span><span class="n">matrizA</span><span class="p">,</span> <span class="n">linhaA</span><span class="p">,</span> <span class="n">colunaA</span><span class="p">,</span> <span class="n">matrizB</span><span class="p">,</span> <span class="n">linhaB</span><span class="p">,</span> <span class="n">colunaB</span><span class="p">):</span>
     
     <span class="c1"># verificando se a operação está definida</span>
@@ -13377,8 +13416,19 @@ $$x_{escalar}.\begin{bmatrix}
         <span class="n">subtraindo</span> <span class="o">=</span> <span class="n">matrizB</span> <span class="o">-</span> <span class="n">matrizA</span>
         <span class="c1"># retornando o resultado da função</span>
         <span class="k">return</span> <span class="n">subtraindo</span>
+</pre></div>
 
-<span class="c1"># função que realiza  a multiplicação de duas matrizes</span>
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># função que realiza  a multiplicação de duas matrizes</span>
 <span class="k">def</span> <span class="nf">multiplicacao</span><span class="p">(</span><span class="n">matrizA</span><span class="p">,</span> <span class="n">linhaA</span><span class="p">,</span> <span class="n">colunaA</span><span class="p">,</span> <span class="n">matrizB</span><span class="p">,</span> <span class="n">linhaB</span><span class="p">,</span> <span class="n">colunaB</span><span class="p">):</span>
     
     <span class="c1">#escolhendo a multiplicação</span>
@@ -13414,8 +13464,19 @@ $$x_{escalar}.\begin{bmatrix}
         <span class="n">multiplicando</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matrizB</span><span class="p">,</span><span class="n">matrizA</span><span class="p">)</span>
         <span class="c1"># retornando o resultado da função</span>
         <span class="k">return</span> <span class="n">multiplicando</span>
-    
-<span class="c1"># função que  multiplica um escalar pela matriz</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># função que  multiplica um escalar pela matriz</span>
 <span class="k">def</span> <span class="nf">multiplicaEscalar</span><span class="p">(</span><span class="n">matrizA</span><span class="p">,</span> <span class="n">matrizB</span><span class="p">,</span> <span class="n">escalar</span><span class="p">):</span>
     
     <span class="c1"># escolhendo a matriz</span>
@@ -13441,8 +13502,19 @@ $$x_{escalar}.\begin{bmatrix}
         <span class="n">novaMatriz</span> <span class="o">=</span> <span class="n">escalar</span> <span class="o">*</span> <span class="n">matrizB</span>
         <span class="c1"># retornando o resultado da função</span>
         <span class="k">return</span> <span class="n">novaMatriz</span>
+</pre></div>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">main</span><span class="p">()</span> <span class="c1"># chamada da função main</span>
 </pre></div>
 
@@ -13553,15 +13625,14 @@ A matriz A é:
 
 
 A matriz B é: 
-[[1. 2.]
- [3. 4.]]
+[[1. 2. 3.]
+ [4. 5. 6.]]
 
 
 
 Soma:
 
- [[2. 4.]
- [6. 8.]]
+ operação com tais matrizes incompatíveis. Tente novamente.
 
 Escolha uma das opções de operações com matrizes abaixo:
    1 - Soma entre duas matrizes.
@@ -13650,15 +13721,216 @@ Escolha uma das opções de operações com matrizes abaixo:
 <pre>
 
 A matriz A é: 
-[[1. 2. 3.]
- [4. 5. 6.]
- [7. 8. 9.]]
+[[1. 3.]
+ [4. 5.]]
+
+
+A matriz B é: 
+[[6. 7.]
+ [8. 9.]]
+
+
+
+Soma:
+
+ [[ 7. 10.]
+ [12. 14.]]
+
+Escolha uma das opções de operações com matrizes abaixo:
+   1 - Soma entre duas matrizes.
+   2 - Subtração entre duas matrizes.
+   3 - Multiplicação entre duas matrizes.
+   4 - Multiplicação de uma matriz por um escalar.
+   5 - Sair do progama
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+A matriz A é: 
+[[1. 2.]
+ [3. 4.]]
 
 
 A matriz B é: 
 [[1. 2. 3.]
- [4. 5. 6.]
- [7. 8. 9.]]
+ [4. 5. 6.]]
+
+
+
+Subtração: 
+
+operação com tais matrizes incompatíveis. Tente novamente.
+
+Escolha uma das opções de operações com matrizes abaixo:
+   1 - Soma entre duas matrizes.
+   2 - Subtração entre duas matrizes.
+   3 - Multiplicação entre duas matrizes.
+   4 - Multiplicação de uma matriz por um escalar.
+   5 - Sair do progama
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+A matriz A é: 
+[[2. 2.]
+ [2. 2.]]
+
+
+A matriz B é: 
+[[3. 4.]
+ [5. 6.]]
 
 
 1) A - B = ??
@@ -13684,9 +13956,130 @@ A matriz B é:
 <pre>
 Subtração: 
 
-[[0. 0. 0.]
- [0. 0. 0.]
- [0. 0. 0.]]
+[[-1. -2.]
+ [-3. -4.]]
+
+Escolha uma das opções de operações com matrizes abaixo:
+   1 - Soma entre duas matrizes.
+   2 - Subtração entre duas matrizes.
+   3 - Multiplicação entre duas matrizes.
+   4 - Multiplicação de uma matriz por um escalar.
+   5 - Sair do progama
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+A matriz A é: 
+[[2. 2.]
+ [2. 2.]]
+
+
+A matriz B é: 
+[[3. 4.]
+ [5. 6.]]
+
+
+1) A - B = ??
+2) B - A = ??
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Subtração: 
+
+[[1. 2.]
+ [3. 4.]]
 
 Escolha uma das opções de operações com matrizes abaixo:
    1 - Soma entre duas matrizes.
@@ -13779,8 +14172,8 @@ A matriz A é:
 
 
 A matriz B é: 
-[[2.]
- [1.]]
+[[1. 2. 3.]
+ [4. 5. 6.]]
 
 
 1) A x B = ??
@@ -13806,7 +14199,7 @@ A matriz B é:
 <pre>
 Multiplicação: 
 
-[[4.]]
+[[ 9. 12. 15.]]
 
 Escolha uma das opções de operações com matrizes abaixo:
    1 - Soma entre duas matrizes.
@@ -13899,8 +14292,130 @@ A matriz A é:
 
 
 A matriz B é: 
-[[2.]
- [1.]]
+[[1. 2. 3.]
+ [4. 5. 6.]]
+
+
+1) A x B = ??
+2) B x A = ??
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Multiplicação: 
+
+operação com tais matrizes incompatíveis. Tente novamente.
+
+Escolha uma das opções de operações com matrizes abaixo:
+   1 - Soma entre duas matrizes.
+   2 - Subtração entre duas matrizes.
+   3 - Multiplicação entre duas matrizes.
+   4 - Multiplicação de uma matriz por um escalar.
+   5 - Sair do progama
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+A matriz A é: 
+[[1. 2. 3.]
+ [4. 5. 6.]
+ [7. 8. 9.]]
+
+
+A matriz B é: 
+[[1. 2.]
+ [3. 4.]]
 </pre>
 </div>
 </div>
@@ -13945,7 +14460,8 @@ Qual matriz você quer multiplicar pelo escalar?
 <pre>
 Multiplicação de um escalar com uma matriz: 
 
-[[4.6 9.2]]
+[[ 5. 10.]
+ [15. 20.]]
 
 Escolha uma das opções de operações com matrizes abaixo:
    1 - Soma entre duas matrizes.
@@ -13972,24 +14488,25 @@ Escolha uma das opções de operações com matrizes abaixo:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Aprenda mais:</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href = "http://matematicaufsj.files.wordpress.com/2012/12/caderno_al_vol1.pdf" target = "_blank"> Álgebra Linear - Vol 1 </a></td>
-</tr>
-</tbody>
-</table>
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
