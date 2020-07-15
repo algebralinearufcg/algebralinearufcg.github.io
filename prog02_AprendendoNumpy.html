@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Aprendendo Numpy</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13117,20 +13117,21 @@ div#notebook {
 
 	</script>
 
+
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Estudando-a-Biblioteca-Numpy">Estudando a Biblioteca Numpy<a class="anchor-link" href="#Estudando-a-Biblioteca-Numpy">&#182;</a></h1>
+<h1 id="Estudando-a-Biblioteca-Numpy">Estudando a Biblioteca Numpy<a class="anchor-link" href="#Estudando-a-Biblioteca-Numpy">&#182;</a></h1><h4 id="Neste-notebook,-vamos-analisar-algumas-fun&#231;&#245;es-pertencentes-a-biblioteca-numpy.-&#201;-pertinente-saber-que-tal-biblioteca-nos-permite-implementar-&#243;timas-aplica&#231;&#245;es-computacionais-em-&#192;lgebra-Linear-e,-atrav&#233;s-dela,-reduzir-o-nosso-trabalho-em-diversas-situa&#231;&#245;es-na-qual-o-c&#225;lculo-feito-de-forma-manual-seja-algo-ma&#231;ante.">Neste notebook, vamos analisar algumas fun&#231;&#245;es pertencentes a biblioteca numpy. &#201; pertinente saber que tal biblioteca nos permite implementar &#243;timas aplica&#231;&#245;es computacionais em &#192;lgebra Linear e, atrav&#233;s dela, reduzir o nosso trabalho em diversas situa&#231;&#245;es na qual o c&#225;lculo feito de forma manual seja algo ma&#231;ante.<a class="anchor-link" href="#Neste-notebook,-vamos-analisar-algumas-fun&#231;&#245;es-pertencentes-a-biblioteca-numpy.-&#201;-pertinente-saber-que-tal-biblioteca-nos-permite-implementar-&#243;timas-aplica&#231;&#245;es-computacionais-em-&#192;lgebra-Linear-e,-atrav&#233;s-dela,-reduzir-o-nosso-trabalho-em-diversas-situa&#231;&#245;es-na-qual-o-c&#225;lculo-feito-de-forma-manual-seja-algo-ma&#231;ante.">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Neste-notebook,-vamos-analisar-algumas-fun&#231;&#245;es-pertencentes-a-biblioteca-numpy.-&#201;-pertinente-saber-que-tal-biblioteca-nos-permite-implementar-&#243;timas-aplica&#231;&#245;es-computacionais-em-&#192;lgebra-Linear-e,-atrav&#233;s-dela,-reduzir-o-nosso-trabalho-em-diversas-situa&#231;&#245;es-na-qual-o-c&#225;lculo-feito-de-forma-manual-seja-algo-ma&#231;ante.">Neste notebook, vamos analisar algumas fun&#231;&#245;es pertencentes a biblioteca numpy. &#201; pertinente saber que tal biblioteca nos permite implementar &#243;timas aplica&#231;&#245;es computacionais em &#192;lgebra Linear e, atrav&#233;s dela, reduzir o nosso trabalho em diversas situa&#231;&#245;es na qual o c&#225;lculo feito de forma manual seja algo ma&#231;ante.<a class="anchor-link" href="#Neste-notebook,-vamos-analisar-algumas-fun&#231;&#245;es-pertencentes-a-biblioteca-numpy.-&#201;-pertinente-saber-que-tal-biblioteca-nos-permite-implementar-&#243;timas-aplica&#231;&#245;es-computacionais-em-&#192;lgebra-Linear-e,-atrav&#233;s-dela,-reduzir-o-nosso-trabalho-em-diversas-situa&#231;&#245;es-na-qual-o-c&#225;lculo-feito-de-forma-manual-seja-algo-ma&#231;ante.">&#182;</a></h4>
+<h3 id="Importando-a-Biblioteca">Importando a Biblioteca<a class="anchor-link" href="#Importando-a-Biblioteca">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13139,7 +13140,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># importando a biblioteca de funções do python</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># importando a biblioteca de funções do python</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 </pre></div>
 
     </div>
@@ -13150,7 +13152,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Criando-uma-Matriz">Criando uma Matriz<a class="anchor-link" href="#Criando-uma-Matriz">&#182;</a></h5>
+<h3 id="Criando-uma-Matriz">Criando uma Matriz<a class="anchor-link" href="#Criando-uma-Matriz">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13159,7 +13161,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">56</span><span class="p">])</span> <span class="c1"># iniciando um array em python</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># iniciando um array em python</span>
+<span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">56</span><span class="p">])</span> 
 </pre></div>
 
     </div>
@@ -13170,7 +13173,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Verificando-o-Tipo-da-Vari&#225;vel">Verificando o Tipo da Vari&#225;vel<a class="anchor-link" href="#Verificando-o-Tipo-da-Vari&#225;vel">&#182;</a></h5>
+<h3 id="Verificando-o-Tipo-da-Vari&#225;vel">Verificando o Tipo da Vari&#225;vel<a class="anchor-link" href="#Verificando-o-Tipo-da-Vari&#225;vel">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13179,7 +13182,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">M</span><span class="p">)</span> <span class="c1">#mostra o tipo da variável a qual a função type recebe</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># mostra o tipo da variável a qual a função type recebe</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">M</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -13210,7 +13214,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Formas-de-Imprimir-Dados-na-Tela">Formas de Imprimir Dados na Tela<a class="anchor-link" href="#Formas-de-Imprimir-Dados-na-Tela">&#182;</a></h5>
+<h3 id="Formas-de-Imprimir-Dados-na-Tela">Formas de Imprimir Dados na Tela<a class="anchor-link" href="#Formas-de-Imprimir-Dados-na-Tela">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13219,7 +13223,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M</span><span class="p">))</span> <span class="c1"># pode-se imprimir algum tipo de dado dessa forma</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pode-se imprimir algum tipo de dado dessa forma</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">M</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -13232,13 +13237,15 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[10 24 34 45 56]
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>numpy.ndarray</pre>
 </div>
+
 </div>
 
 </div>
@@ -13250,7 +13257,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">M</span> <span class="c1"># digitar a variável no Jupyter Notebook também nos permite ver o seu conteúdo</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># digitar a variável no Jupyter Notebook também nos permite ver o seu conteúdo</span>
+<span class="n">M</span>
 </pre></div>
 
     </div>
@@ -13283,7 +13291,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">M</span><span class="p">)</span> <span class="c1"># colocar uma variável diretamente também é um formato compilável</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># colocar uma variável diretamente também é um formato compilável</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">M</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -13312,7 +13321,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Trabalhando-com-Elementos-da-Matriz">Trabalhando com Elementos da Matriz<a class="anchor-link" href="#Trabalhando-com-Elementos-da-Matriz">&#182;</a></h5>
+<h3 id="Trabalhando-com-Elementos-da-Matriz">Trabalhando com Elementos da Matriz<a class="anchor-link" href="#Trabalhando-com-Elementos-da-Matriz">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13321,8 +13330,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span> 
-<span class="c1"># atente-se que na progamação, na maioria das linguagens temos um array iniciado no elemento [0][0] </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># atente-se que na progamação, na maioria das linguagens temos um array </span>
+<span class="c1"># iniciado no elemento [0][0] </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span> 
 </pre></div>
 
     </div>
@@ -13353,7 +13363,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span> <span class="c1"># aqui vemos o elemento 4, na terceira possição do array</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># aqui vemos o elemento 4, na terceira possição do array</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -13384,9 +13395,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]))</span> 
-<span class="c1"># mostra todos os elementos do array começando na posição zero até a terceira posição</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># mostra todos os elementos do array começando na posição zero até a terceira posição</span>
 <span class="c1"># atente-se que o último elemento de parada não é considerado no cálculo, e sim o seu antecessor</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]))</span> 
 </pre></div>
 
     </div>
@@ -13415,7 +13426,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Dimens&#245;es-da-Matriz">Dimens&#245;es da Matriz<a class="anchor-link" href="#Dimens&#245;es-da-Matriz">&#182;</a></h5>
+<h3 id="Dimens&#245;es-da-Matriz">Dimens&#245;es da Matriz<a class="anchor-link" href="#Dimens&#245;es-da-Matriz">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13424,9 +13435,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">M</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> 
-<span class="c1"># função que mostra a dimensão do array</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># função que mostra a dimensão do array</span>
 <span class="c1"># (linhas, colunas)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">M</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -13455,7 +13466,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Matrizes-de-Tamanhos-Diversos-(arrays-multidimensionais)">Matrizes de Tamanhos Diversos (arrays multidimensionais)<a class="anchor-link" href="#Matrizes-de-Tamanhos-Diversos-(arrays-multidimensionais)">&#182;</a></h5>
+<h3 id="Matrizes-de-Tamanhos-Diversos-(arrays-multidimensionais)">Matrizes de Tamanhos Diversos (arrays multidimensionais)<a class="anchor-link" href="#Matrizes-de-Tamanhos-Diversos-(arrays-multidimensionais)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13464,7 +13475,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">]])</span> <span class="c1"># criando um array multidimensional</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando um array multidimensional</span>
+<span class="n">MD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -13477,7 +13489,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MD</span><span class="p">))</span> <span class="c1"># imprime o array multidimensional</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime o array multidimensional</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MD</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -13509,7 +13522,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MD</span><span class="o">.</span><span class="n">shape</span> <span class="c1"># verificando a dimensão do array</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># verificando a dimensão do array</span>
+<span class="n">MD</span><span class="o">.</span><span class="n">shape</span> 
 </pre></div>
 
     </div>
@@ -13542,7 +13556,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MD</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># forma de verificar os elementos da matriz multidimensional</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># forma de verificar os elementos da matriz multidimensional</span>
+<span class="n">MD</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> 
 </pre></div>
 
     </div>
@@ -13575,7 +13590,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MD</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># outra forma de verificar os elementos da matriz multidimensional</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># outra forma de verificar os elementos da matriz multidimensional</span>
+<span class="n">MD</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> 
 </pre></div>
 
     </div>
@@ -13608,7 +13624,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MD</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># o parâmetro de entrada zero permitirá ver a quantidade de linhas do array</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># o parâmetro de entrada zero permitirá ver a quantidade de linhas do array</span>
+<span class="n">MD</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
 </pre></div>
 
     </div>
@@ -13641,7 +13658,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MD</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># o parâmetro de entrada um permitirá ver a quantidade de colunas do array</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># o parâmetro de entrada um permitirá ver a quantidade de colunas do array</span>
+<span class="n">MD</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> 
 </pre></div>
 
     </div>
@@ -13672,7 +13690,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Criando-uma-Submatriz-de-Outra-Matriz">Criando uma Submatriz de Outra Matriz<a class="anchor-link" href="#Criando-uma-Submatriz-de-Outra-Matriz">&#182;</a></h5>
+<h3 id="Criando-uma-Submatriz-de-Outra-Matriz">Criando uma Submatriz de Outra Matriz<a class="anchor-link" href="#Criando-uma-Submatriz-de-Outra-Matriz">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13681,9 +13699,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">subMD</span> <span class="o">=</span> <span class="n">MD</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> 
-<span class="c1"># subMD recebe as linhas localizadas na posição zero e um, e colunas de zero a dois</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># subMD recebe as linhas localizadas na posição zero e um, e colunas de zero a dois</span>
 <span class="c1"># atente-se que o último digito de parada é desconsiderado</span>
+<span class="n">subMD</span> <span class="o">=</span> <span class="n">MD</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> 
 </pre></div>
 
     </div>
@@ -13696,7 +13714,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subMD</span><span class="p">))</span> <span class="c1"># imprime a matriz subMD</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz subMD</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subMD</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -13726,7 +13745,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Modificando-Elementos-das-Matrizes">Modificando Elementos das Matrizes<a class="anchor-link" href="#Modificando-Elementos-das-Matrizes">&#182;</a></h5>
+<h3 id="Modificando-Elementos-das-Matrizes">Modificando Elementos das Matrizes<a class="anchor-link" href="#Modificando-Elementos-das-Matrizes">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13735,7 +13754,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MD</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">11</span> <span class="c1"># nova entrada para o elemento da matriz localizado na posição MD[1][1]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nova entrada para o elemento da matriz localizado na posição MD[1][1]</span>
+<span class="n">MD</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">11</span> 
 </pre></div>
 
     </div>
@@ -13748,7 +13768,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MD</span><span class="p">))</span> <span class="c1"># veja como o elemento da matriz na posição [1][1] foi modificado</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># veja como o elemento da matriz na posição [1][1] foi modificado</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MD</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -13778,7 +13799,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Transformando-uma-Matriz-de-N&#250;meros-Inteiros-em-N&#250;meros-Reais">Transformando uma Matriz de N&#250;meros Inteiros em N&#250;meros Reais<a class="anchor-link" href="#Transformando-uma-Matriz-de-N&#250;meros-Inteiros-em-N&#250;meros-Reais">&#182;</a></h5>
+<h3 id="Transformando-uma-Matriz-de-N&#250;meros-Inteiros-em-N&#250;meros-Reais">Transformando uma Matriz de N&#250;meros Inteiros em N&#250;meros Reais<a class="anchor-link" href="#Transformando-uma-Matriz-de-N&#250;meros-Inteiros-em-N&#250;meros-Reais">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13787,8 +13808,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">MR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">1.0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">4556</span><span class="p">,</span><span class="mi">788</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1000</span><span class="p">]])</span>
-<span class="c1"># o fato do primeiro elemento ser um float, número real, indica que todos os outros elementos serão também do tipo float</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># o fato do primeiro elemento ser um float, número real, indica que todos os outros elementos </span>
+<span class="c1"># serão também do tipo float</span>
+<span class="n">MR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">1.0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">4556</span><span class="p">,</span><span class="mi">788</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1000</span><span class="p">]])</span>
 </pre></div>
 
     </div>
@@ -13801,8 +13823,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MR</span><span class="p">))</span> <span class="c1"># imprime a matriz MR</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz MR</span>
 <span class="c1"># Os valores dos elementos da matriz são mostrados no formato de notação científica computacional</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MR</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13833,7 +13856,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Criando-uma-Matriz-Identidade">Criando uma Matriz Identidade<a class="anchor-link" href="#Criando-uma-Matriz-Identidade">&#182;</a></h5>
+<h3 id="Criando-uma-Matriz-Identidade">Criando uma Matriz Identidade<a class="anchor-link" href="#Criando-uma-Matriz-Identidade">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13842,8 +13865,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">I</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1">#observe que a matriz identidade será do tipo float</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#observe que a matriz identidade será do tipo float</span>
 <span class="c1"># o parâmetro de entrada é a ordem da matriz a ser trabalhada</span>
+<span class="n">I</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -13856,7 +13880,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">I</span><span class="p">))</span> <span class="c1"># imprime a matriz Identidade I</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz Identidade I</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">I</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -13888,7 +13913,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Criando-uma-Matriz-de-Zeros">Criando uma Matriz de Zeros<a class="anchor-link" href="#Criando-uma-Matriz-de-Zeros">&#182;</a></h5>
+<h3 id="Criando-uma-Matriz-de-Zeros">Criando uma Matriz de Zeros<a class="anchor-link" href="#Criando-uma-Matriz-de-Zeros">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13897,9 +13922,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span> <span class="c1"># interessante para inicializar uma matriz sem lixo de memória</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># interessante para inicializar uma matriz sem lixo de memória</span>
 <span class="c1"># são dois parâmetros de entrada, relativos a quantidade de linhas e colunas, respectivamente.</span>
-<span class="c1"># caso tal matriz seja manipulada por algum procedimento de multiplicação, essa inicialização não é uma boa escolha</span>
+<span class="c1"># caso tal matriz seja manipulada por algum procedimento de multiplicação, essa inicialização </span>
+<span class="c1"># não é uma boa escolha</span>
+<span class="n">Z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -13912,7 +13939,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Z</span><span class="p">))</span> <span class="c1"># imprimindo a matriz Z</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprimindo a matriz Z</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Z</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -13944,7 +13972,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Criando-uma-Matriz-de-Uns">Criando uma Matriz de Uns<a class="anchor-link" href="#Criando-uma-Matriz-de-Uns">&#182;</a></h5>
+<h3 id="Criando-uma-Matriz-de-Uns">Criando uma Matriz de Uns<a class="anchor-link" href="#Criando-uma-Matriz-de-Uns">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13953,9 +13981,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span> 
-<span class="c1"># mesma ideia da função acima, mas ao invés de zeros, será preenchido com valores 1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># mesma ideia da função acima, mas ao invés de zeros, será preenchido com valores 1</span>
 <span class="c1"># observe que essa matriz é ideal quando trabalha-se com operações de multiplicação</span>
+<span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -13968,7 +13996,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">U</span><span class="p">))</span> <span class="c1"># imprime a matriz U</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz U</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">U</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -14002,8 +14031,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">10</span> <span class="o">*</span> <span class="n">U</span>
-<span class="c1"># multiplicando uma matriz com todos os elementos iniciados com 1 por um escalar</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># multiplicando uma matriz com todos os elementos iniciados com 1 por um escalar</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">U</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -14016,18 +14045,16 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[10., 10.],
-       [10., 10.],
-       [10., 10.],
-       [10., 10.]])</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[1. 1.]
+ [1. 1.]
+ [1. 1.]
+ [1. 1.]]
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -14047,9 +14074,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="mi">10</span><span class="p">)</span>
-<span class="c1"># função que cria um array em que todos os seus elementos são iguais a uma constante a ser definida</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># função que cria um array em que todos os seus elementos são iguais a uma constante a ser definida</span>
 <span class="c1"># np.full((número de linhas, número de colunas), constante a ser definida na matriz)</span>
+<span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14062,7 +14089,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">U</span><span class="p">))</span> <span class="c1">#imprime a matriz U</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#imprime a matriz U</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">U</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -14095,7 +14123,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Matriz-Rand&#244;mica">Matriz Rand&#244;mica<a class="anchor-link" href="#Matriz-Rand&#244;mica">&#182;</a></h5>
+<h3 id="Matriz-Rand&#244;mica">Matriz Rand&#244;mica<a class="anchor-link" href="#Matriz-Rand&#244;mica">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14104,8 +14132,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span> <span class="c1"># np.random.random((número de linhas, número de colunas))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># np.random.random((número de linhas, número de colunas))</span>
 <span class="c1"># cria uma matriz de números aleatórios</span>
+<span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -14118,7 +14147,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">R</span><span class="p">))</span> <span class="c1"># imprime a matriz R</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz R</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">R</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -14135,10 +14165,10 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[[0.44672864 0.72232289 0.01232689 0.06576017 0.98499059]
- [0.9377346  0.34222689 0.8584688  0.97704743 0.38100834]
- [0.33374236 0.81985432 0.5370455  0.28956349 0.94895315]
- [0.18477957 0.87425711 0.71618074 0.66404689 0.61337039]]
+<pre>[[0.83670313 0.6563392  0.77275586 0.69965855 0.55071841]
+ [0.51802409 0.62063839 0.35390263 0.80153205 0.32365402]
+ [0.20997078 0.58628487 0.03465468 0.19432512 0.18718823]
+ [0.33339079 0.02659723 0.22485586 0.58804561 0.71405599]]
 </pre>
 </div>
 </div>
@@ -14150,7 +14180,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="M&#233;dia-dos-Elementos-da-Matriz">M&#233;dia dos Elementos da Matriz<a class="anchor-link" href="#M&#233;dia-dos-Elementos-da-Matriz">&#182;</a></h5>
+<h3 id="M&#233;dia-dos-Elementos-da-Matriz">M&#233;dia dos Elementos da Matriz<a class="anchor-link" href="#M&#233;dia-dos-Elementos-da-Matriz">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14159,7 +14189,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span> <span class="c1"># criando uma matriz X</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando uma matriz X</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -14172,7 +14203,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="c1"># calcula a média de todos os elementos da matriz X inicializada acima</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># calcula a média de todos os elementos da matriz X inicializada acima</span>
+<span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14203,7 +14235,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Opera&#231;&#245;es-com-Matrizes">Opera&#231;&#245;es com Matrizes<a class="anchor-link" href="#Opera&#231;&#245;es-com-Matrizes">&#182;</a></h5>
+<h3 id="Opera&#231;&#245;es-com-Matrizes">Opera&#231;&#245;es com Matrizes<a class="anchor-link" href="#Opera&#231;&#245;es-com-Matrizes">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14212,8 +14244,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span> <span class="c1"># criando uma matriz A</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span> <span class="c1"># criando uma matriz B</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando uma matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span> 
+<span class="c1"># criando uma matriz B</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -14226,7 +14260,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">A</span><span class="p">))</span> <span class="c1"># imprime a matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz A</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">A</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -14259,7 +14294,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">B</span><span class="p">))</span> <span class="c1"># imprime a matriz B</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz B</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">B</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -14292,9 +14328,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">*</span> <span class="n">B</span> 
-<span class="c1"># multiplicação simples de uma matriz</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># multiplicação simples de uma matriz</span>
 <span class="c1"># OBS: só é permitido a entrada de matrizes de mesma ordem</span>
+<span class="n">A</span> <span class="o">*</span> <span class="n">B</span> 
 </pre></div>
 
     </div>
@@ -14329,7 +14365,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">+</span> <span class="n">B</span> <span class="c1"># soma duas matrizes de mesma ordem</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># soma duas matrizes de mesma ordem</span>
+<span class="n">A</span> <span class="o">+</span> <span class="n">B</span> 
 </pre></div>
 
     </div>
@@ -14364,7 +14401,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">-</span> <span class="n">B</span> <span class="c1"># subtração de duas matrizes de mesma ordem</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># subtração de duas matrizes de mesma ordem</span>
+<span class="n">A</span> <span class="o">-</span> <span class="n">B</span> 
 </pre></div>
 
     </div>
@@ -14399,7 +14437,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">B</span> <span class="o">-</span> <span class="n">A</span> <span class="c1"># subtração de duas matrizes de mesma ordem</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># subtração de duas matrizes de mesma ordem</span>
+<span class="n">B</span> <span class="o">-</span> <span class="n">A</span> 
 </pre></div>
 
     </div>
@@ -14443,7 +14482,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> <span class="c1"># multiplicação de matrizes de ordem diferentes, mas com a multiplicação definida</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># multiplicação de matrizes de ordem diferentes, mas com a multiplicação definida</span>
+<span class="n">np</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14478,7 +14518,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span> <span class="c1"># soma as matrizes de mesma ordem</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># soma as matrizes de mesma ordem</span>
+<span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14513,7 +14554,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span> <span class="c1"># subtrai as matrizes de mesma ordem</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># subtrai as matrizes de mesma ordem</span>
+<span class="n">np</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14548,7 +14590,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="n">A</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span> <span class="c1"># subtrai as matrizes de mesma ordem</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># subtrai as matrizes de mesma ordem</span>
+<span class="n">np</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="n">A</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14583,8 +14626,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span> <span class="c1"># criando a matriz A</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">]])</span> <span class="c1"># criando a matriz B</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando a matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span> 
+<span class="c1"># criando a matriz B</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -14597,7 +14642,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> <span class="c1">#outra função que realiza a multiplicação de matrizes de ordens diferentes, mas sem especificador de tipo</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># outra função que realiza a multiplicação de matrizes de ordens diferentes, mas </span>
+<span class="c1"># sem especificador de tipo</span>
+<span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14631,7 +14678,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="n">A</span><span class="p">)</span> <span class="c1">#Matriz com operação não definida, veja que a compilação não ocorrerá</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Matriz com operação não definida, veja que a compilação não ocorrerá</span>
+<span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="n">A</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14651,8 +14699,9 @@ div#notebook {
 <pre>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-50-1651db820fa8&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>np<span class="ansi-yellow-intense-fg ansi-bold">.</span>matmul<span class="ansi-yellow-intense-fg ansi-bold">(</span>B<span class="ansi-yellow-intense-fg ansi-bold">,</span>A<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-red-intense-fg ansi-bold">#Matriz com operação não definida, veja que a compilação não ocorrerá</span>
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-50-7bc42922f4c7&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      1</span> <span class="ansi-red-intense-fg ansi-bold"># Matriz com operação não definida, veja que a compilação não ocorrerá</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>np<span class="ansi-yellow-intense-fg ansi-bold">.</span>matmul<span class="ansi-yellow-intense-fg ansi-bold">(</span>B<span class="ansi-yellow-intense-fg ansi-bold">,</span>A<span class="ansi-yellow-intense-fg ansi-bold">)</span>
 
 <span class="ansi-red-intense-fg ansi-bold">ValueError</span>: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)-&gt;(n?,m?) (size 2 is different from 1)</pre>
 </div>
@@ -14676,7 +14725,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> <span class="c1"># outra forma de multiplicar duas matrizes</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># outra forma de multiplicar duas matrizes</span>
+<span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14710,8 +14760,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span> <span class="c1"># criando a matriz a</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span> <span class="c1"># criando a matriz b</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando a matriz a</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span> 
+<span class="c1"># criando a matriz b</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -14724,9 +14776,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inner</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> 
-<span class="c1">#Um produto interno é uma generalização do produto escalar. Em um espaço vetorial, é uma maneira de multiplicar vetores </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Um produto interno é uma generalização do produto escalar. Em um espaço vetorial, </span>
+<span class="c1"># é uma maneira de multiplicar vetores </span>
 <span class="c1"># juntos, com o resultado dessa multiplicação sendo um escalar.</span>
+<span class="n">np</span><span class="o">.</span><span class="n">inner</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14759,8 +14812,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span> <span class="c1"># criando a matriz A</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span> <span class="c1"># criando a matriz B</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando a matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span> 
+<span class="c1"># criando a matriz B</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -14773,7 +14828,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">tensordot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> <span class="c1"># produto tensorial de dois espaços vetoriais</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># produto tensorial de dois espaços vetoriais</span>
+<span class="n">np</span><span class="o">.</span><span class="n">tensordot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14806,7 +14862,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span> <span class="c1"># criando a matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando a matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -14819,8 +14876,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_power</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="c1"># função responsável por calcular a potenciação de matrizes.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># função responsável por calcular a potenciação de matrizes.</span>
 <span class="c1"># Nesse caso, A está elevada a 5º potência</span>
+<span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_power</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14853,7 +14911,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Produto-Kronecker">Produto Kronecker<a class="anchor-link" href="#Produto-Kronecker">&#182;</a></h5>
+<h3 id="Produto-Kronecker">Produto Kronecker<a class="anchor-link" href="#Produto-Kronecker">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14862,8 +14920,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span> <span class="c1"># criando a matriz A</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]])</span> <span class="c1"># criando a matriz B</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando a matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span> 
+<span class="c1"># criando a matriz B</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -14876,7 +14936,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">kron</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> <span class="c1"># calcula o produto kronecker de duas matrizes</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># calcula o produto kronecker de duas matrizes</span>
+<span class="n">np</span><span class="o">.</span><span class="n">kron</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14910,7 +14971,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Fatora&#231;&#227;o-de-Cholesky">Fatora&#231;&#227;o de Cholesky<a class="anchor-link" href="#Fatora&#231;&#227;o-de-Cholesky">&#182;</a></h5>
+<h3 id="Fatora&#231;&#227;o-de-Cholesky">Fatora&#231;&#227;o de Cholesky<a class="anchor-link" href="#Fatora&#231;&#227;o-de-Cholesky">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14919,7 +14980,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="o">-</span><span class="mi">16</span><span class="p">],[</span><span class="mi">12</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="o">-</span><span class="mi">43</span><span class="p">],[</span><span class="o">-</span><span class="mi">16</span><span class="p">,</span><span class="o">-</span><span class="mi">43</span><span class="p">,</span><span class="mi">98</span><span class="p">]])</span> <span class="c1"># criando a matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando a matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="o">-</span><span class="mi">16</span><span class="p">],[</span><span class="mi">12</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="o">-</span><span class="mi">43</span><span class="p">],[</span><span class="o">-</span><span class="mi">16</span><span class="p">,</span><span class="o">-</span><span class="mi">43</span><span class="p">,</span><span class="mi">98</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -14932,7 +14994,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fatorada</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">cholesky</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1"># função responsável por calcular a fatoração de cholesky</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># função responsável por calcular a fatoração de cholesky</span>
+<span class="n">fatorada</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">cholesky</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -14945,7 +15008,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fatorada</span> <span class="c1"># imprime a matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz A</span>
+<span class="n">fatorada</span> 
 </pre></div>
 
     </div>
@@ -14980,8 +15044,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">fatorada</span><span class="p">,</span><span class="n">fatorada</span><span class="o">.</span><span class="n">transpose</span><span class="p">())</span> <span class="c1">#provando a validade da Fatoração de Cholesky em python</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># provando a validade da Fatoração de Cholesky em python</span>
 <span class="c1"># multiplica a matriz fatorada por sua transposta, obtendo a matriz A que foi fatorada</span>
+<span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">fatorada</span><span class="p">,</span><span class="n">fatorada</span><span class="o">.</span><span class="n">transpose</span><span class="p">())</span> 
 </pre></div>
 
     </div>
@@ -15016,7 +15081,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span> <span class="c1"># criando uma matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando uma matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
 </pre></div>
 
     </div>
@@ -15029,7 +15095,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="c1"># imprime a matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz A</span>
+<span class="n">A</span> 
 </pre></div>
 
     </div>
@@ -15061,7 +15128,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Autovalores-e-Autovetores">Autovalores e Autovetores<a class="anchor-link" href="#Autovalores-e-Autovetores">&#182;</a></h5>
+<h3 id="Autovalores-e-Autovetores">Autovalores e Autovetores<a class="anchor-link" href="#Autovalores-e-Autovetores">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15070,11 +15137,14 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">autovalores</span><span class="p">,</span> <span class="n">autovetores</span><span class="p">)</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">#determinando autovalores e autovetores</span>
-<span class="n">matrizDiagonal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">autovalores</span><span class="p">)</span> <span class="c1">#matriz diagonal de autovalores</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#determinando autovalores e autovetores</span>
+<span class="n">autovalores</span><span class="p">,</span> <span class="n">autovetores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> 
+<span class="c1"># matriz diagonal de autovalores</span>
+<span class="n">matrizDiagonal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">autovalores</span><span class="p">)</span> 
 
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">autovetores</span><span class="p">,</span><span class="n">matrizDiagonal</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">autovetores</span><span class="p">))</span> <span class="c1"># A = PDP^(-1)</span>
 <span class="c1"># obtendo novamente a matriz A através da decomposição espectral ou valores singulares</span>
+<span class="c1"># A = PDP^(-1)</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">autovetores</span><span class="p">,</span><span class="n">matrizDiagonal</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">autovetores</span><span class="p">))</span> 
 </pre></div>
 
     </div>
@@ -15087,7 +15157,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autovetores</span> <span class="c1"># autovetores da matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># autovetores da matriz A</span>
+<span class="n">autovetores</span> 
 </pre></div>
 
     </div>
@@ -15121,7 +15192,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">matrizDiagonal</span> <span class="c1"># matriz diagonal</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># matriz diagonal</span>
+<span class="n">matrizDiagonal</span> 
 </pre></div>
 
     </div>
@@ -15155,7 +15227,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="c1"># matriz de transformação linear</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># matriz de transformação linear</span>
+<span class="n">A</span> 
 </pre></div>
 
     </div>
@@ -15189,7 +15262,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autovalores</span> <span class="c1"># autovalores para a matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># autovalores para a matriz A</span>
+<span class="n">autovalores</span>
 </pre></div>
 
     </div>
@@ -15222,7 +15296,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eigvals</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1"># outra forma de se obter os autovalores</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># outra forma de se obter os autovalores</span>
+<span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eigvals</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -15253,7 +15328,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Decomposi&#231;&#227;o-em-Valores-Singulares">Decomposi&#231;&#227;o em Valores Singulares<a class="anchor-link" href="#Decomposi&#231;&#227;o-em-Valores-Singulares">&#182;</a></h5>
+<h3 id="Decomposi&#231;&#227;o-em-Valores-Singulares">Decomposi&#231;&#227;o em Valores Singulares<a class="anchor-link" href="#Decomposi&#231;&#227;o-em-Valores-Singulares">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15262,7 +15337,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span> <span class="c1"># criando uma matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando uma matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span> 
 <span class="p">(</span><span class="n">U</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">V</span><span class="p">)</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
 
@@ -15276,7 +15352,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">U</span> <span class="c1"># imprime a matriz U </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#  imprime a matriz U </span>
+<span class="n">U</span>
 </pre></div>
 
     </div>
@@ -15310,7 +15387,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="c1"># imprime a matriz s</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz s</span>
+<span class="n">s</span> 
 </pre></div>
 
     </div>
@@ -15343,7 +15421,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">V</span> <span class="c1"># imprime a matriz V</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz V</span>
+<span class="n">V</span> 
 </pre></div>
 
     </div>
@@ -15375,7 +15454,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Determinante-de-Matrizes">Determinante de Matrizes<a class="anchor-link" href="#Determinante-de-Matrizes">&#182;</a></h5>
+<h3 id="Determinante-de-Matrizes">Determinante de Matrizes<a class="anchor-link" href="#Determinante-de-Matrizes">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15384,7 +15463,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1"># determinante da matriz</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># determinante da matriz</span>
+<span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -15415,7 +15495,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Posto-da-Matriz">Posto da Matriz<a class="anchor-link" href="#Posto-da-Matriz">&#182;</a></h5>
+<h3 id="Posto-da-Matriz">Posto da Matriz<a class="anchor-link" href="#Posto-da-Matriz">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15424,7 +15504,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_rank</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">#posto da matriz</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># posto da matriz</span>
+<span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_rank</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -15455,7 +15536,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Tra&#231;o-da-Matriz-(Soma-da-Diagonal)">Tra&#231;o da Matriz (Soma da Diagonal)<a class="anchor-link" href="#Tra&#231;o-da-Matriz-(Soma-da-Diagonal)">&#182;</a></h5>
+<h3 id="Tra&#231;o-da-Matriz-(Soma-da-Diagonal)">Tra&#231;o da Matriz (Soma da Diagonal)<a class="anchor-link" href="#Tra&#231;o-da-Matriz-(Soma-da-Diagonal)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15464,7 +15545,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[78]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">#traço da matriz (soma da diagonal)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># traço da matriz (soma da diagonal)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -15495,7 +15577,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Sistema-de-Equa&#231;&#245;es">Sistema de Equa&#231;&#245;es<a class="anchor-link" href="#Sistema-de-Equa&#231;&#245;es">&#182;</a></h5>
+<h3 id="Sistema-de-Equa&#231;&#245;es">Sistema de Equa&#231;&#245;es<a class="anchor-link" href="#Sistema-de-Equa&#231;&#245;es">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15505,8 +15587,12 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Vamos considerar Ax = B</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">]])</span> <span class="c1"># criando a matriz A</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">]])</span> <span class="c1"># criando a matriz b</span>
+
+<span class="c1"># criando a matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">]])</span>
+<span class="c1"># criando a matriz b</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">]])</span>
+
 <span class="c1"># 3x = 6</span>
 <span class="c1"># 4y = 8</span>
 </pre></div>
@@ -15521,8 +15607,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">A</span><span class="p">),</span> <span class="n">b</span><span class="p">)</span>
-<span class="c1"># realiza a multiplicação da matriz inversa de A com a matriz b</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># realiza a multiplicação da matriz inversa de A com a matriz b</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">A</span><span class="p">),</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15535,7 +15621,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="c1"># imprime a matriz X</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz X</span>
+<span class="n">X</span> 
 </pre></div>
 
     </div>
@@ -15566,7 +15653,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Matriz-Inversa">Matriz Inversa<a class="anchor-link" href="#Matriz-Inversa">&#182;</a></h5>
+<h3 id="Matriz-Inversa">Matriz Inversa<a class="anchor-link" href="#Matriz-Inversa">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15575,7 +15662,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span> <span class="c1"># criando a matriz A</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># criando a matriz A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span> 
 </pre></div>
 
     </div>
@@ -15588,7 +15676,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1"># imprime a matriz inversa</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># imprime a matriz inversa</span>
+<span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -15620,27 +15709,25 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong><em>Aprenda mais</em></strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href = "https://numpy.org" target = "_blank"> numpy.org</a></td>
-</tr>
-<tr>
-<td style="text-align:left"><a href = "https://www.scipy.org" target = "_blank"> scipy.org </a></td>
-</tr>
-</tbody>
-</table>
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
