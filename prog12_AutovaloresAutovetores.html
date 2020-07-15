@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>Álgebra Linear com Python</title>
+<title>Autovalores e Autovetores</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13079,7 +13079,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header class = "headeratalho"> 
+  <header class = "headeratalho"> 
 
 		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
@@ -13115,22 +13115,23 @@ div#notebook {
 			})
 		})
 
-	</script>
-
+  </script>
+  
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Calculando-Autovalores-e-Autovetores">Calculando Autovalores e Autovetores<a class="anchor-link" href="#Calculando-Autovalores-e-Autovetores">&#182;</a></h1><h4 id="Este-progama-pretende-mostrar-um-recurso-computacional-para-conseguir-calcular-autovalores-e-autovetores-a-partir-de-uma-matriz-de-transforma&#231;&#227;o-informada.-Associados-com-uma-transforma&#231;&#227;o-linear-T-est&#227;o-os-seus-autovetores,-que,-como-veremos,-s&#227;o-dire&#231;&#245;es-especiais-para-esta-transforma&#231;&#227;o-T.-Por-esta-raz&#227;o,-s&#227;o-tamb&#233;m-conhecidos-como-vetores-pr&#243;prios-ou-vetores-caracter&#237;sticos-de-T.-Aparecem-em-muitas-aplica&#231;&#245;es,-pois-nos-ajudam-a-entender-mais-profundamente-a-transforma&#231;&#227;o-linear-T.">Este progama pretendo mostrar um recurso computacional para conseguir calcular autovalores e autovetores a partir de uma matriz de transforma&#231;&#227;o informada. Associados com uma transforma&#231;&#227;o linear T est&#227;o os seus autovetores, que, como veremos, s&#227;o dire&#231;&#245;es especiais para esta transforma&#231;&#227;o T. Por esta raz&#227;o, s&#227;o tamb&#233;m conhecidos como vetores pr&#243;prios ou vetores caracter&#237;sticos de T. Aparecem em muitas aplica&#231;&#245;es, pois nos ajudam a entender mais profundamente a transforma&#231;&#227;o linear T.<a class="anchor-link" href="#Este-progama-pretendo-mostrar-um-recurso-computacional-para-conseguir-calcular-autovalores-e-autovetores-a-partir-de-uma-matriz-de-transforma&#231;&#227;o-informada.-Associados-com-uma-transforma&#231;&#227;o-linear-T-est&#227;o-os-seus-autovetores,-que,-como-veremos,-s&#227;o-dire&#231;&#245;es-especiais-para-esta-transforma&#231;&#227;o-T.-Por-esta-raz&#227;o,-s&#227;o-tamb&#233;m-conhecidos-como-vetores-pr&#243;prios-ou-vetores-caracter&#237;sticos-de-T.-Aparecem-em-muitas-aplica&#231;&#245;es,-pois-nos-ajudam-a-entender-mais-profundamente-a-transforma&#231;&#227;o-linear-T.">&#182;</a></h4>
+<h1 id="Calculando-Autovalores-e-Autovetores">Calculando Autovalores e Autovetores<a class="anchor-link" href="#Calculando-Autovalores-e-Autovetores">&#182;</a></h1><h4 id="Este-progama-pretendo-mostrar-um-recurso-computacional-para-conseguir-calcular-autovalores-e-autovetores-a-partir-de-uma-matriz-de-transforma&#231;&#227;o-informada.-Associados-com-uma-transforma&#231;&#227;o-linear-T-est&#227;o-os-seus-autovetores,-que,-como-veremos,-s&#227;o-dire&#231;&#245;es-especiais-para-esta-transforma&#231;&#227;o-T.-Por-esta-raz&#227;o,-s&#227;o-tamb&#233;m-conhecidos-como-vetores-pr&#243;prios-ou-vetores-caracter&#237;sticos-de-T.-Aparecem-em-muitas-aplica&#231;&#245;es,-pois-nos-ajudam-a-entender-mais-profundamente-a-transforma&#231;&#227;o-linear-T.">Este progama pretendo mostrar um recurso computacional para conseguir calcular autovalores e autovetores a partir de uma matriz de transforma&#231;&#227;o informada. Associados com uma transforma&#231;&#227;o linear T est&#227;o os seus autovetores, que, como veremos, s&#227;o dire&#231;&#245;es especiais para esta transforma&#231;&#227;o T. Por esta raz&#227;o, s&#227;o tamb&#233;m conhecidos como vetores pr&#243;prios ou vetores caracter&#237;sticos de T. Aparecem em muitas aplica&#231;&#245;es, pois nos ajudam a entender mais profundamente a transforma&#231;&#227;o linear T.<a class="anchor-link" href="#Este-progama-pretendo-mostrar-um-recurso-computacional-para-conseguir-calcular-autovalores-e-autovetores-a-partir-de-uma-matriz-de-transforma&#231;&#227;o-informada.-Associados-com-uma-transforma&#231;&#227;o-linear-T-est&#227;o-os-seus-autovetores,-que,-como-veremos,-s&#227;o-dire&#231;&#245;es-especiais-para-esta-transforma&#231;&#227;o-T.-Por-esta-raz&#227;o,-s&#227;o-tamb&#233;m-conhecidos-como-vetores-pr&#243;prios-ou-vetores-caracter&#237;sticos-de-T.-Aparecem-em-muitas-aplica&#231;&#245;es,-pois-nos-ajudam-a-entender-mais-profundamente-a-transforma&#231;&#227;o-linear-T.">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">Refer&#234;ncia: &#193;lgebra Linear com aplica&#231;&#245;es / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.<a class="anchor-link" href="#Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#182;</a></h6>
+<h5 id="Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">Refer&#234;ncia: &#193;lgebra Linear com aplica&#231;&#245;es / Anton Howard e Chris Rorres; trad. Claus Ivo Doering. - 8. ed. - Porto Alegre: Bookman, 2001.<a class="anchor-link" href="#Refer&#234;ncia:-&#193;lgebra-Linear-com-aplica&#231;&#245;es-/-Anton-Howard-e-Chris-Rorres;-trad.-Claus-Ivo-Doering.---8.-ed.---Porto-Alegre:-Bookman,-2001.">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -13156,7 +13157,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># importando a biblioteca numpy do Python</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># importando a biblioteca numpy do Python</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Progama que calcula Autovalores e Autovetores.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
@@ -13196,7 +13198,7 @@ div#notebook {
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cada coluna é associada a cada um dos autovalores, respectivamente.&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Autovetores:</span><span class="se">\n\n</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">autovetores</span><span class="p">))</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">como a matriz não é invertível, dado que det(matriz) == 0, logo não é possível determinar os resultados.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">A matriz não é invertível, dado que det(matriz) == 0.&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13292,76 +13294,83 @@ Autovetores:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>[x] Se A é uma matriz $n_{x}n$ e se $T_{A}:R^{n}$ &rarr; $R^{n}$ é a multiplicação por A, então as seguintes afirmações são equivalentes:</li>
+<li>Se A é uma matriz $n_{x}n$ e se $T_{A}:R^{n}$ &rarr; $R^{n}$ é a multiplicação por A, então as seguintes afirmações são equivalentes:</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
-<th style="text-align:left"><center><strong>Afirmações Equivalente</strong><center></th>
+<th style="text-align:center"><strong>Afirmações Equivalente</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">1. A é invertível.</td>
+<td style="text-align:center">1. A é invertível.</td>
 </tr>
 <tr>
-<td style="text-align:left">2. A<strong>x</strong> = 0 admite somente a solução trivial.</td>
+<td style="text-align:center">2. A<strong>x</strong> = 0 admite somente a solução trivial.</td>
 </tr>
 <tr>
-<td style="text-align:left">3. A forma escalonada reduzida por linha de A é $I_{n}$.</td>
+<td style="text-align:center">3. A forma escalonada reduzida por linha de A é $I_{n}$.</td>
 </tr>
 <tr>
-<td style="text-align:left">4. A pode ser escrita como um produto de matrizes elementares.</td>
+<td style="text-align:center">4. A pode ser escrita como um produto de matrizes elementares.</td>
 </tr>
 <tr>
-<td style="text-align:left">5. A<strong>x</strong> = <strong>b</strong> é consistente para cada matriz <strong>b</strong> de tamanho $n_{x}1$.</td>
+<td style="text-align:center">5. A<strong>x</strong> = <strong>b</strong> é consistente para cada matriz <strong>b</strong> de tamanho $n_{x}1$.</td>
 </tr>
 <tr>
-<td style="text-align:left">6. A<strong>x</strong> = <strong>b</strong> tem exatamente uma solução para cada matrix <strong>b</strong>  de tamanho $n_{x}n$.</td>
+<td style="text-align:center">6. A<strong>x</strong> = <strong>b</strong> tem exatamente uma solução para cada matrix <strong>b</strong>  de tamanho $n_{x}n$.</td>
 </tr>
 <tr>
-<td style="text-align:left">7. det(A) &ne; 0.</td>
+<td style="text-align:center">7. det(A) &ne; 0.</td>
 </tr>
 <tr>
-<td style="text-align:left">8. A imagem de $T_{A}$ é o $R^{n}$.</td>
+<td style="text-align:center">8. A imagem de $T_{A}$ é o $R^{n}$.</td>
 </tr>
 <tr>
-<td style="text-align:left">9. $T_{A}$ é injetora.</td>
+<td style="text-align:center">9. $T_{A}$ é injetora.</td>
 </tr>
 <tr>
-<td style="text-align:left">10. Os vetores-coluna de A são linearmente independentes.</td>
+<td style="text-align:center">10. Os vetores-coluna de A são linearmente independentes.</td>
 </tr>
 <tr>
-<td style="text-align:left">11. Os vetores-linhas de A são linearmente dependentes.</td>
+<td style="text-align:center">11. Os vetores-linhas de A são linearmente dependentes.</td>
 </tr>
 <tr>
-<td style="text-align:left">12. Os vetores-coluna de A geram o $R^{n}$.</td>
+<td style="text-align:center">12. Os vetores-coluna de A geram o $R^{n}$.</td>
 </tr>
 <tr>
-<td style="text-align:left">13. Os vetores-linhas de A geram o $R^{n}$.</td>
+<td style="text-align:center">13. Os vetores-linhas de A geram o $R^{n}$.</td>
 </tr>
 <tr>
-<td style="text-align:left">14. Os vetores-coluna de A formam uma base do $R^{n}$.</td>
+<td style="text-align:center">14. Os vetores-coluna de A formam uma base do $R^{n}$.</td>
 </tr>
 <tr>
-<td style="text-align:left">15. Os vetores-linha de A formam uma base do $R^{n}$.</td>
+<td style="text-align:center">15. Os vetores-linha de A formam uma base do $R^{n}$.</td>
 </tr>
 <tr>
-<td style="text-align:left">16. A tem posto n.</td>
+<td style="text-align:center">16. A tem posto n.</td>
 </tr>
 <tr>
-<td style="text-align:left">17. A tem nulidade 0.</td>
+<td style="text-align:center">17. A tem nulidade 0.</td>
 </tr>
 <tr>
-<td style="text-align:left">18. O complemento ortogonal do espaço-nulo  de A é o $R^{n}$.</td>
+<td style="text-align:center">18. O complemento ortogonal do espaço-nulo  de A é o $R^{n}$.</td>
 </tr>
 <tr>
-<td style="text-align:left">19. O complemento ortogonal do espaço-linha de A é {0}.</td>
+<td style="text-align:center">19. O complemento ortogonal do espaço-linha de A é {0}.</td>
 </tr>
 <tr>
-<td style="text-align:left">20. $A^{t}A$ é invertível.</td>
+<td style="text-align:center">20. $A^{t}A$ é invertível.</td>
 </tr>
 <tr>
-<td style="text-align:left">21. &lambda; = 0 não é um autovalor de A.</td>
+<td style="text-align:center">21. &lambda; = 0 não é um autovalor de A.</td>
 </tr>
 </tbody>
 </table>
@@ -13372,24 +13381,25 @@ Autovetores:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th style="text-align:left"><center><strong>Aprenda mais:</strong><center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href = "http://matematicaufsj.files.wordpress.com/2012/12/caderno_al_vol1.pdf" target = "_blank"> Álgebra Linear - Vol 1 </a></td>
-</tr>
-</tbody>
-</table>
+<h3 id="Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">Alguma D&#250;vida? Entre em Contato Comigo:<a class="anchor-link" href="#Alguma-D&#250;vida?-Entre-em-Contato-Comigo:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="mailto:alysson.barbosa@ee.ufcg.edu.br">Me envie um e-mail</a>;</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-  
 </body>
+
+ 
+
 
 </html>
