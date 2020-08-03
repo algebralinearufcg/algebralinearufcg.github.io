@@ -13078,6 +13078,45 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
+
+  <header class = "headeratalho"> 
+
+		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
+
+		<div class = "menu-toggle"></div>
+
+		<nav class = "navatalho">
+			
+			<ul>
+				
+				<li><a href = "index.html" target = "_self" class = "active"> Programas </a></li>
+				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
+				<li><a href = "listademateriais.html" target = "_self"> Materiais </a></li>
+				<li><a href = "listadeformulario.html" target = "_self"> Feedback </a></li>
+
+			</ul>
+
+		</nav>
+
+		<div class = "clearfix"></div>
+
+	</header>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js" 
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+	crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+
+  </script>
+  
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -13516,44 +13555,6 @@ sequencialmente, dado que algumas células desenvolvidas anteriormente ajudam no
 <li>Clique na opção "Execute on Binder".</li>
 <li>Abrirá no browser um aplicativo Jupyter Notebook.</li>
 </ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Usando-o-Azure-Notebooks-da-Microsoft">Usando o Azure Notebooks da Microsoft<a class="anchor-link" href="#Usando-o-Azure-Notebooks-da-Microsoft">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Outro recurso interessante a ser mencionado é o Azure Notebooks da Microsoft. Com ele, você pode acessar todos os progamas aqui criados e abri-los pelo próprio navegador web, usando um servidor online da própria plataforma. Use o link abaixo para acessá-lo ou vá ao topo da página, lá você encontrará o mesmo link para acessar. Além disso, utilize os seguintes passos para compilar o progama:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li>Ao abrir a página do projeto, esteja logado com a sua conta da Microsoft.</li>
-<li>Clique na parte superior do projeto em "Clone", assim você terá salvo todos os projetos na sua conta.</li>
-<li>Caso você deseje baixar em seu computador o progama, há uma opção para fazer o download dos programas .ipynb</li>
-<li>Pronto, você pode usá-los da forma que quiser, alterando valores e testando novas funcionalidades.</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><a href="https://notebooks.azure.com/Alyssonmach/projects/algebra-linear-com-python">Azure Notebooks Microsoft</a></li>
-</ul>
 
 </div>
 </div>
