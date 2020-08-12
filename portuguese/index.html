@@ -21,6 +21,7 @@
     <!-- Definindo as configurações para o conteúdo da página -->
 	<link rel = "stylesheet" type = "text/css" href = "CSS/estilomateriais.css">
 	<link rel = "stylesheet" type = "text/css" href = "CSS/switcher.css">
+	<link rel = "stylesheet" type = "text/css" href = "CSS/popup.css">
 
 </head>
 
@@ -42,7 +43,11 @@
 				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
 				<li><a href = "Templates/listademateriais.html" target = "_self"> Materiais </a></li>
 				<li><a href = "Templates/listadeformulario.html" target = "_self"> Feedback </a></li>
-				<li><a href = "#" target = "_self"> PT-BR <img src = "Imagens/pt-br.png" alt = "pt-br" width = "17"></a></li>
+				<li><a href = "#" target = "_self"> 
+
+					<button onclick="togglePopup()">PT-BR <img src = "Imagens/pt-br.png" alt = "pt-br" width = "17"></button>					
+				
+					</a></li>
 				<li>
 					
 					<div class="container-switcher">
@@ -63,6 +68,36 @@
 		<div class = "clearfix"></div>
 
 	</header>
+
+	<div class="popup" id="popup-1">
+		<div class="overlay"></div>
+		<div class="content-popup">
+		  <div class="close-btn" onclick="togglePopup()">&times;</div>
+		  <h1>Language</h1>
+		  <hr>
+		  <p>See the "<strong>Linear Algebra project with Python</strong>" in your preferred language!</p>
+
+		  <table border = "0"  align = "center">
+			  <tr>
+				  <td>
+					<button class = "button-style">Português &nbsp; <img src = "Imagens/pt-br.png" alt = "pt-br" width = "20"> </button>
+				  </td>
+				  <td>
+					<button class = "button-style"> English &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "Imagens/english.png" alt = "pt-br" width = "20"></button>
+				  </td>
+			  </tr>
+			  <tr>
+				<td>
+					<button class = "button-style">Français&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "Imagens/français.png" alt = "pt-br" width = "20">&nbsp;</button>
+				</td>
+				<td>
+					<button class = "button-style">Deutsche &nbsp;<img src = "Imagens/deutsche.png" alt = "pt-br" width = "20"></button>
+				</td>
+			</tr>
+		  </table>
+
+		</div>
+	  </div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.js" 
 	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
@@ -142,6 +177,7 @@
 
 	<script type = "text/javascript" src = "JavaScript/pace.min.js"></script>
 	<script type = "text/javascript" src = "JavaScript/switcher.js"></script>
+	<script type = "text/javascript" src = "JavaScript/popup.js"></script>
 
 	<footer class = "footeratalho">
 
