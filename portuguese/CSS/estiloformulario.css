@@ -13,7 +13,7 @@ body{
 	margin: auto;
 	margin-top: 30px;
 	padding: 20px;
-	box-shadow: 0 0 20px 1px rgba(0,0,0,.3);
+	box-shadow: 0 0 20px 1px var(--font-color);;
 	position: relative;
 }
 
@@ -32,12 +32,12 @@ body{
 .formulario__input{
 	padding: 10px;
 	background: rgba(0,0,0,.1);
-	border: 1px solid rgba(0,0,0,.3);
+	border: 1px solid var(--font-color);;
 	margin-bottom: 40px;
 }
 
 .formulario__input:focus {
-	outline: 1px solid rgba(0,0,0,.7);
+	outline: 1px solid var(--font-color);
 }
 
 .formulario__input:focus + .formulario__label{
@@ -49,7 +49,7 @@ body{
 	position: absolute;
 	margin-top: -90px;
 	z-index: -20;
-	color: rgba(0, 0, 0, 0.863);
+	color: var(--font-color);
 	transition: all 0.2s;
 }
 
