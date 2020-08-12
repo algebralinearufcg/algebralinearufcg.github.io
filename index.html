@@ -19,7 +19,8 @@
     <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
     <!-- Definindo as configurações para o conteúdo da página -->
-    <link rel = "stylesheet" type = "text/css" href = "pt-br/CSS/estilomateriais.css">
+	<link rel = "stylesheet" type = "text/css" href = "pt-br/CSS/estilomateriais.css">
+	<link rel = "stylesheet" type = "text/css" href = "pt-br/CSS/switcher.css">
 
 </head>
 
@@ -42,6 +43,18 @@
 				<li><a href = "pt-br/Templates/listademateriais.html" target = "_self"> Materiais </a></li>
 				<li><a href = "pt-br/Templates/listadeformulario.html" target = "_self"> Feedback </a></li>
 				<li><a href = "#" target = "_self"> PT-BR <img src = "pt-br/Imagens/pt-br.png" alt = "pt-br" width = "17"></a></li>
+				<li>
+					
+					<div class="container-switcher">
+
+					<label id="switch" class="switch">
+							<input type="checkbox" onchange="toggleTheme()" id="slider">
+							<span class="slider round"></span>
+					</label>
+					
+					</div>
+					
+			    </li>
 
 			</ul>
 
@@ -128,10 +141,11 @@
 	</div>
 
 	<script type = "text/javascript" src = "pt-br/JavaScript/pace.min.js"></script>
+	<script type = "text/javascript" src = "pt-br/JavaScript/switcher.js"></script>
 
 	<footer class = "footeratalho">
 
-  			<p align = "center">Criado por:<a href = "mailto:alysson.barbosa@ee.ufcg.edu.br" target = "_blank"> Alysson Machado </a> </p>
+		<p align = "center">Criado por:<a href = "mailto:alysson.barbosa@ee.ufcg.edu.br" target = "_blank"> Alysson Machado </a> </p>
 
 	</footer>
 
