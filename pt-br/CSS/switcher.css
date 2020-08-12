@@ -5,9 +5,9 @@
   --font-color: #000000;
 }
 .theme-dark {
-  --color-primary: #ea4435be;
-  --color-secondary: #2a2c2d;
-  --color-accent: #4286f4c0;
+  --color-primary: #ea4435af;
+  --color-secondary: #2a2c2de8;
+  --color-accent: #4286f4af;
   --font-color: #ffffff;
 }
 .container-switcher {
@@ -71,7 +71,7 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   box-shadow: 0 0px 15px #2020203d;
-  background: white url('https://i.ibb.co/FxzBYR9/night.png');
+  background: white url('https://i.ibb.co/FxzBYR9/night.png'); 
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -88,7 +88,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
-  background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+  background: white url('https://i.ibb.co/7JfqXxB/sunny.png'); 
   background-repeat: no-repeat;
   background-position: center;
 }
