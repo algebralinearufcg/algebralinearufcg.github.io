@@ -23,7 +23,7 @@ body
 	align-items: center;
 	width: 350px;
 	padding: 40px;
-	background: #fff;
+	background: var(--font-card1); /*#fff*/
 	box-shadow: 0 5px 15px rgba(0,0,0,.3);
 	border-radius: 4px;
 	margin: 20px;
@@ -64,266 +64,266 @@ body
 
 .container .box:nth-child(1) .icon
 {
-	box-shadow: 0 0 0 0 #da4d39;
-	background: #da4d39;
+	box-shadow: 0 0 0 0 var(--base-color1);
+	background: var(--base-color1);
 }
 
 .container .box:nth-child(1):hover .icon
 {
-	box-shadow: 0 0 0 540px #da4d39;
-	background: #da4d39;
+	box-shadow: 0 0 0 540px var(--base-color1);
+	background: var(--base-color1);
 }
 
 .container .box:nth-child(2) .icon
 {
-	box-shadow: 0 0 0 0 #1166e8;
-	background: #1166e8;
+	box-shadow: 0 0 0 0 var(--base-color2);
+	background: var(--base-color2);
 }
 
 .container .box:nth-child(2):hover .icon
 {
-	box-shadow: 0 0 0 540px #1166e8;
-	background: #1166e8;
+	box-shadow: 0 0 0 540px var(--base-color2);
+	background: var(--base-color2);
 }
 
 .container .box:nth-child(3) .icon
 {
-	box-shadow: 0 0 0 0 #009c58;
-	background: #009c58;
+	box-shadow: 0 0 0 0 var(--base-color3);
+	background: var(--base-color3);
 }
 
 .container .box:nth-child(3):hover .icon
 {
-	box-shadow: 0 0 0 540px #009c58;
-	background: #009c58;
+	box-shadow: 0 0 0 540px var(--base-color3);
+	background: var(--base-color3);
 }
 
 .container .box:nth-child(4) .icon
 {
-	box-shadow: 0 0 0 0  #dd4814;
-	background:  #dd4814;
+	box-shadow: 0 0 0 0  var(--base-color4);
+	background:  var(--base-color4);
 }
 
 .container .box:nth-child(4):hover .icon
 {
-	box-shadow: 0 0 0 540px  #dd4814;
-	background: #dd4814;
+	box-shadow: 0 0 0 540px  var(--base-color4);
+	background: var(--base-color4);
 }
 
 .container .box:nth-child(5) .icon
 {
-	box-shadow: 0 0 0 0 #7D26CD;
-	background: #7D26CD;
+	box-shadow: 0 0 0 0 var(--base-color5);
+	background: var(--base-color5);
 }
 
 .container .box:nth-child(5):hover .icon
 {
-	box-shadow: 0 0 0 540px #7D26CD;
-	background: #7D26CD;
+	box-shadow: 0 0 0 540px var(--base-color5);
+	background: var(--base-color5);
 }
 
 .container .box:nth-child(6) .icon
 {
-	box-shadow: 0 0 0 0  #627870;
-	background:  #627870;
+	box-shadow: 0 0 0 0  var(--base-color6);
+	background:  var(--base-color6);
 }
 
 .container .box:nth-child(6):hover .icon
 {
-	box-shadow: 0 0 0 540px  #627870;
-	background:  #627870;
+	box-shadow: 0 0 0 540px  var(--base-color6);
+	background:  var(--base-color6);
 }
 
 .container .box:nth-child(7) .icon
 {
-	box-shadow: 0 0 0 0 rgb(160, 0, 112);
-	background: rgb(160, 0, 112);
+	box-shadow: 0 0 0 0 var(--base-color7);
+	background: var(--base-color7);
 }
 
 .container .box:nth-child(7):hover .icon
 {
-	box-shadow: 0 0 0 540px rgb(160, 0, 112);
-	background: rgb(160, 0, 112);
+	box-shadow: 0 0 0 540px var(--base-color7);
+	background: var(--base-color7);
 }
 
 .container .box:nth-child(8) .icon
 {
-	box-shadow: 0 0 0 0 #f82790;
-	background: #f82790;
+	box-shadow: 0 0 0 0 var(--base-color8);
+	background: var(--base-color8);
 }
 
 .container .box:nth-child(8):hover .icon
 {
-	box-shadow: 0 0 0 540px #f82790;
-	background: #f82790;
+	box-shadow: 0 0 0 540px var(--base-color8);
+	background: var(--base-color8);
 }
 
 .container .box:nth-child(9) .icon
 {
-	box-shadow: 0 0 0 0 gray;
-	background: gray;
+	box-shadow: 0 0 0 0 var(--base-color9);
+	background: var(--base-color9);
 }
 
 .container .box:nth-child(9):hover .icon
 {
-	box-shadow: 0 0 0 540px gray;
-	background: gray;
+	box-shadow: 0 0 0 540px var(--base-color9);
+	background: var(--base-color9);
 }
 
 .container .box:nth-child(10) .icon
 {
-	box-shadow: 0 0 0 0 #da4d39;
-	background: #da4d39;
+	box-shadow: 0 0 0 0 var(--base-color1);
+	background: var(--base-color1);
 }
 
 .container .box:nth-child(10):hover .icon
 {
-	box-shadow: 0 0 0 540px #da4d39;
-	background: #da4d39;
+	box-shadow: 0 0 0 540px var(--base-color1);
+	background: var(--base-color1);
 }
 
 .container .box:nth-child(11) .icon
 {
-	box-shadow: 0 0 0 0 #1166e8;
-	background: #1166e8;
+	box-shadow: 0 0 0 0 var(--base-color2);
+	background: var(--base-color2);
 }
 
 .container .box:nth-child(11):hover .icon
 {
-	box-shadow: 0 0 0 540px #1166e8;
-	background: #1166e8;
+	box-shadow: 0 0 0 540px var(--base-color2);
+	background: var(--base-color2);
 }
 
 .container .box:nth-child(12) .icon
 {
-	box-shadow: 0 0 0 0 #009c58;
-	background: #009c58;
+	box-shadow: 0 0 0 0 var(--base-color3);
+	background: var(--base-color3);
 }
 
 .container .box:nth-child(12):hover .icon
 {
-	box-shadow: 0 0 0 540px #009c58;
-	background: #009c58;
+	box-shadow: 0 0 0 540px var(--base-color3);
+	background: var(--base-color3);
 }
 
 .container .box:nth-child(13) .icon
 {
-	box-shadow: 0 0 0 0  #dd4814;
-	background:  #dd4814;
+	box-shadow: 0 0 0 0  var(--base-color4);
+	background:  var(--base-color4);
 }
 
 .container .box:nth-child(13):hover .icon
 {
-	box-shadow: 0 0 0 540px  #dd4814;
-	background: #dd4814;
+	box-shadow: 0 0 0 540px  var(--base-color4);
+	background: var(--base-color4);
 }
 
 .container .box:nth-child(14) .icon
 {
-	box-shadow: 0 0 0 0 #7D26CD;
-	background: #7D26CD;
+	box-shadow: 0 0 0 0 var(--base-color5);
+	background: var(--base-color5);
 }
 
 .container .box:nth-child(14):hover .icon
 {
-	box-shadow: 0 0 0 540px #7D26CD;
-	background: #7D26CD;
+	box-shadow: 0 0 0 540px var(--base-color5);
+	background: var(--base-color5);
 }
 
 .container .box:nth-child(15) .icon
 {
-	box-shadow: 0 0 0 0  #627870;
-	background:  #627870;
+	box-shadow: 0 0 0 0  var(--base-color6);
+	background:  var(--base-color6);
 }
 
 .container .box:nth-child(15):hover .icon
 {
-	box-shadow: 0 0 0 540px  #627870;
-	background:  #627870;
+	box-shadow: 0 0 0 540px  var(--base-color6);
+	background:  var(--base-color6);
 }
 
 .container .box:nth-child(16) .icon
 {
-	box-shadow: 0 0 0 0 rgb(160, 0, 112);
-	background: rgb(160, 0, 112);
+	box-shadow: 0 0 0 0 var(--base-color7);
+	background: var(--base-color7);
 }
 
 .container .box:nth-child(16):hover .icon
 {
-	box-shadow: 0 0 0 540px rgb(160, 0, 112);
-	background: rgb(160, 0, 112);
+	box-shadow: 0 0 0 540px var(--base-color7);
+	background: var(--base-color7);
 }
 
 .container .box:nth-child(17) .icon
 {
-	box-shadow: 0 0 0 0 #f82790;
-	background: #f82790;
+	box-shadow: 0 0 0 0 var(--base-color8);
+	background: var(--base-color8);
 }
 
 .container .box:nth-child(17):hover .icon
 {
-	box-shadow: 0 0 0 540px #f82790;
-	background: #f82790;
+	box-shadow: 0 0 0 540px var(--base-color8);
+	background: var(--base-color8);
 }
 
 .container .box:nth-child(18) .icon
 {
-	box-shadow: 0 0 0 0 gray;
-	background: gray;
+	box-shadow: 0 0 0 0 var(--base-color9);
+	background: var(--base-color9);
 }
 
 .container .box:nth-child(18):hover .icon
 {
-	box-shadow: 0 0 0 540px gray;
-	background: gray;
+	box-shadow: 0 0 0 540px var(--base-color9);
+	background: var(--base-color9);
 }
 
 .container .box:nth-child(19) .icon
 {
-	box-shadow: 0 0 0 0 #da4d39;
-	background: #da4d39;
+	box-shadow: 0 0 0 0 var(--base-color1);
+	background: var(--base-color1);
 }
 
 .container .box:nth-child(19):hover .icon
 {
-	box-shadow: 0 0 0 540px #da4d39;
-	background: #da4d39;
+	box-shadow: 0 0 0 540px var(--base-color1);
+	background: var(--base-color1);
 }
 
 .container .box:nth-child(20) .icon
 {
-	box-shadow: 0 0 0 0 #1166e8;
-	background: #1166e8;
+	box-shadow: 0 0 0 0 var(--base-color2);
+	background: var(--base-color2);
 }
 
 .container .box:nth-child(20):hover .icon
 {
-	box-shadow: 0 0 0 540px #1166e8;
-	background: #1166e8;
+	box-shadow: 0 0 0 540px var(--base-color2);
+	background: var(--base-color2);
 }
 
 .container .box:nth-child(21) .icon
 {
-	box-shadow: 0 0 0 0 #009c58;
-	background: #009c58;
+	box-shadow: 0 0 0 0 var(--base-color3);
+	background: var(--base-color3);
 }
 
 .container .box:nth-child(21):hover .icon
 {
-	box-shadow: 0 0 0 540px #009c58;
-	background: #009c58;
+	box-shadow: 0 0 0 540px var(--base-color3);
+	background: var(--base-color3);
 }
 
 .container .box:nth-child(22) .icon
 {
-	box-shadow: 0 0 0 0  #dd4814;
-	background:  #dd4814;
+	box-shadow: 0 0 0 0  var(--base-color4);
+	background:  var(--base-color4);
 }
 
 .container .box:nth-child(22):hover .icon
 {
-	box-shadow: 0 0 0 540px  #dd4814;
-	background: #dd4814;
+	box-shadow: 0 0 0 540px  var(--base-color4);
+	background: var(--base-color4);
 }
 
 .container .box .content
@@ -340,6 +340,7 @@ body
 
 .container .box .content h3
 {
+	color: var(--font-color);
 	font-size: 20px;
 	margin: 10px 0;
 	padding: 0;
@@ -347,6 +348,7 @@ body
 
 .container .box .content p
 {
+	color: var(--font-color);
 	margin: 0;
 	padding: 0;
 }
@@ -355,10 +357,10 @@ body
 {
 	display: inline-block;
 	padding: 10px 20px;
-	background: #fff;
+	background: var(--font-card2);
 	border-radius: 4px;
 	text-decoration: none;
-	color: #000;
+	color: var(--font-color);
 	font-weight: 500;
 	margin-top: 20px;
 	box-shadow: 0 2px 5px rgba(0,0,0,.4);

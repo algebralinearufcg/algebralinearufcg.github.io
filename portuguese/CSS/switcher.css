@@ -3,12 +3,34 @@
   --color-secondary: #fbfbfe;
   --color-accent: #4285F4;
   --font-color: #000000;
+  --font-card1: #ffffff;
+  --font-card2: #ffffff;
+  --base-color1:#da4d39;
+  --base-color2:#1166e8;
+  --base-color3:#009c58;
+  --base-color4:#dd4814;
+  --base-color5:#7D26CD;
+  --base-color6:#627870;
+  --base-color7:rgb(160, 0, 112);
+  --base-color8:#f82790;
+  --base-color9:gray;
 }
 .theme-dark {
   --color-primary: #ea4435af;
-  --color-secondary: #2a2c2de8;
+  --color-secondary: #2a2c2ddc;
   --color-accent: #4286f4af;
   --font-color: #ffffff;
+  --font-card1: #000000af;
+  --font-card2: #0000009f;
+  --base-color1:#da4c3977;
+  --base-color2:#1166e877;
+  --base-color3:#009c5877;
+  --base-color4:#dd481477;
+  --base-color5:#7D26CD77;
+  --base-color6:#62787077;
+  --base-color7:rgba(160, 0, 112, 0.411);
+  --base-color8:#f8279077;
+  --base-color9:rgba(128, 128, 128, 0.418);
 }
 .container-switcher {
   float: left;
