@@ -95,7 +95,7 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   box-shadow: 0 0px 15px #2020203d;
-  background: white url('https://i.ibb.co/FxzBYR9/night.png'); 
+  background: white url('https://i.ibb.co/7JfqXxB/sunny.png'); 
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -112,7 +112,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
-  background: white url('https://i.ibb.co/7JfqXxB/sunny.png'); 
+  background: white url('https://i.ibb.co/FxzBYR9/night.png'); 
   background-repeat: no-repeat;
   background-position: center;
 }
