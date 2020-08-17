@@ -23,7 +23,7 @@ body
 	align-items: center;
 	width: 350px;
 	padding: 40px;
-	background: var(--font-card1); /*#fff*/
+	background: var(--font-card1); 
 	box-shadow: 0 5px 15px rgba(0,0,0,.3);
 	border-radius: 100px;
 	margin: 20px;
@@ -34,6 +34,7 @@ body
 
 .container .box:before
 {
+	border-radius: 100px 0px 0px 100px;
 	content: '';
 	width: 50%;
 	height: 100%;
