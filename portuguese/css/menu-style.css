@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700');
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	background: var(--color-secondary); 
+	background-attachment: fixed;
+}
+
+.headeratalho
+{
+	position: relative;
+	max-width: 1300px;
+	margin: 20px auto;
+	padding: 10px;
+	background: var(--color-secondary); 
+	box-sizing: border-box;
+	border-radius: 32px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo
+{
+	color: var(--color-primary); 
+	height: 60px;
+	font-size: 36px;
+	line-height: 60px;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.navatalho
+{
+	float: right;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+.navatalho ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navatalho ul li
+{
+	list-style: none;
+}
+
+.navatalho ul li a
+{
+	display: block;
+	margin: 10px 1.5px;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: var(--color-accent); 
+}
+
+.navatalho ul li a.active, .navatalho ul li a:hover
+{
+	border-radius: 34px;
+	background: var(--color-primary); 
+	color: #fff;
+	transition: 0.2s;
+}
+
+@media (max-width: 1290px)
+{
+	.menu-toggle
+	{
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		float: right;
+		cursor: pointer;
+		text-align: center;
+		font-size: 30px;
+		color: #4285F4;
+	}
+
+	.menu-toggle:before
+	{
+		content: '\f0c9';
+		font-family: fontAwesome;
+		line-height: 40px;
+	}
+
+	.menu-toggle.active:before
+	{
+		content: '\f00d';
+	}
+
+	.navatalho
+	{
+		display: none;
+	}
+
+	.navatalho.active
+	{
+		display: block;
+		width: 100%;
+	}
+
+	.navatalho.active ul
+	{
+		display: block;
+	}
+
+	.navatalho.active ul li a
+	{
+		margin: 5px;
+	}
+
+	
+}
