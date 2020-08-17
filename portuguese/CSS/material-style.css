@@ -25,7 +25,7 @@ body
 	padding: 40px;
 	background: var(--font-card1); /*#fff*/
 	box-shadow: 0 5px 15px rgba(0,0,0,.3);
-	border-radius: 4px;
+	border-radius: 100px;
 	margin: 20px;
 	box-sizing: border-box;
 	overflow: hidden;
