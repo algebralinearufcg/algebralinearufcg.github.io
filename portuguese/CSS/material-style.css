@@ -368,7 +368,7 @@ body
 
 .footeratalho p, .footeratalho a
 {
-	color: #069370;
+	color: var(--color-accent);
 	height: 30px;
 	font-size: 18px;
 	line-height: 30px;
