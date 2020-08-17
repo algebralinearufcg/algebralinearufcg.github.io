@@ -8240,7 +8240,7 @@ button.close {
 */
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, css: MIT License)
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
@@ -12653,7 +12653,7 @@ ul#new-menu {
 * IPython notebook
 *
 */
-/* css font colors for translated ANSI escape sequences */
+/* CSS font colors for translated ANSI escape sequences */
 /* The color values are a mix of
    http://www.xcolors.net/dl/baskerville-ivorylight and
    http://www.xcolors.net/dl/euphrasia */
@@ -14139,7 +14139,7 @@ p.dialog {
   padding: 0.2em;
 }
 
-/* Word-wrap output correctly.  This is the css3 spelling, though Firefox seems
+/* Word-wrap output correctly.  This is the CSS3 spelling, though Firefox seems
    to not honor it correctly.  Webkit browsers (Chrome, rekonq, Safari) do.
  */
 pre,
@@ -14211,7 +14211,7 @@ kbd {
   padding-bottom: 1px;
 }
 
-/* css for the cell toolbar */
+/* CSS for the cell toolbar */
 .celltoolbar {
   border: thin solid #CFCFCF;
   border-bottom: none;
@@ -16024,7 +16024,7 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 }
  /* Literal.Number.Integer.Long */
 
-/* Overrides of notebook css for static HTML export */
+/* Overrides of notebook CSS for static HTML export */
 body {
   overflow: visible;
   padding: 8px;
