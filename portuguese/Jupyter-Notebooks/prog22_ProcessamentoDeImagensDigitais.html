@@ -2,17 +2,25 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Imagens Digitais</title>
+<title>img Digitais</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
+<<<<<<< HEAD
+<link rel = "stylesheet" href = "../css/jupyter-style.css">
+<link rel="stylesheet" href="../css/switcher.css">
+<link rel = "stylesheet" href = "../css/loading.css">
+<link rel = "icon" href = "../img/logo.png" type = "image/x-icon" />
+<link rel = "shortcut icon" href = "../img/logo.png" type = "image/x-icon" />
+=======
 <link rel = "stylesheet" href = "../CSS/jupyter-style.css">
 <link rel="stylesheet" href="../CSS/switcher.css">
 <link rel = "stylesheet" href = "../CSS/loading.css">
 <link rel = "icon" href = "../Imagens/logo.png" type = "image/x-icon" />
 <link rel = "shortcut icon" href = "../Imagens/logo.png" type = "image/x-icon" />
+>>>>>>> parent of 059e943... Atualizando arquivos css
 <meta name = "author" content = "Alysson Machado">
 <meta name = "description" content = "Aplicações dos tópicos aprendidos na disciplina Álgebra Linear em Python.">
 <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
@@ -43,8 +51,8 @@
     <!-- End of mathjax configuration --></head>
 <body>
 
-  <script type = "text/javascript" src = "../JavaScript/switcher.js"></script>
-  <script type = "text/javascript" src = "../JavaScript/pace.min.js"></script>
+  <script type = "text/js" src = "../js/switcher.js"></script>
+  <script type = "text/js" src = "../js/pace.min.js"></script>
 
   <header class = "headeratalho"> 
 
@@ -85,7 +93,7 @@
 	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
 	crossorigin="anonymous"></script>
 
-	<script type="text/javascript">
+	<script type="text/js">
 
 		$(document).ready(function(){
 			$('.menu-toggle').click(function(){
@@ -103,14 +111,14 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Introdu&#231;&#227;o-a-Processamento-de-Imagens">Introdu&#231;&#227;o a Processamento de Imagens<a class="anchor-link" href="#Introdu&#231;&#227;o-a-Processamento-de-Imagens">&#182;</a></h1><h4 id="Imagens-digitais-s&#227;o-representadas-por-in&#250;meros-pixels.-Cada-pixel-corresponde-a-um-elemento-de-uma-matriz-que-representa-a-imagem-digital.-Vamos-ver-como-podemos-usar-algumas-opera&#231;&#245;es-com-matrizes-para-fazer-processamento-de-imagens-usando-a-linguagem-de-progama&#231;&#227;o-Python-e-os-t&#243;picos-aprendidos-em-&#193;lgebra-Linear.">Imagens digitais s&#227;o representadas por in&#250;meros pixels. Cada pixel corresponde a um elemento de uma matriz que representa a imagem digital. Vamos ver como podemos usar algumas opera&#231;&#245;es com matrizes para fazer processamento de imagens usando a linguagem de progama&#231;&#227;o Python e os t&#243;picos aprendidos em &#193;lgebra Linear.<a class="anchor-link" href="#Imagens-digitais-s&#227;o-representadas-por-in&#250;meros-pixels.-Cada-pixel-corresponde-a-um-elemento-de-uma-matriz-que-representa-a-imagem-digital.-Vamos-ver-como-podemos-usar-algumas-opera&#231;&#245;es-com-matrizes-para-fazer-processamento-de-imagens-usando-a-linguagem-de-progama&#231;&#227;o-Python-e-os-t&#243;picos-aprendidos-em-&#193;lgebra-Linear.">&#182;</a></h4>
+<h1 id="Introdu&#231;&#227;o-a-Processamento-de-img">Introdu&#231;&#227;o a Processamento de img<a class="anchor-link" href="#Introdu&#231;&#227;o-a-Processamento-de-img">&#182;</a></h1><h4 id="img-digitais-s&#227;o-representadas-por-in&#250;meros-pixels.-Cada-pixel-corresponde-a-um-elemento-de-uma-matriz-que-representa-a-imagem-digital.-Vamos-ver-como-podemos-usar-algumas-opera&#231;&#245;es-com-matrizes-para-fazer-processamento-de-img-usando-a-linguagem-de-progama&#231;&#227;o-Python-e-os-t&#243;picos-aprendidos-em-&#193;lgebra-Linear.">img digitais s&#227;o representadas por in&#250;meros pixels. Cada pixel corresponde a um elemento de uma matriz que representa a imagem digital. Vamos ver como podemos usar algumas opera&#231;&#245;es com matrizes para fazer processamento de img usando a linguagem de progama&#231;&#227;o Python e os t&#243;picos aprendidos em &#193;lgebra Linear.<a class="anchor-link" href="#img-digitais-s&#227;o-representadas-por-in&#250;meros-pixels.-Cada-pixel-corresponde-a-um-elemento-de-uma-matriz-que-representa-a-imagem-digital.-Vamos-ver-como-podemos-usar-algumas-opera&#231;&#245;es-com-matrizes-para-fazer-processamento-de-img-usando-a-linguagem-de-progama&#231;&#227;o-Python-e-os-t&#243;picos-aprendidos-em-&#193;lgebra-Linear.">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Uma das tecnologias mais interessantes e de grande utilidade na atualidade são as <strong>imagens digitais</strong>. Com elas, podemos armazená-las em diversos tipos de bancos de dados com mais segurança e facilidade. Por exemplo, a rede social <strong>Instagram</strong> as utiliza para que possamos compartilhar diversos momentos de nossas vidas com outras pessoas. Mas como o computador armazena e lida com as imagens digitais?</p>
+<p>Uma das tecnologias mais interessantes e de grande utilidade na atualidade são as <strong>img digitais</strong>. Com elas, podemos armazená-las em diversos tipos de bancos de dados com mais segurança e facilidade. Por exemplo, a rede social <strong>Instagram</strong> as utiliza para que possamos compartilhar diversos momentos de nossas vidas com outras pessoas. Mas como o computador armazena e lida com as img digitais?</p>
 
 </div>
 </div>
@@ -118,7 +126,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Imagens-Digitais">Imagens Digitais<a class="anchor-link" href="#Imagens-Digitais">&#182;</a></h3>
+<h3 id="img-Digitais">img Digitais<a class="anchor-link" href="#img-Digitais">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -430,7 +438,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como as imagens digitais são representadas através de matrizes, é inerente a disciplina de Álgebra Linear. Como por exemplo, a ideia de <strong>combinação linear</strong> entre as três camadas de cores que formam um pixel, responsável por nos dar diversos tipos de paletas de cores que juntas formam uma imagem.</p>
+<p>Como as img digitais são representadas através de matrizes, é inerente a disciplina de Álgebra Linear. Como por exemplo, a ideia de <strong>combinação linear</strong> entre as três camadas de cores que formam um pixel, responsável por nos dar diversos tipos de paletas de cores que juntas formam uma imagem.</p>
 
 </div>
 </div>
@@ -1202,7 +1210,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Quem faz uso de aplicativos que editam imagens, já pode ter uma noção mínima de como o processo ocorre após estudar esses assunto. Para finalizar, podemos adicionar valores a cada elemento da matriz, de forma que será possível mudar as intensidades pré-estabelecidas para os pixels que constituem a imagem. Assim, é possível modificar as propiedades da mesma visando obter um novo resultado.</p>
+<p>Quem faz uso de aplicativos que editam img, já pode ter uma noção mínima de como o processo ocorre após estudar esses assunto. Para finalizar, podemos adicionar valores a cada elemento da matriz, de forma que será possível mudar as intensidades pré-estabelecidas para os pixels que constituem a imagem. Assim, é possível modificar as propiedades da mesma visando obter um novo resultado.</p>
 
 </div>
 </div>
@@ -1310,7 +1318,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Partindo do princípio que algoritmos inteligentes aprendem com os dados através de etapas de treinamento, será que um computador teria a capacidade de reconhecer imagens? A resposta é sim! Através do processamento digital das imagens (como você viu, não são nada mais e nada menos que arrays com dados numéricos), esses dados podem passar por inúmeras etapas, usando geralmente redes neurais artificiais e, através disso, o algoritmo pode identificar padrões nesse dados. Desse modo, podemos criar sistemas inteligentes como o que reconhece pessoas através de câmeras. Vale a pena estudar sobre isso!</p>
+<p>Partindo do princípio que algoritmos inteligentes aprendem com os dados através de etapas de treinamento, será que um computador teria a capacidade de reconhecer img? A resposta é sim! Através do processamento digital das img (como você viu, não são nada mais e nada menos que arrays com dados numéricos), esses dados podem passar por inúmeras etapas, usando geralmente redes neurais artificiais e, através disso, o algoritmo pode identificar padrões nesse dados. Desse modo, podemos criar sistemas inteligentes como o que reconhece pessoas através de câmeras. Vale a pena estudar sobre isso!</p>
 
 </div>
 </div>
@@ -1325,7 +1333,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Imagens Digitais e Matrizes. Universidade Federal Fluminense (UFF), Gazeta da Matemática. Rio de Janeiro. Acesso em 01 de março de 2020. Disponível em: <a href="http://gazeta.spm.pt/getArtigo?gid=407">http://gazeta.spm.pt/getArtigo?gid=407</a>.</p>
+<p>img Digitais e Matrizes. Universidade Federal Fluminense (UFF), Gazeta da Matemática. Rio de Janeiro. Acesso em 01 de março de 2020. Disponível em: <a href="http://gazeta.spm.pt/getArtigo?gid=407">http://gazeta.spm.pt/getArtigo?gid=407</a>.</p>
 
 </div>
 </div>
