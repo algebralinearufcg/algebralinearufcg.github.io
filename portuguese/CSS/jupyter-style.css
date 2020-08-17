@@ -241,7 +241,7 @@ th {
   }
 
   a[href^="#"]:after,
-  a[href^="js:"]:after {
+  a[href^="javascript:"]:after {
     content: "";
   }
 
@@ -13043,7 +13043,7 @@ div.input_area {
 
 /* This is needed so that empty prompt areas can collapse to zero height when there
    is no content in the output_subarea and the prompt. The main purpose of this is
-   to make sure that empty js output_subareas have no height. */
+   to make sure that empty JavaScript output_subareas have no height. */
 div.prompt:empty {
   padding-top: 0;
   padding-bottom: 0;
@@ -13633,8 +13633,8 @@ div.output_latex {
   text-align: left;
 }
 
-/* Empty output_js divs should have no height */
-div.output_js:empty {
+/* Empty output_javascript divs should have no height */
+div.output_javascript:empty {
   padding: 0;
 }
 
