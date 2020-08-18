@@ -3,23 +3,22 @@
 <html>
 
 <head>
-
 	<!-- Definindo as configurações gerais -->
 	<meta http-equiv = "Content-Type" content = "text/html" />
 	<meta charset = "utf-8" />
-	<title> Materiais </title>
+	<title> Feedback </title>
 	<link rel = "icon" href = "../img/logo.png" type = "image/x-icon" />
 	<link rel = "shortcut icon" href = "../img/logo.png" type = "image/x-icon" />
 	<meta name = "author" content = "Alysson Machado">
-	<meta name = "description" content = "Lista de materiais complementares ao projeto Álgebra Linear com Python.">
+	<meta name = "description" content = "Me envie um Feedback sobre o site.">
 
     <!-- Definindo as configurações do menu navegador-->
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
     <link rel = "stylesheet" type = "text/css" href = "../css/menu-style.css" />
     <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
-    <!-- Definindo as configurações para o conteúdo da página -->
-	<link rel = "stylesheet" type = "text/css" href = "../css/material-style.css">
+    <!-- Definindo as configurações do conteúdo da página -->
+	<link rel = "stylesheet" type = "text/css" href = "../css/form-style.css" />
 	<link rel = "stylesheet" type = "text/css" href = "../css/switcher-style.css">
 	<link rel = "stylesheet" href = "../css/loading-style.css">
 
@@ -41,8 +40,8 @@
 				
 				<li><a href = "../index.html" target = "_self" > Programas </a></li>
 				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
-				<li><a href = "listademateriais.html" target = "_self" class = "active"> Materiais </a></li>
-				<li><a href = "listadeformulario.html" target = "_self"> Feedback </a></li>
+				<li><a href = "material-list.html" target = "_self"> Materiais </a></li>
+				<li><a href = "form-list.html" target = "_self" class = "active"> Feedback </a></li>
 				<li>
 					
 					<div class="container-switcher">
@@ -81,64 +80,21 @@
 
 	<!-- Definindo o conteúdo da página -->
 
-	<div class = "container">
+	<form action = "https://formspree.io/alysson.barbosa@ee.ufcg.edu.br" method = "post" class = "formulario">
+		<h1 class = "formulario__titulo"> Feedback </h1>
+		<input type = "text" class = "formulario__input" name = "nome" />
+		<label for = "" class = "formulario__label"> Nome </label>
+		<input type = "text" class = "formulario__input" name = "email" />
+		<label for = "" class = "formulario__label"> E-mail para contato </label>
+		<input type = "text" class = "formulario__input" name = "curso" />
+		<label for = "" class = "formulario__label"> Curso </label>
+		<input type = "text" class = "formulario__input" name = "mensagem" />
+		<label for = "" class = "formulario__label"> Mensagem </label>
+		<input type = "submit" class = "formulario__submit" value = "Enviar" />
 		
-		<div class = "box">
-			
-			<div class = "icon"> 01 </div>
+	</form>
 
-			<div class = "content">
-				
-				<h3> Recursos Textuais </h3>
-				<p> Acesse alguns materiais em texto para aprofundar os estudos em Álgebra Linear. </p>
-				<br /> <br /> <br />
-				<img src = "../img/texts-logo.png" width = "100">
-				<br />
-				<a class = "aatalho" href = "listadetextos.html" target = "_self"> Acesse </a>
-
-			</div>
-
-		</div>
-
-
-
-		<div class = "box">
-			
-			<div class = "icon"> 02 </div>
-
-			<div class = "content">
-				
-				<h3> Vídeos </h3>
-				<p> Assista à alguns vídeos essencias para começar bem os estudos em "Álgebra Linear com Python". </p>
-				<br /> <br /> 
-				<img src = "../img/videos-logo.png" width = "100">
-				<br />
-				<a class = "aatalho" href = "listadevideos.html" target = "_self"> Acesse </a>
-
-			</div>
-
-		</div>
-
-
-
-		<div class = "box">
-			
-			<div class = "icon"> 03 </div>
-
-			<div class = "content">
-				
-				<h3> Curso de Git e GitHub </h3>
-				<p> Aprenda a usar o Software de Versionamento Git e o Repositório GitHub para auxiliar sua vida acadêmica e profissional. </p>
-				<br /> 
-				<img src = "../img/logo2.png" width = "100">
-				<br />  
-				<a class = "aatalho" href = "https://alyssonmach.github.io/Minicurso-Git-e-GitHub/index.html" target = "_blank"> Acesse </a>
-
-			</div>
-
-		</div>
-
-	</div>
+	<script src = "../js/form.js"></script>
 
 	<script type = "text/javascript" src = "../js/pace.min.js"></script>
 	<script type = "text/javascript" src = "../js/switcher.js"></script>
