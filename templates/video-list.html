@@ -22,6 +22,7 @@
 	<link rel = "stylesheet" type = "text/css" href = "../css/material-style.css">
 	<link rel = "stylesheet" type = "text/css" href = "../css/switcher-style.css">
 	<link rel = "stylesheet" href = "../css/loading-style.css">
+	<link rel = "stylesheet" type = "text/css" href = "../css/popup-style.css">
 
 
 </head>
@@ -44,6 +45,11 @@
 				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
 				<li><a href = "material-list.html" target = "_self" class = "active"> Materiais </a></li>
 				<li><a href = "form-list.html" target = "_self"> Feedback </a></li>
+				<li><a href = "#" target = "_self"> 
+
+					<button onclick="togglePopup()">Contribua</button>					
+				
+					</a></li>
 				<li>
 					
 					<div class="container-switcher">
@@ -64,6 +70,19 @@
 		<div class = "clearfix"></div>
 
 	</header>
+
+	<div class="popup" id="popup-1">
+		<div class="overlay"></div>
+		<div class="content-popup">
+		  <div class="close-btn" onclick="togglePopup()">&times;</div>
+		  <h1>Deixe sua Doação</h1>
+		  <hr>
+		  <p>Ajude um desenvolvedor Open Source a continuar contribuindo para o ensino gratuito!</p>
+		  <p>Deixe sua doação pelo PayPal, sua contribuição será de grande ajuda para a continuidade do projeto!</p>
+		  <button class = "button-style"><a href = "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=G7YB4B9P4JML2&item_name=Help+a+developer+with+their+Open+Source+work&currency_code=BRL&source=url" target = "_blank">Doe pelo PayPal</a></button>
+
+		</div>
+	  </div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.js" 
 	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
@@ -159,6 +178,7 @@
 
 	<script type = "text/javascript" src = "../js/pace.min.js"></script>
 	<script type = "text/javascript" src = "../js/switcher.js"></script>
+	<script type = "text/javascript" src = "../js/popup.js"></script>
 	
 	<footer class = "footeratalho">
 
