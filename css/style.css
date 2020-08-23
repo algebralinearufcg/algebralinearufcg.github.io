@@ -14,13 +14,12 @@
 
 .feature-box h1
 {
-    margin-top: 0%;
     color: var(--home-color);
 }
 
 .feature-box p
 {
-    margin: 50px auto;
+    margin: 50px 50px;
     color:var(--font-color);
 }
 
