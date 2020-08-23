@@ -35,6 +35,11 @@ body
 	text-decoration: none;
 }
 
+.logo img
+{
+	width: 110px;
+}
+
 .navatalho
 {
 	float: right;
