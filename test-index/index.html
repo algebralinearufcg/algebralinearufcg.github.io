@@ -1,57 +1,89 @@
 <html>
     <head>
+
+        <!-- Definindo as configurações gerais -->
         <title>Álgebra Linear com Python</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel = "icon" href = "img/logo.png" type = "image/x-icon" />
+        <link rel = "shortcut icon" href = "img/logo.png" type = "image/x-icon" />
+        <meta name = "author" content = "Alysson Machado">
+        <meta name = "description" content = "Aplicações dos tópicos aprendidos na disciplina Álgebra Linear em Python.">
+
+         <!-- Definindo as configurações do menu navegador-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel = "stylesheet" type = "text/css" href = "../css/menu-style.css" />
+        <link rel = "stylesheet" type = "text/css" href = "../css/material-style.css">
+        <link rel = "stylesheet" type = "text/css" href = "../css/switcher-style.css">
+        <link rel = "stylesheet" href = ".../css/loading-style.css">
+        
     </head>
+
     <body>
-        <div class = "container">
 
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="menu-icon.png" alt="menu-icon">
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto text-right">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" ">Blog</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+      <header class = "headeratalho"> 
 
-        </div>
+        <a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
+    
+        <div class = "menu-toggle"></div>
+    
+        <nav class = "navatalho">
+          
+          <ul>
+            
+            <li><a href = "index.html" target = "_self" > Programas </a></li>
+            <li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
+            <li><a href = "templates/material-list.html" target = "_self"> Materiais </a></li>
+            <li><a href = "templates/form-list.html" target = "_self"> Feedback </a></li>
+            <li>
+              <div class="container-switcher">
+    
+              <label id="switch" class="switch">
+                  <input type="checkbox" onchange="toggleTheme()" id="slider">
+                  <span class="slider round"></span>
+              </label>
+              
+              </div>
+              
+              </li>
+    
+          </ul>
+    
+        </nav>
+    
+        <div class = "clearfix"></div>
+    
+      </header>
 
         <div class = "container">
           <div class = "wrapper">
             <div class = "row">
               <div class = "col-md-6">
                 <div class = "feature-box">
-                  <h1>Create Your Own Website</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quod rerum. Obcaecati ea cupiditate repellendus omnis dolores harum quidem corporis qui. Iste officiis omnis voluptatem deserunt a, eaque fugit iusto.</p>
-                  <a href="#" class = "btn-One">Read More</a>
-                  <a href="#" class = "btn-Two">Contact Us</a>
+
+                  <h1 align = "center"><strong>Álgebra Linear com Python</strong></h1>
+
+                  <p>
+                    Aprenda os principais métodos computacionais para os tópicos da disciplina Álgebra Linear. O projeto <strong>Álgebra Linear com Python</strong> conta com 22 programas sobre o tema. Além disso, você aprenderá a usar a linguagem de programação python e alguns pacotes famosos, como o numpy e o matplotlib. Nesse site, você encontrará recursos em texto, vídeo, códigos e poderá se introduzir no ramo da inteligência artificial!
+                  </p>
+
+                  <a href="#" class = "btn-One">Projeto no GitHub</a>
+                  <a href="#" class = "btn-Two">Contribua</a>
+
                 </div>
               </div>
+
               <div class = "col-md-6">
                 <img src = "capa.svg" alt = "capa" class = "feature-img">
               </div>
+
             </div>
           </div>
         </div>
+
+        <script type = "text/javascript" src = "../js/pace.min.js"></script>
+        <script type = "text/javascript" src = "../js/switcher.js"></script>
 
     </body>
 </html>

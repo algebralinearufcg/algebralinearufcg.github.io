@@ -4,35 +4,6 @@
     padding: 0;
 }
 
-body
-{
-    background-image: url('background.png');
-    background-size: 1920px 1080px;
-}
-
-.navbar-toggler 
-{
-    outline: none !important;
-    padding: 0 !important;
-}
-
-.navbar-toggler img
-{
-    width: 35px;
-}
-
-.navbar-brand img
-{
-    width: 80px;
-}
-
-.nav-link
-{
-    color: #c200ff !important;
-    font-weight: 600;
-    margin-left: 30px;
-}
-
 .wrapper
 {
     margin: 50px auto;
@@ -49,14 +20,14 @@ body
 
 .feature-box h1
 {
-    margin-top: 20%;
-    color: #c200ff;
+    margin-top: 0%;
+    color: var(--home-color);
 }
 
 .feature-box p
 {
     margin: 50px auto;
-    color: #555;
+    color: var(--font-color);
 }
 
 .feature-box a

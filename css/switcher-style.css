@@ -15,7 +15,8 @@
   --base-color8:#f82790;
   --base-color9:gray;
   --loading-font:#0365f7;
-  --board-code: #46454577;
+  --board-code: #464545;
+  --home-color: #c200ff;
 }
 .theme-dark {
   --color-primary: #ea4435af;
@@ -34,7 +35,8 @@
   --base-color8:#f8279077;
   --base-color9:rgba(128, 128, 128, 0.418);
   --loading-font:#0365f777;
-  --board-code: #464545;
+  --board-code: #46454577;
+  --home-color: #c200ff77;
 }
 .container-switcher {
   float: left;
