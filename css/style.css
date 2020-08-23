@@ -19,7 +19,7 @@
 
 .feature-box p
 {
-    margin: 50px 50px;
+    margin: 50px auto;
     color:var(--font-color);
 }
 
