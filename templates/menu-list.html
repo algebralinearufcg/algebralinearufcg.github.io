@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!-- Definindo as configurações gerais -->
+	<meta http-equiv = "Content-Type" content = "text/html" />
+	<meta charset = "utf-8" />
+	<title> Álgebra Linear com Python </title>
+	<link rel = "icon" href = "img/logo.png" type = "image/x-icon" />
+	<link rel = "shortcut icon" href = "img/logo.png" type = "image/x-icon" />
+	<meta name = "author" content = "Alysson Machado">
+	<meta name = "description" content = "Aplicações dos tópicos aprendidos na disciplina Álgebra Linear em Python.">
+
+    <!-- Definindo as configurações do menu navegador-->
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <link rel = "stylesheet" type = "text/css" href = "css/menu-style.css" />
+    <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
+
+    <!-- Definindo as configurações para o conteúdo da página -->
+	<link rel = "stylesheet" type = "text/css" href = "css/material-style.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/switcher-style.css">
+	<link rel = "stylesheet" href = "css/loading-style.css">
+
+</head>
+
+<body>
+
+	<!-- Definindo o menu navegador -->
+
+	<header class = "headeratalho"> 
+
+		<a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
+
+		<div class = "menu-toggle"></div>
+
+		<nav class = "navatalho">
+			
+			<ul>
+				
+				<li><a href = "index.html" target = "_self" class = "active"> Programas </a></li>
+				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
+				<li><a href = "templates/material-list.html" target = "_self"> Materiais </a></li>
+				<li><a href = "templates/form-list.html" target = "_self"> Feedback </a></li>
+				<li>
+					<div class="container-switcher">
+
+					<label id="switch" class="switch">
+							<input type="checkbox" onchange="toggleTheme()" id="slider">
+							<span class="slider round"></span>
+					</label>
+					
+					</div>
+					
+			    </li>
+
+			</ul>
+
+		</nav>
+
+		<div class = "clearfix"></div>
+
+	</header>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js" 
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+	crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+
+	</script>
+
+	<!-- Definindo o conteúdo da página -->
+
+	<div class = "container">
+		
+		<div class = "box">
+			
+			<div class = "icon"> 01 </div>
+
+			<div class = "content">
+				
+				<h3> Lista de Programas </h3>
+				<p> Acesse a lista de programas com inúmeras aplicações de Álgebra Linear na linguagem de programação Python. </p>
+				<br /> <br />
+				<img src = "img/logo.png" width = "100">
+				<br />
+				<a class = "aatalho" href = "templates/program-list.html" target = "_self"> Acesse </a>
+
+			</div>
+
+		</div>
+
+
+
+		<div class = "box">
+			
+			<div class = "icon"> 02 </div>
+
+			<div class = "content">
+				
+				<h3> Instruções </h3>
+				<p> Veja como os programas estão estruturados, aprenda a usar arquivos .ipynb e tenha uma noção geral sobre o projeto "Álgebra Linear com Python". </p>
+				<br />
+				<img src = "img/instruction-logo.png" width = "100">
+				<br />
+				<a class = "aatalho" href = "instructions/instructions.html" target = "_self"> Acesse </a>
+
+			</div>
+
+		</div>
+
+
+
+		<div class = "box">
+			
+			<div class = "icon"> 03 </div>
+
+			<div class = "content">
+				
+				<h3> Repositórios e Informações</h3>
+				<p> Acesse ao repositório GitHub e tenha acesso as Wikis do site e do projeto. </p>
+				<br /> 
+				<img src = "img/repository-logo.png" width = "100">
+				<br />
+				<a class = "aatalho" href = "templates/repository-list.html" target = "_self"> Acesse </a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script type = "text/javascript" src = "js/pace.min.js"></script>
+	<script type = "text/javascript" src = "js/switcher.js"></script>
+
+	<footer class = "footeratalho">
+
+		<p align = "center">Criado por:<a href = "mailto:alysson.barbosa@ee.ufcg.edu.br" target = "_blank"> Alysson Machado </a> </p>
+
+	</footer>
+
+</body>
+
+</html>
