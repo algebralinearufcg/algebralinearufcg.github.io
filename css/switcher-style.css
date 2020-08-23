@@ -49,6 +49,13 @@
   align-items: center;
 }
 
+@media (max-width: 1200px)
+{
+  .container-switcher
+	{
+		height: 8%;
+	}
+}
 
 .container-switcher button {
   color: var(--font-color);

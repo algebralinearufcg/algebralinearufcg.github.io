@@ -9,19 +9,19 @@
 
 .feature-box
 {
-    padding: 30px;
+    padding: 20px;
 }
 
 .feature-box h1
 {
-    margin-top: 10%;
+    margin-top: 0%;
     color: var(--home-color);
 }
 
 .feature-box p
 {
     margin: 50px auto;
-    color: var(--font-color);
+    color:var(--font-color);
 }
 
 .feature-box a
@@ -46,20 +46,18 @@
     color: #a669ce !important;
 }
 
-.feature-img
+.col-md-6 img
 {
-    width: 100%;
-    padding: 40px;
-   
+    width: 47%;
+    display: inline-block;
+    padding: ;
 }
 
-@media 
+@media only screen and (max-width:990px)
 {
-
     .feature-box a
     {
         padding: 5px 8px;
         margin-right: 10px;
     }
-   
-}
+} 
