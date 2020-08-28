@@ -339,18 +339,6 @@ body
 	background: var(--base-color5);
 }
 
-.container .box:nth-child(24) .icon
-{
-	box-shadow: 0 0 0 0  var(--base-color6);
-	background:  var(--base-color6);
-}
-
-.container .box:nth-child(24):hover .icon
-{
-	box-shadow: 0 0 0 540px  var(--base-color6);
-	background: var(--base-color6);
-}
-
 .container .box .content
 {
 	position: relative;
