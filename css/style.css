@@ -47,9 +47,8 @@
 
 .col-md-6 img
 {
-    width: 47%;
+    width: 38%;
     display: inline-block;
-    padding: ;
 }
 
 @media only screen and (max-width:990px)
