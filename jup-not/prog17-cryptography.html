@@ -93,7 +93,7 @@
 		})
 
   </script>
-  
+
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -160,13 +160,10 @@ $$\begin{bmatrix}
 <span class="k">def</span> <span class="nf">equivalenteDecimal</span><span class="p">(</span><span class="n">letra</span><span class="p">):</span>
     
     <span class="c1"># definindo uma cadeia de caracteres com todas as letras do alfabeto, exceto pela letra z</span>
-    <span class="n">alfabeto</span> <span class="o">=</span> <span class="s2">&quot;abcdefghijklmnopqrstuvwxy&quot;</span>
-    <span class="c1"># como será trabalhado com mod 16, teremos que para z, a letra número 16, um resto 0</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">letra</span> <span class="o">==</span> <span class="s2">&quot;z&quot;</span><span class="p">):</span>
-        <span class="k">return</span> <span class="mi">0</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="c1"># encontra a posição da letra na string e retorna com +1, dado que a contagem inicia em 0</span>
-        <span class="k">return</span><span class="p">(</span><span class="n">alfabeto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">alfabeto</span> <span class="o">=</span> <span class="s2">&quot;zabcdefghijklmnopqrstuvwxy&quot;</span>
+    
+    <span class="c1"># encontra a posição da letra na string e a retorna</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">alfabeto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">letra</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -183,14 +180,10 @@ $$\begin{bmatrix}
 <span class="k">def</span> <span class="nf">equivalenteAlfabetico</span><span class="p">(</span><span class="n">numero</span><span class="p">):</span>
     
     <span class="c1"># definindo uma cadeia de caracteres com todas as letras do alfabeto, exceto pela letra z</span>
-    <span class="n">alfabeto</span> <span class="o">=</span> <span class="s2">&quot;abcdefghijklmnopqrstuvwxy&quot;</span>
+    <span class="n">alfabeto</span> <span class="o">=</span> <span class="s2">&quot;zabcdefghijklmnopqrstuvwxy&quot;</span>
     
-    <span class="c1"># Caso seja o caractere z, retorna 0, pois como ele está na posição 16, teremos que 16 mod 16 terá como resultado 0</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">numero</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s2">&quot;z&quot;</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="c1"># encontra o pedaço da string a qual o número correspondente indica</span>
-        <span class="k">return</span><span class="p">(</span><span class="n">alfabeto</span><span class="p">[</span><span class="n">numero</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span>
+    <span class="c1"># encontra o pedaço da string a qual o número correspondente indica</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">alfabeto</span><span class="p">[</span><span class="n">numero</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -1332,7 +1325,7 @@ $$A^{-1} = (ad - bc)^{-1}\begin{bmatrix}
     <p align = "center">Criado por:<a href = "mailto:alysson.barbosa@ee.ufcg.edu.br" target = "_blank"> Alysson Machado </a> </p>
 
   </footer>
-
+  
 </body>
 
 </html>
