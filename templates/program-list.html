@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-BR">
 
 <head>
 
 	<!-- Definindo as configurações gerais -->
 	<meta http-equiv = "Content-Type" content = "text/html" />
 	<meta charset = "utf-8" />
-	<title> Programas </title>
+	<title>Programas · Álgebra Linear com Python</title>
 	<link rel = "icon" href = "../img/navicon.png" type = "image/x-icon" />
 	<link rel = "shortcut icon" href = "../img/navicon.png" type = "image/x-icon" />
 	<meta name = "author" content = "Alysson Machado">
@@ -16,12 +16,10 @@
     <!-- Definindo as configurações do menu navegador-->
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
     <link rel = "stylesheet" type = "text/css" href = "../css/menu-style.css" />
-    <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
     <!-- Definindo as configurações para o conteúdo da página -->
 	<link rel = "stylesheet" type = "text/css" href = "../css/material-style.css">
 	<link rel = "stylesheet" type = "text/css" href = "../css/switcher-style.css">
-	<link rel = "stylesheet" href = "../css/loading-style.css">
 
 </head>
 
@@ -33,20 +31,20 @@
 
 		<a href = "../index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
 
-		<div class = "menu-toggle"></div>
+		<button class = "menu-toggle" type = "button" aria-label = "Abrir menu" aria-expanded = "false" aria-controls = "primary-navigation"></button>
 
-		<nav class = "navatalho">
+		<nav class = "navatalho" id = "primary-navigation" aria-label = "Navegação principal">
 			
 			<ul>
 				
-				<li><a href = "menu-list.html" target = "_self" class = "active"> Programas </a></li>
+				<li><a href = "program-list.html" target = "_self" class = "active"> Programas </a></li>
 				<li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
 				<li><a href = "material-list.html" target = "_self"> Materiais </a></li>
 				<li>
 					
 					<div class="container-switcher">
 
-					<label id="switch" class="switch">
+					<label id="switch" class="switch" aria-label="Alternar tema claro ou escuro">
 							<input type="checkbox" onchange="toggleTheme()" id="slider">
 							<span class="slider round"></span>
 					</label>
@@ -62,23 +60,14 @@
 		<div class = "clearfix"></div>
 
 	</header>
+<!-- Definindo o conteúdo da página -->
 
-	<script src="https://code.jquery.com/jquery-3.4.1.js" 
-	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
-	crossorigin="anonymous"></script>
-
-	<script type="text/javascript">
-
-		$(document).ready(function(){
-			$('.menu-toggle').click(function(){
-				$('.menu-toggle').toggleClass('active')
-				$('nav').toggleClass('active')
-			})
-		})
-
-	</script>
-
-	<!-- Definindo o conteúdo da página -->
+	<main>
+	<section class="catalog-heading" aria-labelledby="page-title">
+		<p class="eyebrow">Álgebra Linear com Python</p>
+		<h1 id="page-title">Programas e aplicações</h1>
+		<p>Uma sequência de 22 notebooks para conectar conceitos de Álgebra Linear com experimentação computacional.</p>
+	</section>
 
 	<div class = "container">
 		
@@ -480,14 +469,17 @@
 			
 	</div>
 
-	<script type = "text/javascript" src = "../js/pace.min.js"></script>
+	</main>
+
 	<script type = "text/javascript" src = "../js/switcher.js"></script>
 
 	<footer class = "footeratalho">
 
-		<p align = "center">Criado por:<a href = "https://github.com/Alyssonmach" target = "_blank"> Alysson Machado </a> </p>
+		<p align = "center">Criado por:<a href = "https://alyssonmach.github.io" target = "_blank"> Alysson Machado </a> </p>
 
 	</footer>
+
+	<script type = "text/javascript" src = "../js/site.js"></script>
 
 </body>
 

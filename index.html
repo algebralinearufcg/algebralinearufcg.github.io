@@ -1,7 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
     <head>
-      
+
         <title>Álgebra Linear com Python</title>
         <meta charset = "utf-8" />
         <link rel = "icon" href = "img/navicon.png" type = "image/x-icon" />
@@ -10,97 +11,82 @@
         <meta name = "description" content = "Aplicações dos tópicos aprendidos na disciplina Álgebra Linear em Python.">
 
         <link rel = "stylesheet" type = "text/css" href = "css/menu-style.css" />
-        <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet" />
 
-        
+
         <link rel = "stylesheet" href = "css/material-style.css">
         <link rel = "stylesheet" type = "text/css" href = "css/switcher-style.css">
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
+
+
     </head>
     <body>
 
-      <header class = "headeratalho"> 
+      <header class = "headeratalho">
 
         <a href = "index.html" class = "logo" target = "_self"> Álgebra Linear com Python </a>
-    
-        <div class = "menu-toggle"></div>
-    
-        <nav class = "navatalho">
-          
+
+        <button class = "menu-toggle" type = "button" aria-label = "Abrir menu" aria-expanded = "false" aria-controls = "primary-navigation"></button>
+
+        <nav class = "navatalho" id = "primary-navigation" aria-label = "Navegação principal">
+
           <ul>
-            
-            <li><a href = "templates/menu-list.html" target = "_self"> Programas </a></li>
+
+            <li><a href = "templates/program-list.html" target = "_self"> Programas </a></li>
             <li><a href = "http://ecandeia.dee.ufcg.edu.br" target = "_blank"> Site da Disciplina </a></li>
             <li><a href = "templates/material-list.html" target = "_self"> Materiais </a></li>
             <li>
               <div class="container-switcher">
-    
-              <label id="switch" class="switch">
+
+              <label id="switch" class="switch" aria-label="Alternar tema claro ou escuro">
                   <input type="checkbox" onchange="toggleTheme()" id="slider">
                   <span class="slider round"></span>
               </label>
-              
+
               </div>
-              
+
               </li>
-    
+
           </ul>
-    
+
         </nav>
-    
+
         <div class = "clearfix"></div>
-    
+
       </header>
 
-      <script src="https://code.jquery.com/jquery-3.4.1.js" 
-	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
-	crossorigin="anonymous"></script>
-
-	<script type="text/javascript">
-
-		$(document).ready(function(){
-			$('.menu-toggle').click(function(){
-				$('.menu-toggle').toggleClass('active')
-				$('nav').toggleClass('active')
-			})
-		})
-
-  </script>
-
-        <div class = "container">
+        <main class = "container home-container">
           <div class = "wrapper">
             <div class = "row">
-              <div class = "col-md-6" align = "center">
-                
-                <img src = "img/capa1.svg" alt = "capa" align = "center">
-                <img src = "img/capa2.svg" alt = "logo" align = "center">
+              <div class = "col-md-6">
+
+                <img src = "img/capa1.svg" alt = "Ilustração de uma estudante trabalhando com álgebra linear">
+                <img src = "img/capa2.svg" alt = "Ilustração de uma pessoa estudando no computador">
 
               </div>
               <div class = "col-md-6">
                 <div class = "feature-box">
-                  <h1 align = "center"><strong>Álgebra Linear com Python</strong></h1>
+                  <p class = "eyebrow">Recursos didáticos · UFCG</p>
+                  <h1>Álgebra Linear com Python</h1>
 
-                  <p align = "justify">
-                    Aprenda as principais aplicações computacionais para os tópicos da disciplina Álgebra Linear. O projeto <strong>Álgebra Linear com Python</strong> conta com 22 programas sobre o tema. Além disso, você aprenderá a usar a linguagem de programação Python e alguns pacotes famosos, como o Numpy e o Matplotlib. Nesse site, você encontrará recursos em texto, vídeo e código. Aproveite o conteúdo!
+                  <p>
+                    Explore aplicações computacionais dos principais tópicos de Álgebra Linear. São 22 programas que articulam conceitos matemáticos com Python, NumPy e Matplotlib, acompanhados por recursos em texto e vídeo para apoiar o estudo.
                   </p>
-                  <a href="templates/program-list.html" class = "btn-Two">Lista de Programas</a>
-                  <a href="templates/contribute-list.html" class = "btn-Two">Contribua</a>
+                  <a href="templates/program-list.html">Explorar programas</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </main>
 
         <footer class = "footeratalho">
 
-          <p align = "center">Criado por:<a href = "https://github.com/Alyssonmach" target = "_blank"> Alysson Machado </a> </p>
-      
+          <p align = "center">Criado por:<a href = "https://alyssonmach.github.io" target = "_blank"> Alysson Machado </a> </p>
+
         </footer>
 
 	      <script type = "text/javascript" src = "js/switcher.js"></script>
+	      <script type = "text/javascript" src = "js/site.js"></script>
 
     </body>
-</html> 
+</html>

@@ -1,25 +1,18 @@
-// function to set a given theme/color-scheme
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
-    document.documentElement.className = themeName;
+    document.documentElement.classList.remove('theme-light', 'theme-dark');
+    document.documentElement.classList.add(themeName);
+    const slider = document.getElementById('slider');
+    if (slider) {
+        slider.checked = themeName === 'theme-dark';
+    }
 }
 
-// function to toggle between light and dark theme
 function toggleTheme() {
-    if (localStorage.getItem('theme') === 'theme-light') {
-        setTheme('theme-dark');
-    } else {
-        setTheme('theme-light');
-    }
+    setTheme(document.documentElement.classList.contains('theme-dark') ? 'theme-light' : 'theme-dark');
 }
 
-// Immediately invoked function to set the theme on initial load
 (function () {
-    if (localStorage.getItem('theme') === 'theme-light') {
-        setTheme('theme-light');
-        document.getElementById('slider').checked = false;
-    } else {
-        setTheme('theme-dark');
-      document.getElementById('slider').checked = true;
-    }
+    const savedTheme = localStorage.getItem('theme');
+    setTheme(savedTheme === 'theme-dark' ? 'theme-dark' : 'theme-light');
 })();
