@@ -14,7 +14,7 @@ Site didático com programas e materiais de apoio para estudar aplicações de �
 - `js/` — comportamento do menu móvel e alternância entre temas claro e escuro.
 - `LICENSE` — licença MIT.
 
-Os notebooks são publicados em um repositório GitHub separado e abertos pelo site usando o nbviewer. Os vídeos e alguns materiais complementares também apontam para serviços externos.
+Os notebooks são publicados em um repositório GitHub separado e abertos diretamente no GitHub pela branch `master`, acompanhando as versões atuais dos arquivos. Os vídeos e alguns materiais complementares também apontam para serviços externos.
 
 ## Visualizar localmente
 
